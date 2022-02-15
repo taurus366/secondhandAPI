@@ -58,9 +58,9 @@ public class UserRegistrationController {
         return ResponseEntity.status(HttpStatus.CREATED).body(userRegistrationDTO);
     }
 
-    @PostMapping("/register/2")
+    @PostMapping("/test")
     @CrossOrigin(origins = "*")
-    public ResponseEntity<String> test(){
-        return ResponseEntity.ok().build();
+    public ResponseEntity<String> test(@RequestBody UserRegistrationBindingModel userRegistrationBindingModel,BindingResult bindingResult,RedirectAttributes redirectAttributes){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(userRegistrationBindingModel.getEmail());
     }
 }

@@ -42,6 +42,7 @@ public class CustomUsernamePasswordAuthenticationFilter extends UsernamePassword
             String line = null;
             while ((line = reader.readLine()) != null) {
                 sb.append(line);
+                System.out.println(line);
             }
             String parsedReq = sb.toString();
             if (parsedReq != null) {
