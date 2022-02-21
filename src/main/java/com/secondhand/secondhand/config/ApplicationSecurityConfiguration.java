@@ -19,6 +19,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.context.SecurityContextPersistenceFilter;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+import org.springframework.security.web.csrf.CsrfAuthenticationStrategy;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -63,8 +66,6 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
     }
 
 
-
-
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.authenticationProvider(authProvider());
@@ -73,17 +74,25 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .httpBasic()
+
+                .and()
+
                 .csrf().disable()
+//                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+//                .and()
+//                .and()
                 .cors().configurationSource(corsConfigurationSource())
                 .and()
                 .authorizeRequests()
-                .antMatchers("/users/register").permitAll()
+                .antMatchers("/users/register","/users/login","/users/validate").permitAll()
                 .antMatchers("/**").authenticated()
-
                 .and()
+
                 .addFilterBefore(
                         authenticationFilter(),
                         UsernamePasswordAuthenticationFilter.class)
+
                 .logout()
                 .logoutUrl("/logout")
                 .logoutSuccessHandler(this::logoutSuccessHandler)
@@ -93,12 +102,10 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
 //                .headers().c
 //                .and()
                 .exceptionHandling()
-                .authenticationEntryPoint(new Http401AuthenticationEntryPoint("401"));
+                .authenticationEntryPoint(new Http401AuthenticationEntryPoint("401"))
+                .and()
+                .sessionManagement().maximumSessions(1);
     }
-
-
-
-
 
 
     private void loginSuccessHandler(
@@ -109,7 +116,8 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
         UserDetails loggedInUser = userDetailsService.loadUserByUsername(authentication.getName());
 //                .orElseThrow(() -> new UsernameNotFoundException("User not found: " + authentication.getName()));
         response.setStatus(HttpStatus.OK.value());
-        objectMapper.writeValue(response.getWriter(),request.getCookies());
+        objectMapper.writeValue(response.getWriter(), "Successful Logged!");
+//        objectMapper.writeValueAsString("test");
 //        objectMapper.writeValue(response.getWriter(),response.setHeader(););
 
     }
@@ -120,7 +128,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
             AuthenticationException e) throws IOException {
 
         response.setStatus(HttpStatus.UNAUTHORIZED.value());
-        objectMapper.writeValue(response.getWriter(), "Nopity nop!");
+        objectMapper.writeValue(response.getWriter(), "We couldn't authorized you!");
     }
 
     private void logoutSuccessHandler(
@@ -129,9 +137,8 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
             Authentication authentication) throws IOException {
 
         response.setStatus(HttpStatus.OK.value());
-        objectMapper.writeValue(response.getWriter(), "Bye!");
+        objectMapper.writeValue(response.getWriter(), "Logout function were successful by user!");
     }
-
 
 
 //    @Override
@@ -255,7 +262,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
 //        return new CorsFilter(source);
 //    }
 
-//    public static class SimpleCorsFilter extends OncePerRequestFilter {
+    //    public static class SimpleCorsFilter extends OncePerRequestFilter {
 //
 //        @Override
 //        public void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {

@@ -1,6 +1,6 @@
 package com.secondhand.secondhand.service.Impl;
 
-import com.secondhand.secondhand.model.dto.UserRegistrationDTO;
+import com.secondhand.secondhand.model.dto.UserInformationDTO;
 import com.secondhand.secondhand.model.entity.RoleEntity;
 import com.secondhand.secondhand.model.entity.UserEntity;
 import com.secondhand.secondhand.model.entity.enums.RoleEnum;
@@ -14,6 +14,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -43,7 +44,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserRegistrationDTO registerNewUser(UserRegistrationServiceModel registerServiceModel) {
+    public UserInformationDTO registerNewUserAndLogin(UserRegistrationServiceModel registerServiceModel) {
 
         RoleEntity userRoleFromDB = roleRepository.findByRole(RoleEnum.USER);
 
@@ -79,7 +80,7 @@ public class UserServiceImpl implements UserService {
 //
 //        }
 
-        return modelMapper.map(savedUser, UserRegistrationDTO.class);
+        return modelMapper.map(savedUser, UserInformationDTO.class);
 
     }
 
@@ -88,5 +89,12 @@ public class UserServiceImpl implements UserService {
 
 
         return Optional.empty();
+    }
+
+    @Override
+    public UserInformationDTO findUserByEmail(String email) {
+        UserEntity userEntity = userRepository.findByEmail(email).orElseThrow(() -> new UsernameNotFoundException("The user couldn't found"));
+
+        return modelMapper.map(userEntity, UserInformationDTO.class);
     }
 }

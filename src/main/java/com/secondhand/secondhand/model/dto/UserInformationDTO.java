@@ -6,7 +6,7 @@ import com.secondhand.secondhand.model.entity.enums.SexEnum;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserRegistrationDTO {
+public class UserInformationDTO {
 
     private Long id;
     private String firstName;
@@ -19,7 +19,7 @@ public class UserRegistrationDTO {
         return id;
     }
 
-    public UserRegistrationDTO setId(Long id) {
+    public UserInformationDTO setId(Long id) {
         this.id = id;
         return this;
     }
@@ -28,7 +28,7 @@ public class UserRegistrationDTO {
         return firstName;
     }
 
-    public UserRegistrationDTO setFirstName(String firstName) {
+    public UserInformationDTO setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -37,7 +37,7 @@ public class UserRegistrationDTO {
         return lastName;
     }
 
-    public UserRegistrationDTO setLastName(String lastName) {
+    public UserInformationDTO setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -46,7 +46,7 @@ public class UserRegistrationDTO {
         return email;
     }
 
-    public UserRegistrationDTO setEmail(String email) {
+    public UserInformationDTO setEmail(String email) {
         this.email = email;
         return this;
     }
@@ -55,7 +55,7 @@ public class UserRegistrationDTO {
         return roles;
     }
 
-    public UserRegistrationDTO setRoles(List<RoleEntity> roles) {
+    public UserInformationDTO setRoles(List<RoleEntity> roles) {
         this.roles = roles;
         return this;
     }
@@ -64,7 +64,7 @@ public class UserRegistrationDTO {
         return sex;
     }
 
-    public UserRegistrationDTO setSex(SexEnum sex) {
+    public UserInformationDTO setSex(SexEnum sex) {
         this.sex = sex;
         return this;
     }
