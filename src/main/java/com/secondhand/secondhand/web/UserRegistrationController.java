@@ -30,7 +30,7 @@ public class UserRegistrationController {
 
 
     @PostMapping("/register")
-    public ResponseEntity<UserInformationDTO> registerNewUser(@Valid @RequestBody UserRegistrationBindingModel userRegistrationBindingModel, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+    public ResponseEntity<String> registerNewUser(@Valid @RequestBody UserRegistrationBindingModel userRegistrationBindingModel, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
         boolean isSamePasswords = userRegistrationBindingModel.getPassword().equals(userRegistrationBindingModel.getConfirmPassword());
 
@@ -45,10 +45,15 @@ public class UserRegistrationController {
                     .addFlashAttribute("isSamePasswords", isSamePasswords);
 
             System.out.println(bindingResult.getAllErrors().size());
-            System.out.println(bindingResult.getAllErrors().get(0));
+            System.out.println(bindingResult.getAllErrors());
 //            System.out.println(bindingResult.getFieldError().);
 
-            return ResponseEntity.status(HttpStatus.CONFLICT).build();
+
+//            HERE I MUST RETURN THE ERROR!
+
+            bindingResult.getAllErrors().forEach(objectError -> System.out.println(objectError.getDefaultMessage() + " " + objectError.getCodes()[1].split("\\.")[1] ));
+
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(bindingResult.getModel().values().toString());
         }
 
 // HERE I CONVERT THE REQUEST FROM FRONT END / from   userRegistrationBindingModel >to> UserRegistrationServiceModel
@@ -59,25 +64,11 @@ public class UserRegistrationController {
                 .registerNewUserAndLogin(serviceModel);
 
 //             HERE SHOULD RETURN INFORMATION TO FROND END TO RENDERING AFTER CLIENT REGISTERED! - IT MEANS LOGIN AFTER REGISTER !
-        return ResponseEntity.status(HttpStatus.CREATED).body(userInformationDTO);
-    }
-
-    @PostMapping("/test")
-    public ResponseEntity<String> test(@RequestBody UserRegistrationBindingModel userRegistrationBindingModel,BindingResult bindingResult,RedirectAttributes redirectAttributes){
-        return ResponseEntity.status(HttpStatus.ACCEPTED).body(userRegistrationBindingModel.getEmail());
+        return ResponseEntity.status(HttpStatus.CREATED).body(userInformationDTO.toString());
     }
 
 
-//    CHECK IF USER IS LOGGED OR NOT!
-    @GetMapping("/validate")
-    public ResponseEntity<UserInformationDTO> checkUserIfLogged(@AuthenticationPrincipal SecondHandUser principal){
-        UserInformationDTO userByEmail = null;
-        try {
-            userByEmail = userService.findUserByEmail(principal.getUserIdentifierEmail());
-        }catch (Exception e){
-        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-        }
 
-        return ResponseEntity.status(HttpStatus.OK).body(userByEmail);
-    }
+
+
 }

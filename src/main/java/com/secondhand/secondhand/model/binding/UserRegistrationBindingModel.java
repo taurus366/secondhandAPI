@@ -1,9 +1,8 @@
 package com.secondhand.secondhand.model.binding;
 
-import com.secondhand.secondhand.model.entity.enums.SexEnum;
+import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
 import com.secondhand.secondhand.model.validator.UniqueEmail;
 
-import javax.persistence.Enumerated;
 import javax.validation.constraints.*;
 
 public class UserRegistrationBindingModel {
@@ -35,7 +34,7 @@ public class UserRegistrationBindingModel {
 
 
     @NotNull(message = "Please choose SEX")
-    private SexEnum sex;
+    private UserSexEnum sex;
 
     public String getFirstName() {
         return firstName;
@@ -82,11 +81,11 @@ public class UserRegistrationBindingModel {
         return this;
     }
 
-    public SexEnum getSex() {
+    public UserSexEnum getSex() {
         return sex;
     }
 
-    public UserRegistrationBindingModel setSex(SexEnum sex) {
+    public UserRegistrationBindingModel setSex(UserSexEnum sex) {
         this.sex = sex;
         return this;
     }

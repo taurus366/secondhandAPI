@@ -3,6 +3,8 @@ package com.secondhand.secondhand.config;
 import com.fasterxml.jackson.databind.cfg.CoercionAction;
 import com.fasterxml.jackson.databind.cfg.CoercionInputShape;
 import com.fasterxml.jackson.databind.type.LogicalType;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 
@@ -28,17 +30,21 @@ public class ApplicationConfig {
         return new ModelMapper();
     }
 
-//    @Bean
+    //    @Bean
 //    public AuthenticationSuccessHandler appAuthenticationSuccessHandler(){
 //        return new AppAuthenticationSuccessHandler();
 //    }
-@Bean
-public HttpSessionEventPublisher httpSessionEventPublisher() {
-    return new HttpSessionEventPublisher();
-}
+    @Bean
+    public HttpSessionEventPublisher httpSessionEventPublisher() {
+        return new HttpSessionEventPublisher();
+    }
 
 
-
-
-
+    @Bean
+    public Gson gson() {
+        return new GsonBuilder()
+                .excludeFieldsWithoutExposeAnnotation()
+                .setPrettyPrinting()
+                .create();
+    }
 }

@@ -2,7 +2,8 @@ package com.secondhand.secondhand.config;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.secondhand.secondhand.model.entity.UserEntity;
+import com.google.gson.Gson;
+import com.secondhand.secondhand.model.dto.UserInformationDTO;
 import com.secondhand.secondhand.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -14,22 +15,20 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.security.web.context.SecurityContextPersistenceFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
-import org.springframework.security.web.csrf.CsrfAuthenticationStrategy;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 @Configuration
@@ -38,12 +37,16 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
     private final UserDetailsService userDetailsService;
     private final PasswordEncoder passwordEncoder;
     private final ObjectMapper objectMapper;
+    private final UserService userService;
+    private final Gson gson;
 
 
-    public ApplicationSecurityConfiguration(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder, ObjectMapper objectMapper) {
+    public ApplicationSecurityConfiguration(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder, ObjectMapper objectMapper, UserService userService, Gson gson) {
         this.userDetailsService = userDetailsService;
         this.passwordEncoder = passwordEncoder;
         this.objectMapper = objectMapper;
+        this.userService = userService;
+        this.gson = gson;
     }
 
     @Bean
@@ -52,7 +55,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 = new RequestBodyReaderAuthenticationFilter();
         authenticationFilter.setAuthenticationSuccessHandler(this::loginSuccessHandler);
         authenticationFilter.setAuthenticationFailureHandler(this::loginFailureHandler);
-        authenticationFilter.setRequiresAuthenticationRequestMatcher(new AntPathRequestMatcher("/login", "POST"));
+        authenticationFilter.setRequiresAuthenticationRequestMatcher(new AntPathRequestMatcher("/users/login", "POST"));
         authenticationFilter.setAuthenticationManager(authenticationManagerBean());
         return authenticationFilter;
     }
@@ -85,7 +88,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .cors().configurationSource(corsConfigurationSource())
                 .and()
                 .authorizeRequests()
-                .antMatchers("/users/register","/users/login","/users/validate").permitAll()
+                .antMatchers("/users/register","/users/login","/users/validate","/users/test2").permitAll()
                 .antMatchers("/**").authenticated()
                 .and()
 
@@ -94,7 +97,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                         UsernamePasswordAuthenticationFilter.class)
 
                 .logout()
-                .logoutUrl("/logout")
+                .logoutUrl("/users/logout")
                 .logoutSuccessHandler(this::logoutSuccessHandler)
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESSIONID")
@@ -113,10 +116,14 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
             HttpServletResponse response,
             Authentication authentication) throws IOException {
 
-        UserDetails loggedInUser = userDetailsService.loadUserByUsername(authentication.getName());
+        UserInformationDTO userByEmail = userService.findUserByEmail(authentication.getName());
 //                .orElseThrow(() -> new UsernameNotFoundException("User not found: " + authentication.getName()));
+
+        objectMapper.writeValue(response.getWriter(), userByEmail);
+
         response.setStatus(HttpStatus.OK.value());
-        objectMapper.writeValue(response.getWriter(), "Successful Logged!");
+
+//        <<<<<<<<<<<<<<<<<<<<<< HERE I MUST IMPLEMENT/CALL METHOD TO MERGE TOKEN ID CARD ITEMS WITH SPRING SECURITY CARD ITEMS! >>>>>>>>>>>>>>>>>>
 //        objectMapper.writeValueAsString("test");
 //        objectMapper.writeValue(response.getWriter(),response.setHeader(););
 

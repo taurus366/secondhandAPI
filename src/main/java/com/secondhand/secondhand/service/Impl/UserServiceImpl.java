@@ -4,7 +4,7 @@ import com.secondhand.secondhand.model.dto.UserInformationDTO;
 import com.secondhand.secondhand.model.entity.RoleEntity;
 import com.secondhand.secondhand.model.entity.UserEntity;
 import com.secondhand.secondhand.model.entity.enums.RoleEnum;
-import com.secondhand.secondhand.model.entity.enums.SexEnum;
+import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
 import com.secondhand.secondhand.model.service.UserRegistrationServiceModel;
 import com.secondhand.secondhand.repository.RoleRepository;
 import com.secondhand.secondhand.repository.UserRepository;
@@ -55,7 +55,7 @@ public class UserServiceImpl implements UserService {
                 .setEmail(registerServiceModel.getEmail())
                 .setPassword(passwordEncoder.encode(registerServiceModel.getPassword()))
                 .setActive(true)
-                .setSex(SexEnum.valueOf(registerServiceModel.getSex().name()))
+                .setSex(UserSexEnum.valueOf(registerServiceModel.getSex().name()))
                 .getRoles().add(userRoleFromDB);
         newUser
                 .setCreated(Instant.now())

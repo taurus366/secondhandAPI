@@ -1,7 +1,7 @@
 package com.secondhand.secondhand.model.dto;
 
 import com.secondhand.secondhand.model.entity.RoleEntity;
-import com.secondhand.secondhand.model.entity.enums.SexEnum;
+import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class UserInformationDTO {
     private String lastName;
     private String email;
     private List<RoleEntity> roles = new ArrayList<>();
-    private SexEnum sex;
+    private UserSexEnum sex;
 
     public Long getId() {
         return id;
@@ -60,11 +60,11 @@ public class UserInformationDTO {
         return this;
     }
 
-    public SexEnum getSex() {
+    public UserSexEnum getSex() {
         return sex;
     }
 
-    public UserInformationDTO setSex(SexEnum sex) {
+    public UserInformationDTO setSex(UserSexEnum sex) {
         this.sex = sex;
         return this;
     }

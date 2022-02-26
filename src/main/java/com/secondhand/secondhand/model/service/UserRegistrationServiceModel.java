@@ -1,6 +1,6 @@
 package com.secondhand.secondhand.model.service;
 
-import com.secondhand.secondhand.model.entity.enums.SexEnum;
+import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
 
 public class UserRegistrationServiceModel {
 
@@ -8,7 +8,7 @@ public class UserRegistrationServiceModel {
     private String lastName;
     private String password;
     private String email;
-    private SexEnum sex;
+    private UserSexEnum sex;
 
     public String getFirstName() {
         return firstName;
@@ -46,11 +46,11 @@ public class UserRegistrationServiceModel {
         return this;
     }
 
-    public SexEnum getSex() {
+    public UserSexEnum getSex() {
         return sex;
     }
 
-    public UserRegistrationServiceModel setSex(SexEnum sex) {
+    public UserRegistrationServiceModel setSex(UserSexEnum sex) {
         this.sex = sex;
         return this;
     }

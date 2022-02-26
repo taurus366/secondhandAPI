@@ -1,6 +1,6 @@
 package com.secondhand.secondhand.model.entity;
 
-import com.secondhand.secondhand.model.entity.enums.SexEnum;
+import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ public class UserEntity extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private SexEnum sex;
+    private UserSexEnum sex;
 
     private boolean isActive = true;
 
@@ -33,6 +33,9 @@ public class UserEntity extends BaseEntity {
 
     @ManyToMany(fetch = FetchType.EAGER)
     private List<RoleEntity> roles = new ArrayList<>();
+
+    @ManyToMany
+    private List<ClothEntity> clothesList = new ArrayList<>();
 
     public UserEntity() {
     }
@@ -73,11 +76,11 @@ public class UserEntity extends BaseEntity {
         return this;
     }
 
-    public SexEnum getSex() {
+    public UserSexEnum getSex() {
         return sex;
     }
 
-    public UserEntity setSex(SexEnum sex) {
+    public UserEntity setSex(UserSexEnum sex) {
         this.sex = sex;
         return this;
     }
