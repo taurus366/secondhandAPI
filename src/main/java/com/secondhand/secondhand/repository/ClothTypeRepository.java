@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ClothTypeRepository extends JpaRepository<ClothTypeEntity,Long> {
+
+    ClothTypeEntity findByName(String typeName);
+
 }

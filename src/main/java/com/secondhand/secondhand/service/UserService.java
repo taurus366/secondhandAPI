@@ -12,4 +12,5 @@ public interface UserService {
     UserInformationDTO registerNewUserAndLogin(UserRegistrationServiceModel registerServiceModel);
     Optional<UserEntity> findByLogin(String login);
     UserInformationDTO findUserByEmail(String email);
+    boolean isAdmin(String userEmail);
 }

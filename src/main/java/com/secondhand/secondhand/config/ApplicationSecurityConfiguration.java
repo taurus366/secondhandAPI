@@ -4,6 +4,7 @@ package com.secondhand.secondhand.config;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.secondhand.secondhand.model.dto.UserInformationDTO;
+import com.secondhand.secondhand.model.entity.enums.RoleEnum;
 import com.secondhand.secondhand.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -88,7 +89,8 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .cors().configurationSource(corsConfigurationSource())
                 .and()
                 .authorizeRequests()
-                .antMatchers("/users/register","/users/login","/users/validate","/users/test2").permitAll()
+                .antMatchers("/users/register","/users/login","/users/validate").permitAll()
+                .antMatchers("/admin/**").hasRole(RoleEnum.ADMINISTRATOR.name())
                 .antMatchers("/**").authenticated()
                 .and()
 
@@ -293,7 +295,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
 
 
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:4200"));
+        configuration.setAllowedOrigins(List.of("http://localhost:4200","http://77.71.76.17:8080","http://77.71.76.17:4200","http://192.168.0.163:4200"));
         configuration.setAllowedMethods(List.of("POST, GET, OPTIONS, DELETE"));
 //        configuration.setAllowCredentials(true);
         //the below three lines will add the relevant CORS response headers

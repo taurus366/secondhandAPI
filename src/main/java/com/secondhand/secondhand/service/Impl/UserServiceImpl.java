@@ -97,4 +97,15 @@ public class UserServiceImpl implements UserService {
 
         return modelMapper.map(userEntity, UserInformationDTO.class);
     }
+
+    @Override
+    public boolean isAdmin(String userEmail) {
+
+      return this.userRepository.findByEmail(userEmail)
+                .orElseThrow(() -> new UsernameNotFoundException(userEmail + "doesn't exists in database"))
+                .getRoles()
+                .stream()
+              .map(RoleEntity::getRole)
+              .anyMatch(roleEnum -> roleEnum.equals(RoleEnum.ADMINISTRATOR));
+    }
 }

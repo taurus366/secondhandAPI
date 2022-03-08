@@ -8,12 +8,17 @@ import com.google.gson.GsonBuilder;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 
+import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.session.HttpSessionEventPublisher;
+import org.springframework.util.unit.DataSize;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+
+import javax.servlet.MultipartConfigElement;
 
 
 @Configuration
@@ -46,5 +51,13 @@ public class ApplicationConfig {
                 .excludeFieldsWithoutExposeAnnotation()
                 .setPrettyPrinting()
                 .create();
+    }
+
+    @Bean
+    MultipartConfigElement multipartConfigElement() {
+        MultipartConfigFactory factory = new MultipartConfigFactory();
+        factory.setMaxFileSize(DataSize.parse("5120MB"));
+        factory.setMaxRequestSize(DataSize.parse("5120MB"));
+        return factory.createMultipartConfig();
     }
 }

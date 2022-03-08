@@ -3,17 +3,24 @@ package com.secondhand.secondhand.web;
 import com.secondhand.secondhand.model.binding.UserRegistrationBindingModel;
 import com.secondhand.secondhand.model.dto.UserInformationDTO;
 import com.secondhand.secondhand.model.service.UserRegistrationServiceModel;
-import com.secondhand.secondhand.service.Impl.SecondHandUser;
+
 import com.secondhand.secondhand.service.UserService;
+import io.micrometer.core.lang.Nullable;
 import org.modelmapper.ModelMapper;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
+
 import org.springframework.validation.BindingResult;
+
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -30,13 +37,18 @@ public class UserRegistrationController {
 
 
     @PostMapping("/register")
-    public ResponseEntity<String> registerNewUser(@Valid @RequestBody UserRegistrationBindingModel userRegistrationBindingModel, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+    public ResponseEntity<Object> registerNewUser(@Valid @RequestBody UserRegistrationBindingModel userRegistrationBindingModel, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
         boolean isSamePasswords = userRegistrationBindingModel.getPassword().equals(userRegistrationBindingModel.getConfirmPassword());
 
         System.out.println(userRegistrationBindingModel.getEmail());
         System.out.println(userRegistrationBindingModel.getSex());
 
+        if (!isSamePasswords){
+            String[] codes = new String[]{"not match"};
+            String[] arguments = new String[]{""};
+            bindingResult.addError(new FieldError("confirmPassword","confirmPassword",userRegistrationBindingModel.getConfirmPassword(),false,codes, arguments,"passwords aren't matched!"));
+        }
 
         if (bindingResult.hasErrors() || !isSamePasswords) {
             redirectAttributes
@@ -51,9 +63,11 @@ public class UserRegistrationController {
 
 //            HERE I MUST RETURN THE ERROR!
 
-            bindingResult.getAllErrors().forEach(objectError -> System.out.println(objectError.getDefaultMessage() + " " + objectError.getCodes()[1].split("\\.")[1] ));
+//            bindingResult.getAllErrors().forEach(objectError -> System.out.println(objectError.getDefaultMessage() + " " + objectError.getCodes()[1].split("\\.")[1] ));
 
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(bindingResult.getModel().values().toString());
+//            return ResponseEntity.status(HttpStatus.CONFLICT).body(bindingResult.getModel().values().toString());
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(bindingResult.getAllErrors());
+//            return ResponseEntity.status(HttpStatus.CONFLICT).body(userRegistrationBindingModel);
         }
 
 // HERE I CONVERT THE REQUEST FROM FRONT END / from   userRegistrationBindingModel >to> UserRegistrationServiceModel
@@ -64,7 +78,9 @@ public class UserRegistrationController {
                 .registerNewUserAndLogin(serviceModel);
 
 //             HERE SHOULD RETURN INFORMATION TO FROND END TO RENDERING AFTER CLIENT REGISTERED! - IT MEANS LOGIN AFTER REGISTER !
-        return ResponseEntity.status(HttpStatus.CREATED).body(userInformationDTO.toString());
+//        return ResponseEntity.status(HttpStatus.CREATED).body(userInformationDTO.toString());
+        return ResponseEntity.status(HttpStatus.OK).body(userInformationDTO);
+
     }
 
 

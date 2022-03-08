@@ -5,6 +5,7 @@ import com.secondhand.secondhand.service.Impl.SecondHandUser;
 import com.secondhand.secondhand.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,6 +40,7 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(userByEmail);
     }
 
+    @PreAuthorize("isAdmin()")
     @GetMapping("/test2")
     public void test2(HttpServletRequest request, HttpServletResponse response){
 

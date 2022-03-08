@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ClothCompositionRepository extends JpaRepository<ClothCompositionEntity,Long> {
+
+    ClothCompositionEntity findByName(String compositionName);
+
 }
