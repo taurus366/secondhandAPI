@@ -1,66 +1,38 @@
-package com.secondhand.secondhand.model.service;
+package com.secondhand.secondhand.model.dto;
 
 import com.secondhand.secondhand.model.entity.enums.ClothColorEnum;
 import com.secondhand.secondhand.model.entity.enums.ClothSeasonEnum;
 import com.secondhand.secondhand.model.entity.enums.ClothSexEnum;
 import com.secondhand.secondhand.model.entity.enums.ClothSizeEnum;
-import com.secondhand.secondhand.model.validator.ClothBrandExists;
-import com.secondhand.secondhand.model.validator.ClothCompositionExists;
-import com.secondhand.secondhand.model.validator.ClothTypeExists;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
-import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClothCreateServiceModel {
-
+public class ClothCreateDTO {
 
     private MultipartFile coverPicture;
-
-
     private MultipartFile frontPicture;
-
-    private MultipartFile thirdPicture;
-    private MultipartFile fourthPicture;
-
-//    private List<MultipartFile> sidePictures = new ArrayList<>();
-
-//    private MultipartFile thirdPicture;
-//
-//
-//    private MultipartFile fourthPicture;
-
+    private List<MultipartFile> sidePictures = new ArrayList<>();
     private ClothSexEnum sex;
-
     private String brand;
-
     private ClothColorEnum color;
-
     private String type;
-
     private ClothSizeEnum size;
-
     private ClothSeasonEnum season;
-
     private String composition;
-
     private String description;
-
     private Long startPrice;
-
     private Long newPrice;
 
-    public ClothCreateServiceModel() {
+    public ClothCreateDTO() {
     }
 
     public MultipartFile getCoverPicture() {
         return coverPicture;
     }
 
-    public ClothCreateServiceModel setCoverPicture(MultipartFile coverPicture) {
+    public ClothCreateDTO setCoverPicture(MultipartFile coverPicture) {
         this.coverPicture = coverPicture;
         return this;
     }
@@ -69,26 +41,17 @@ public class ClothCreateServiceModel {
         return frontPicture;
     }
 
-    public ClothCreateServiceModel setFrontPicture(MultipartFile frontPicture) {
+    public ClothCreateDTO setFrontPicture(MultipartFile frontPicture) {
         this.frontPicture = frontPicture;
         return this;
     }
 
-    public MultipartFile getThirdPicture() {
-        return thirdPicture;
+    public List<MultipartFile> getSidePictures() {
+        return sidePictures;
     }
 
-    public ClothCreateServiceModel setThirdPicture(MultipartFile thirdPicture) {
-        this.thirdPicture = thirdPicture;
-        return this;
-    }
-
-    public MultipartFile getFourthPicture() {
-        return fourthPicture;
-    }
-
-    public ClothCreateServiceModel setFourthPicture(MultipartFile fourthPicture) {
-        this.fourthPicture = fourthPicture;
+    public ClothCreateDTO setSidePictures(List<MultipartFile> sidePictures) {
+        this.sidePictures = sidePictures;
         return this;
     }
 
@@ -96,7 +59,7 @@ public class ClothCreateServiceModel {
         return sex;
     }
 
-    public ClothCreateServiceModel setSex(ClothSexEnum sex) {
+    public ClothCreateDTO setSex(ClothSexEnum sex) {
         this.sex = sex;
         return this;
     }
@@ -105,7 +68,7 @@ public class ClothCreateServiceModel {
         return brand;
     }
 
-    public ClothCreateServiceModel setBrand(String brand) {
+    public ClothCreateDTO setBrand(String brand) {
         this.brand = brand;
         return this;
     }
@@ -114,7 +77,7 @@ public class ClothCreateServiceModel {
         return color;
     }
 
-    public ClothCreateServiceModel setColor(ClothColorEnum color) {
+    public ClothCreateDTO setColor(ClothColorEnum color) {
         this.color = color;
         return this;
     }
@@ -123,7 +86,7 @@ public class ClothCreateServiceModel {
         return type;
     }
 
-    public ClothCreateServiceModel setType(String type) {
+    public ClothCreateDTO setType(String type) {
         this.type = type;
         return this;
     }
@@ -132,7 +95,7 @@ public class ClothCreateServiceModel {
         return size;
     }
 
-    public ClothCreateServiceModel setSize(ClothSizeEnum size) {
+    public ClothCreateDTO setSize(ClothSizeEnum size) {
         this.size = size;
         return this;
     }
@@ -141,7 +104,7 @@ public class ClothCreateServiceModel {
         return season;
     }
 
-    public ClothCreateServiceModel setSeason(ClothSeasonEnum season) {
+    public ClothCreateDTO setSeason(ClothSeasonEnum season) {
         this.season = season;
         return this;
     }
@@ -150,7 +113,7 @@ public class ClothCreateServiceModel {
         return composition;
     }
 
-    public ClothCreateServiceModel setComposition(String composition) {
+    public ClothCreateDTO setComposition(String composition) {
         this.composition = composition;
         return this;
     }
@@ -159,7 +122,7 @@ public class ClothCreateServiceModel {
         return description;
     }
 
-    public ClothCreateServiceModel setDescription(String description) {
+    public ClothCreateDTO setDescription(String description) {
         this.description = description;
         return this;
     }
@@ -168,7 +131,7 @@ public class ClothCreateServiceModel {
         return startPrice;
     }
 
-    public ClothCreateServiceModel setStartPrice(Long startPrice) {
+    public ClothCreateDTO setStartPrice(Long startPrice) {
         this.startPrice = startPrice;
         return this;
     }
@@ -177,7 +140,7 @@ public class ClothCreateServiceModel {
         return newPrice;
     }
 
-    public ClothCreateServiceModel setNewPrice(Long newPrice) {
+    public ClothCreateDTO setNewPrice(Long newPrice) {
         this.newPrice = newPrice;
         return this;
     }

@@ -6,19 +6,19 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "cloth_brand")
-public class ClothBrand extends BaseEntity{
+public class ClothBrandEntity extends BaseEntity{
 
     @Column(nullable = false)
     private String name;
 
-    public ClothBrand() {
+    public ClothBrandEntity() {
     }
 
     public String getName() {
         return name;
     }
 
-    public ClothBrand setName(String name) {
+    public ClothBrandEntity setName(String name) {
         this.name = name;
         return this;
     }

@@ -58,7 +58,7 @@ public class ClothCreateBindingModel {
     private String composition;
 
     @NotBlank(message = "Please write description of the item")
-    @Length(min = 5,message = "Please write description of the item")
+//    @Length(min = 5,message = "Please write description of the item")
     private String description;
 
 

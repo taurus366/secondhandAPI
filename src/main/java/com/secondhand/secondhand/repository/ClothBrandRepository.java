@@ -1,11 +1,11 @@
 package com.secondhand.secondhand.repository;
 
-import com.secondhand.secondhand.model.entity.ClothBrand;
+import com.secondhand.secondhand.model.entity.ClothBrandEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ClothBrandRepository extends JpaRepository<ClothBrand,Long> {
+public interface ClothBrandRepository extends JpaRepository<ClothBrandEntity,Long> {
 
-    ClothBrand findByName(String brandName);
+    ClothBrandEntity findByName(String brandName);
 }

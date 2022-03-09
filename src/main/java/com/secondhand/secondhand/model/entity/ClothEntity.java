@@ -7,6 +7,8 @@ import com.secondhand.secondhand.model.entity.enums.ClothSizeEnum;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "clothes")
@@ -17,7 +19,7 @@ public class ClothEntity extends BaseEntity{
     private ClothTypeEntity clothType;
 
     @ManyToOne
-    private ClothBrand clothBrand;
+    private ClothBrandEntity clothBrandEntity;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
@@ -45,18 +47,24 @@ public class ClothEntity extends BaseEntity{
 
     @Column(nullable = false)
     @Positive
-    @NotEmpty
     private Long startPrice;
 
     @Column(nullable = false)
     @Positive
-    @NotEmpty
     private Long newPrice;
 
     @Column(nullable = false)
     @PositiveOrZero
-    @NotEmpty
     private Integer likes;
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    private List<PictureEntity> sidePictures = new ArrayList<>();
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private PictureEntity coverPicture;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private PictureEntity frontPicture;
 
     public ClothEntity() {
     }
@@ -70,12 +78,12 @@ public class ClothEntity extends BaseEntity{
         return this;
     }
 
-    public ClothBrand getClothBrand() {
-        return clothBrand;
+    public ClothBrandEntity getClothBrand() {
+        return clothBrandEntity;
     }
 
-    public ClothEntity setClothBrand(ClothBrand clothBrand) {
-        this.clothBrand = clothBrand;
+    public ClothEntity setClothBrand(ClothBrandEntity clothBrandEntity) {
+        this.clothBrandEntity = clothBrandEntity;
         return this;
     }
 
@@ -157,6 +165,42 @@ public class ClothEntity extends BaseEntity{
 
     public ClothEntity setLikes(Integer likes) {
         this.likes = likes;
+        return this;
+    }
+
+    public ClothBrandEntity getClothBrandEntity() {
+        return clothBrandEntity;
+    }
+
+    public ClothEntity setClothBrandEntity(ClothBrandEntity clothBrandEntity) {
+        this.clothBrandEntity = clothBrandEntity;
+        return this;
+    }
+
+    public List<PictureEntity> getSidePictures() {
+        return sidePictures;
+    }
+
+    public ClothEntity setSidePictures(List<PictureEntity> sidePictures) {
+        this.sidePictures = sidePictures;
+        return this;
+    }
+
+    public PictureEntity getCoverPicture() {
+        return coverPicture;
+    }
+
+    public ClothEntity setCoverPicture(PictureEntity coverPicture) {
+        this.coverPicture = coverPicture;
+        return this;
+    }
+
+    public PictureEntity getFrontPicture() {
+        return frontPicture;
+    }
+
+    public ClothEntity setFrontPicture(PictureEntity frontPicture) {
+        this.frontPicture = frontPicture;
         return this;
     }
 }

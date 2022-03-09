@@ -1,8 +1,7 @@
 package com.secondhand.secondhand.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.secondhand.secondhand.model.dto.LoginRequest;
-import io.micrometer.core.instrument.util.IOUtils;
+import com.secondhand.secondhand.model.dto.LoginDTO;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
@@ -41,7 +40,7 @@ public class RequestBodyReaderAuthenticationFilter extends UsernamePasswordAuthe
 
             requestBody = sb.toString();
 
-            LoginRequest authRequest = objectMapper.readValue(requestBody, LoginRequest.class);
+            LoginDTO authRequest = objectMapper.readValue(requestBody, LoginDTO.class);
 
             UsernamePasswordAuthenticationToken token
                     = new UsernamePasswordAuthenticationToken(authRequest.email, authRequest.password);
