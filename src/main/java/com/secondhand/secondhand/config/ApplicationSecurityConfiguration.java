@@ -89,7 +89,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .cors().configurationSource(corsConfigurationSource())
                 .and()
                 .authorizeRequests()
-                .antMatchers("/users/register","/users/login","/users/validate").permitAll()
+                .antMatchers("/users/register","/users/login","/users/validate","/clothes/**").permitAll()
                 .antMatchers("/admin/**").hasRole(RoleEnum.ADMINISTRATOR.name())
                 .antMatchers("/**").authenticated()
                 .and()
