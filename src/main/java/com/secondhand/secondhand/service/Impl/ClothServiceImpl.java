@@ -106,7 +106,7 @@ public class ClothServiceImpl implements ClothService {
 
 
     @Override
-    public Page<ClothDTO> getAllClothes(int pageNo, int pageSize, String brand, String size, Long discount, String color, Long priceLow, Long priceHigh,String sex, String type, String sortBy) {
+    public Page<ClothDTO> getAllClothes(int pageNo, int pageSize, String brand, String size, Long discount, String color, Long priceLow, Long priceHigh,String sex, List<String> type, String sortBy) {
 
         Sort sortPrice = sortBy.equals("desc") ? Sort.by("newPrice").descending() : Sort.by("newPrice").ascending();
 
@@ -117,7 +117,11 @@ public class ClothServiceImpl implements ClothService {
         String checkSize = size.equals("null") ? null : size;
         ClothSizeEnum sizeEnum = checkSize == null ? null : checkIfExists(size.toUpperCase(),"size") ? ClothSizeEnum.valueOf(size.toUpperCase()) : null;
 
-        Long checkDiscount = discount == 100 ? null : discount;
+        Long checkDiscount = discount == -1 ? null : discount;
+        Long checkDiscountStart = null;
+        if (checkDiscount != null){
+             checkDiscountStart = checkDiscount == 30 ? 0L : checkDiscount == 60 ? 30L : checkDiscount == 100 ? 60L : null;
+        }
 
         String checkColor = color.equals("null") ? null : color;
         ClothColorEnum colorEnum = checkColor == null ? null : checkIfExists(color.toUpperCase(),"color") ? ClothColorEnum.valueOf(color.toUpperCase()) : null;
@@ -128,11 +132,12 @@ public class ClothServiceImpl implements ClothService {
        String checkSex = sex.equals("null") ? null : sex;
        ClothSexEnum sexEnum = checkSex == null ? null : checkIfExists(sex.toUpperCase(),"sex") ? ClothSexEnum.valueOf(sex.toUpperCase()) : null;
 
-       String checkType = type.equals("null") ? null : type;
+       List<String> checkType = type.get(0).equals("null") ? null : type;
+
 
         return clothRepository
                 .getAllClothesByParamsOr(checkBrand,
-                        sizeEnum,checkDiscount,colorEnum,checkPriceLow,checkPriceHigh, sexEnum, checkType, pageable)
+                        sizeEnum,checkDiscount, checkDiscountStart,colorEnum,checkPriceLow,checkPriceHigh, sexEnum, checkType, pageable)
                 .map(this::asClothDTO);
     }
 

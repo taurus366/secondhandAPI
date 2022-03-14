@@ -5,6 +5,7 @@ import com.secondhand.secondhand.model.service.ClothCreateServiceModel;
 import org.springframework.data.domain.Page;
 
 import java.io.IOException;
+import java.util.List;
 
 public interface ClothService {
 
@@ -12,6 +13,6 @@ public interface ClothService {
 
 //    Page<ClothDTO> getClothes(int pageNo,int pageSize, String sortBy);
 
-    Page<ClothDTO> getAllClothes(int pageNo, int pageSize, String brand, String size, Long discount, String color, Long priceLow, Long priceHigh,String sex, String type, String sortBy);
+    Page<ClothDTO> getAllClothes(int pageNo, int pageSize, String brand, String size, Long discount, String color, Long priceLow, Long priceHigh, String sex, List<String> type, String sortBy);
 
 }

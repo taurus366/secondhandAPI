@@ -28,13 +28,13 @@ public class ClothController {
             @RequestParam(name = "pageSize", defaultValue = "20", required = false) int pageSize,
             @RequestParam(name = "brand", defaultValue = "null", required = false) String brand,
             @RequestParam(name = "size", defaultValue = "null", required = false) String size,
-            @RequestParam(name = "discount", defaultValue = "100", required = false) Long discount,
+            @RequestParam(name = "discount", defaultValue = "-1", required = false) Long discount,
             @RequestParam(name = "color", defaultValue = "null", required = false) String color,
             @RequestParam(name = "priceLow", defaultValue = "-1", required = false) Long priceLow,
             @RequestParam(name = "priceHigh", defaultValue = "-1", required = false) Long priceHigh,
             @RequestParam(name = "sortBy", defaultValue = "desc", required = false) String sortBy,
             @RequestParam(name = "sex", defaultValue = "null", required = false) String sex,
-            @RequestParam(name = "type", defaultValue = "null", required = false) String type
+            @RequestParam(name = "type", defaultValue = "null", required = false) List<String> type
     ) {
 
 
