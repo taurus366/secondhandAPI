@@ -65,7 +65,7 @@ public class DBinit implements CommandLineRunner {
             RoleEntity adminRole = new RoleEntity();
             adminRole.setRole(RoleEnum.ADMINISTRATOR);
 
-            roleRepository.saveAll(List.of(userRole,adminRole));
+            roleRepository.saveAll(List.of(userRole, adminRole));
         }
     }
 
@@ -96,7 +96,7 @@ public class DBinit implements CommandLineRunner {
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
-            this.clothBrandRepository.saveAll(List.of(brandEntity,brandEntity2,brandEntity3,brandEntity4));
+            this.clothBrandRepository.saveAll(List.of(brandEntity, brandEntity2, brandEntity3, brandEntity4));
         }
     }
 
@@ -105,19 +105,19 @@ public class DBinit implements CommandLineRunner {
 
             ClothTypeEntity clothType = new ClothTypeEntity();
             clothType
-                    .setName("PULLOVER")
+                    .setName("PULLOVERS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType2 = new ClothTypeEntity();
             clothType2
-                    .setName("DRESS")
+                    .setName("DRESSES")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType3 = new ClothTypeEntity();
             clothType3
-                    .setName("T-SHORT")
+                    .setName("T-SHORTS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -127,13 +127,152 @@ public class DBinit implements CommandLineRunner {
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
-            this.clothTypeRepository.saveAll(List.of(clothType,clothType2,clothType3,clothType4));
+            ClothTypeEntity clothType5 = new ClothTypeEntity();
+            clothType5
+                    .setName("TRACKSUITS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType6 = new ClothTypeEntity();
+            clothType6
+                    .setName("SWIMWEARS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType7 = new ClothTypeEntity();
+            clothType7
+                    .setName("UNDERWEARS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType8 = new ClothTypeEntity();
+            clothType8
+                    .setName("WINTER EQUIPMENTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType9 = new ClothTypeEntity();
+            clothType9
+                    .setName("BLOUSES")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType10 = new ClothTypeEntity();
+            clothType10
+                    .setName("ELETS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+
+            ClothTypeEntity clothType11 = new ClothTypeEntity();
+            clothType11
+                    .setName("VESTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType12 = new ClothTypeEntity();
+            clothType12
+                    .setName("WEDGES")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType13 = new ClothTypeEntity();
+            clothType13
+                    .setName("COSTUMES")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType14 = new ClothTypeEntity();
+            clothType14
+                    .setName("SHORTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType15 = new ClothTypeEntity();
+            clothType15
+                    .setName("COATS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType16 = new ClothTypeEntity();
+            clothType16
+                    .setName("PANTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType17 = new ClothTypeEntity();
+            clothType17
+                    .setName("MOUNTAIN EQUIPMENTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType18 = new ClothTypeEntity();
+            clothType18
+                    .setName("POLY")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType19 = new ClothTypeEntity();
+            clothType19
+                    .setName("T-SHIRTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType20 = new ClothTypeEntity();
+            clothType20
+                    .setName("SWEATERS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType21 = new ClothTypeEntity();
+            clothType21
+                    .setName("SHIRTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType22 = new ClothTypeEntity();
+            clothType22
+                    .setName("SPORTSWEAR")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType23 = new ClothTypeEntity();
+            clothType23
+                    .setName("TUNICS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType24 = new ClothTypeEntity();
+            clothType24
+                    .setName("PANTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType25 = new ClothTypeEntity();
+            clothType25
+                    .setName("BICYCLE EQUIPMENTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity clothType26 = new ClothTypeEntity();
+            clothType26
+                    .setName("FOOTBALL EQUIPMENTS")
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+
+            this.clothTypeRepository.saveAll(
+                    List.of(clothType, clothType2, clothType3, clothType4, clothType5, clothType6, clothType7,
+                            clothType8, clothType9, clothType10, clothType11, clothType12, clothType13, clothType14, clothType15, clothType16,
+                            clothType17, clothType18, clothType19, clothType20, clothType21, clothType22, clothType23, clothType24, clothType25,
+                            clothType26)
+            );
         }
     }
 
     private void initCompositions() {
 
-        if (this.clothCompositionRepository.findAll().size() == 0){
+        if (this.clothCompositionRepository.findAll().size() == 0) {
 
             ClothCompositionEntity clothComposition = new ClothCompositionEntity();
             clothComposition
@@ -166,7 +305,7 @@ public class DBinit implements CommandLineRunner {
                     .setModified(Instant.now());
 
             this.clothCompositionRepository
-                    .saveAll(List.of(clothComposition,clothComposition2,clothComposition3,clothComposition4,clothComposition5));
+                    .saveAll(List.of(clothComposition, clothComposition2, clothComposition3, clothComposition4, clothComposition5));
         }
     }
 }
