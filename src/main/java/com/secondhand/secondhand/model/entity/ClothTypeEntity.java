@@ -11,6 +11,9 @@ public class ClothTypeEntity extends BaseEntity {
     @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
+    private String gender;
+
 
 
     public ClothTypeEntity() {
@@ -24,6 +27,15 @@ public class ClothTypeEntity extends BaseEntity {
 
     public ClothTypeEntity setName(String name) {
         this.name = name;
+        return this;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public ClothTypeEntity setGender(String gender) {
+        this.gender = gender;
         return this;
     }
 }

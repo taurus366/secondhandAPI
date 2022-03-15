@@ -106,8 +106,10 @@ public class FieldController {
                 .forEach(clothTypeDTO -> {
                     if (!mapFields.containsKey("clothType")) {
                         mapFields.put("clothType",new ArrayList<>());
+
                     }
-                    mapFields.get("clothType").add(clothTypeDTO.getName());
+//                    mapFields.get("clothType").add(clothTypeDTO.getName());
+                    mapFields.get("clothType").add(clothTypeDTO.getName()+"="+clothTypeDTO.getGender());
                 });
 
         this.clothBrandService

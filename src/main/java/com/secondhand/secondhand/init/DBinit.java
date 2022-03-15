@@ -29,7 +29,7 @@ public class DBinit implements CommandLineRunner {
 
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         initUserRoles();
         initBrands();
         initTypes();
@@ -106,60 +106,70 @@ public class DBinit implements CommandLineRunner {
             ClothTypeEntity clothType = new ClothTypeEntity();
             clothType
                     .setName("PULLOVERS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType2 = new ClothTypeEntity();
             clothType2
                     .setName("DRESSES")
+                    .setGender("FEMALE/GIRLS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType3 = new ClothTypeEntity();
             clothType3
                     .setName("T-SHORTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType4 = new ClothTypeEntity();
             clothType4
                     .setName("JEANS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType5 = new ClothTypeEntity();
             clothType5
                     .setName("TRACKSUITS")
+                    .setGender("MALE/FEMALE")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType6 = new ClothTypeEntity();
             clothType6
-                    .setName("SWIMWEARS")
+                    .setName("SWIMWEAR")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType7 = new ClothTypeEntity();
             clothType7
-                    .setName("UNDERWEARS")
+                    .setName("UNDERWEAR")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType8 = new ClothTypeEntity();
             clothType8
                     .setName("WINTER EQUIPMENTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType9 = new ClothTypeEntity();
             clothType9
                     .setName("BLOUSES")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType10 = new ClothTypeEntity();
             clothType10
                     .setName("ELETS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -167,96 +177,112 @@ public class DBinit implements CommandLineRunner {
             ClothTypeEntity clothType11 = new ClothTypeEntity();
             clothType11
                     .setName("VESTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType12 = new ClothTypeEntity();
             clothType12
                     .setName("WEDGES")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType13 = new ClothTypeEntity();
             clothType13
                     .setName("COSTUMES")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType14 = new ClothTypeEntity();
             clothType14
                     .setName("SHORTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType15 = new ClothTypeEntity();
             clothType15
                     .setName("COATS")
+                    .setGender("MALE/FEMALE")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType16 = new ClothTypeEntity();
             clothType16
                     .setName("PANTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType17 = new ClothTypeEntity();
             clothType17
                     .setName("MOUNTAIN EQUIPMENTS")
+                    .setGender("MALE/FEMALE")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType18 = new ClothTypeEntity();
             clothType18
                     .setName("POLY")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType19 = new ClothTypeEntity();
             clothType19
                     .setName("T-SHIRTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType20 = new ClothTypeEntity();
             clothType20
                     .setName("SWEATERS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType21 = new ClothTypeEntity();
             clothType21
                     .setName("SHIRTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType22 = new ClothTypeEntity();
             clothType22
                     .setName("SPORTSWEAR")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType23 = new ClothTypeEntity();
             clothType23
                     .setName("TUNICS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType24 = new ClothTypeEntity();
             clothType24
                     .setName("PANTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType25 = new ClothTypeEntity();
             clothType25
                     .setName("BICYCLE EQUIPMENTS")
+                    .setGender("MALE/FEMALE/GIRLS/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
             ClothTypeEntity clothType26 = new ClothTypeEntity();
             clothType26
                     .setName("FOOTBALL EQUIPMENTS")
+                    .setGender("MALE/FEMALE/BOYS")
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
