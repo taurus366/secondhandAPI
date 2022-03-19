@@ -3,10 +3,7 @@ package com.secondhand.secondhand.service.Impl;
 import com.secondhand.secondhand.model.dto.ClothDTO;
 import com.secondhand.secondhand.model.dto.PictureDTO;
 import com.secondhand.secondhand.model.entity.*;
-import com.secondhand.secondhand.model.entity.enums.ClothColorEnum;
-import com.secondhand.secondhand.model.entity.enums.ClothSeasonEnum;
-import com.secondhand.secondhand.model.entity.enums.ClothSexEnum;
-import com.secondhand.secondhand.model.entity.enums.ClothSizeEnum;
+import com.secondhand.secondhand.model.entity.enums.*;
 import com.secondhand.secondhand.model.service.ClothCreateServiceModel;
 import com.secondhand.secondhand.repository.*;
 import com.secondhand.secondhand.service.ClothService;
@@ -106,7 +103,7 @@ public class ClothServiceImpl implements ClothService {
 
 
     @Override
-    public Page<ClothDTO> getAllClothes(int pageNo, int pageSize, String brand, String size, Long discount, String color, Long priceLow, Long priceHigh,String sex, List<String> type, String sortBy) {
+    public Page<ClothDTO> getAllClothes(int pageNo, int pageSize, String brand, String size, Long discount, String color, Long priceLow, Long priceHigh,String sex, List<String> type, String itemType, String sortBy) {
 
         Sort sortPrice = sortBy.equals("desc") ? Sort.by("newPrice").descending() : Sort.by("newPrice").ascending();
 
@@ -134,22 +131,29 @@ public class ClothServiceImpl implements ClothService {
 
        List<String> checkType = type.get(0).equals("null") ? null : type;
 
+       ItemTypeEnum checkItemType = itemType.equals("null") ? null : checkIfExists(itemType.toUpperCase(),"itemType") ? ItemTypeEnum.valueOf(itemType.toUpperCase()) : null;
+
+        if (sexEnum != null && sexEnum.equals(ClothSexEnum.CHILDREN)) {
+            return clothRepository
+                    .getAllClothesByList(List.of(ClothSexEnum.BOYS, ClothSexEnum.GIRLS), checkBrand, sizeEnum, colorEnum, checkDiscount, checkDiscountStart, checkItemType, pageable)
+                    .map(this::asClothDTO);
+
+        }
 
         return clothRepository
                 .getAllClothesByParamsOr(checkBrand,
-                        sizeEnum,checkDiscount, checkDiscountStart,colorEnum,checkPriceLow,checkPriceHigh, sexEnum, checkType, pageable)
+                        sizeEnum,checkDiscount, checkDiscountStart,colorEnum,checkPriceLow,checkPriceHigh, sexEnum, checkType, checkItemType, pageable)
                 .map(this::asClothDTO);
     }
 
     private boolean checkIfExists(String string,String type) {
-
-
 
         try {
             switch (type) {
                 case "size" -> ClothSizeEnum.valueOf(string);
                 case "color" -> ClothColorEnum.valueOf(string);
                 case "sex" -> ClothSexEnum.valueOf(string);
+                case "itemType" -> ItemTypeEnum.valueOf(string);
             }
         }catch (Exception e){
             return false;

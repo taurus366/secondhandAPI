@@ -34,7 +34,8 @@ public class ClothController {
             @RequestParam(name = "priceHigh", defaultValue = "-1", required = false) Long priceHigh,
             @RequestParam(name = "sortBy", defaultValue = "desc", required = false) String sortBy,
             @RequestParam(name = "sex", defaultValue = "null", required = false) String sex,
-            @RequestParam(name = "type", defaultValue = "null", required = false) List<String> type
+            @RequestParam(name = "type", defaultValue = "null", required = false) List<String> type,
+            @RequestParam(name = "itemType", defaultValue = "null", required = false) String itemType
     ) {
 
 
@@ -51,6 +52,7 @@ public class ClothController {
                         priceHigh,
                         sex,
                         type,
+                        itemType,
                         sortBy);
 
 

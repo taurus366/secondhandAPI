@@ -1,8 +1,8 @@
 package com.secondhand.secondhand.model.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import com.secondhand.secondhand.model.entity.enums.ItemTypeEnum;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "cloth_type")
@@ -14,7 +14,9 @@ public class ClothTypeEntity extends BaseEntity {
     @Column(nullable = false)
     private String gender;
 
-
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private ItemTypeEnum type;
 
     public ClothTypeEntity() {
 
@@ -36,6 +38,15 @@ public class ClothTypeEntity extends BaseEntity {
 
     public ClothTypeEntity setGender(String gender) {
         this.gender = gender;
+        return this;
+    }
+
+    public ItemTypeEnum getType() {
+        return type;
+    }
+
+    public ClothTypeEntity setType(ItemTypeEnum type) {
+        this.type = type;
         return this;
     }
 }

@@ -1,9 +1,6 @@
 package com.secondhand.secondhand.web;
 
-import com.secondhand.secondhand.model.entity.enums.ClothColorEnum;
-import com.secondhand.secondhand.model.entity.enums.ClothSeasonEnum;
-import com.secondhand.secondhand.model.entity.enums.ClothSexEnum;
-import com.secondhand.secondhand.model.entity.enums.ClothSizeEnum;
+import com.secondhand.secondhand.model.entity.enums.*;
 import com.secondhand.secondhand.service.ClothBrandService;
 import com.secondhand.secondhand.service.ClothCompositionService;
 import com.secondhand.secondhand.service.ClothTypeService;
@@ -80,7 +77,9 @@ public class FieldController {
 
                         for (ClothSexEnum sexEnum : (List<ClothSexEnum>)o) {
 
-                            mapFields.get("clothSex").add(sexEnum.name());
+                           if (!sexEnum.name().equals("CHILDREN")){
+                               mapFields.get("clothSex").add(sexEnum.name());
+                           }
 
                         }
 
@@ -100,18 +99,36 @@ public class FieldController {
                 });
 
 
-//    BRAND , TYPE , COMPOSITION
+//     TYPE
         this.clothTypeService
                 .getAllClothType()
                 .forEach(clothTypeDTO -> {
-                    if (!mapFields.containsKey("clothType")) {
-                        mapFields.put("clothType",new ArrayList<>());
+                    if (clothTypeDTO.getType() == ItemTypeEnum.CLOTH){
+                        if (!mapFields.containsKey("clothType")) {
+                            mapFields.put("clothType",new ArrayList<>());
 
+                        }
+
+                        mapFields.get("clothType").add(clothTypeDTO.getName()+"="+clothTypeDTO.getGender());
                     }
-//                    mapFields.get("clothType").add(clothTypeDTO.getName());
-                    mapFields.get("clothType").add(clothTypeDTO.getName()+"="+clothTypeDTO.getGender());
+                    else if (clothTypeDTO.getType() == ItemTypeEnum.ACCESSORIES) {
+                        if (!mapFields.containsKey("accessoriesType")) {
+                            mapFields.put("accessoriesType", new ArrayList<>());
+                        }
+
+                        mapFields.get("accessoriesType").add(clothTypeDTO.getName()+"="+clothTypeDTO.getGender());
+                    }
+                    else if (clothTypeDTO.getType() == ItemTypeEnum.SHOES) {
+                        if (!mapFields.containsKey("shoesType")) {
+                            mapFields.put("shoesType",new ArrayList<>());
+                        }
+
+                        mapFields.get("shoesType").add(clothTypeDTO.getName()+"="+clothTypeDTO.getGender());
+                    }
+
                 });
 
+//        BRAND ,
         this.clothBrandService
                 .getAllClothBrand()
                 .forEach(clothBrandDTO -> {
@@ -121,6 +138,7 @@ public class FieldController {
                     mapFields.get("clothBrand").add(clothBrandDTO.getName());
                 });
 
+//        , COMPOSITION
         this.clothCompositionService
                 .getAllClothComposition()
                 .forEach(clothCompositionDTO -> {

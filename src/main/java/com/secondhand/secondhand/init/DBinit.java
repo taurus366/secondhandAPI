@@ -1,6 +1,7 @@
 package com.secondhand.secondhand.init;
 
 import com.secondhand.secondhand.model.entity.*;
+import com.secondhand.secondhand.model.entity.enums.ItemTypeEnum;
 import com.secondhand.secondhand.model.entity.enums.RoleEnum;
 import com.secondhand.secondhand.repository.*;
 import org.springframework.boot.CommandLineRunner;
@@ -107,6 +108,7 @@ public class DBinit implements CommandLineRunner {
             clothType
                     .setName("PULLOVERS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -114,6 +116,7 @@ public class DBinit implements CommandLineRunner {
             clothType2
                     .setName("DRESSES")
                     .setGender("FEMALE/GIRLS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -121,6 +124,7 @@ public class DBinit implements CommandLineRunner {
             clothType3
                     .setName("T-SHORTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -128,6 +132,7 @@ public class DBinit implements CommandLineRunner {
             clothType4
                     .setName("JEANS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -135,6 +140,7 @@ public class DBinit implements CommandLineRunner {
             clothType5
                     .setName("TRACKSUITS")
                     .setGender("MALE/FEMALE")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -142,6 +148,7 @@ public class DBinit implements CommandLineRunner {
             clothType6
                     .setName("SWIMWEAR")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -149,6 +156,7 @@ public class DBinit implements CommandLineRunner {
             clothType7
                     .setName("UNDERWEAR")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -156,6 +164,7 @@ public class DBinit implements CommandLineRunner {
             clothType8
                     .setName("WINTER EQUIPMENTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -163,6 +172,7 @@ public class DBinit implements CommandLineRunner {
             clothType9
                     .setName("BLOUSES")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -170,6 +180,7 @@ public class DBinit implements CommandLineRunner {
             clothType10
                     .setName("ELETS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -178,6 +189,7 @@ public class DBinit implements CommandLineRunner {
             clothType11
                     .setName("VESTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -185,6 +197,7 @@ public class DBinit implements CommandLineRunner {
             clothType12
                     .setName("WEDGES")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -192,6 +205,7 @@ public class DBinit implements CommandLineRunner {
             clothType13
                     .setName("COSTUMES")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -199,6 +213,7 @@ public class DBinit implements CommandLineRunner {
             clothType14
                     .setName("SHORTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -206,6 +221,7 @@ public class DBinit implements CommandLineRunner {
             clothType15
                     .setName("COATS")
                     .setGender("MALE/FEMALE")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -213,6 +229,7 @@ public class DBinit implements CommandLineRunner {
             clothType16
                     .setName("PANTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -220,6 +237,7 @@ public class DBinit implements CommandLineRunner {
             clothType17
                     .setName("MOUNTAIN EQUIPMENTS")
                     .setGender("MALE/FEMALE")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -227,6 +245,7 @@ public class DBinit implements CommandLineRunner {
             clothType18
                     .setName("POLY")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -234,6 +253,7 @@ public class DBinit implements CommandLineRunner {
             clothType19
                     .setName("T-SHIRTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -241,6 +261,7 @@ public class DBinit implements CommandLineRunner {
             clothType20
                     .setName("SWEATERS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -248,6 +269,7 @@ public class DBinit implements CommandLineRunner {
             clothType21
                     .setName("SHIRTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -255,6 +277,7 @@ public class DBinit implements CommandLineRunner {
             clothType22
                     .setName("SPORTSWEAR")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -262,6 +285,7 @@ public class DBinit implements CommandLineRunner {
             clothType23
                     .setName("TUNICS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -269,6 +293,7 @@ public class DBinit implements CommandLineRunner {
             clothType24
                     .setName("PANTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -276,6 +301,7 @@ public class DBinit implements CommandLineRunner {
             clothType25
                     .setName("BICYCLE EQUIPMENTS")
                     .setGender("MALE/FEMALE/GIRLS/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -283,6 +309,191 @@ public class DBinit implements CommandLineRunner {
             clothType26
                     .setName("FOOTBALL EQUIPMENTS")
                     .setGender("MALE/FEMALE/BOYS")
+                    .setType(ItemTypeEnum.CLOTH)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories = new ClothTypeEntity();
+            accessories
+                    .setName("Belts")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories1 = new ClothTypeEntity();
+            accessories1
+                    .setName("Sets")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories2 = new ClothTypeEntity();
+            accessories2
+                    .setName("Cuffs")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories3 = new ClothTypeEntity();
+            accessories3
+                    .setName("Travel bags")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories4 = new ClothTypeEntity();
+            accessories4
+                    .setName("Purses")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories5 = new ClothTypeEntity();
+            accessories5
+                    .setName("Backpacks")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories6 = new ClothTypeEntity();
+            accessories6
+                    .setName("Gloves")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories7 = new ClothTypeEntity();
+            accessories7
+                    .setName("Bags")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories8 = new ClothTypeEntity();
+            accessories8
+                    .setName("Sunglasses")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories9 = new ClothTypeEntity();
+            accessories9
+                    .setName("Watches")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories10 = new ClothTypeEntity();
+            accessories10
+                    .setName("Scarves")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories11 = new ClothTypeEntity();
+            accessories11
+                    .setName("Hats")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity accessories12 = new ClothTypeEntity();
+            accessories12
+                    .setName("Tie")
+                    .setGender("MALE/BOYS")
+                    .setType(ItemTypeEnum.ACCESSORIES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes = new ClothTypeEntity();
+            shoes
+                    .setName("Boots")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes1 = new ClothTypeEntity();
+            shoes1
+                    .setName("Low shoes")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes2 = new ClothTypeEntity();
+            shoes2
+                    .setName("Sneakers")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes3 = new ClothTypeEntity();
+            shoes3
+                    .setName("Low sandals")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes4 = new ClothTypeEntity();
+            shoes4
+                    .setName("High heels shoes")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes5 = new ClothTypeEntity();
+            shoes5
+                    .setName("Sandals")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes6 = new ClothTypeEntity();
+            shoes6
+                    .setName("Heeled sandals")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes7 = new ClothTypeEntity();
+            shoes7
+                    .setName("Sports / Casual shoes")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes8 = new ClothTypeEntity();
+            shoes8
+                    .setName("Hiking Shoes")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            ClothTypeEntity shoes9 = new ClothTypeEntity();
+            shoes9
+                    .setName("Slippers")
+                    .setGender("MALE/FEMALE/BOYS/GIRLS")
+                    .setType(ItemTypeEnum.SHOES)
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
@@ -291,7 +502,8 @@ public class DBinit implements CommandLineRunner {
                     List.of(clothType, clothType2, clothType3, clothType4, clothType5, clothType6, clothType7,
                             clothType8, clothType9, clothType10, clothType11, clothType12, clothType13, clothType14, clothType15, clothType16,
                             clothType17, clothType18, clothType19, clothType20, clothType21, clothType22, clothType23, clothType24, clothType25,
-                            clothType26)
+                            clothType26,accessories,accessories1,accessories2,accessories3,accessories4,accessories5,accessories6,accessories7,accessories8,
+                            accessories9,accessories10,accessories11,accessories12,shoes,shoes1,shoes2,shoes3,shoes4,shoes5,shoes6,shoes7,shoes8,shoes9)
             );
         }
     }

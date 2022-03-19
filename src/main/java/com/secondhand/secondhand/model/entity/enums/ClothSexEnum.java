@@ -4,5 +4,6 @@ public enum ClothSexEnum {
     MALE,
     FEMALE,
     BOYS,
-    GIRLS
+    GIRLS,
+    CHILDREN
 }
