@@ -5,11 +5,13 @@ import com.secondhand.secondhand.model.dto.ClothDTO;
 import com.secondhand.secondhand.service.ClothService;
 import org.apache.http.protocol.HTTP;
 import org.springframework.data.domain.Page;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -58,5 +60,20 @@ public class ClothController {
 
 
         return ResponseEntity.ok(allClothes);
+    }
+
+    @GetMapping(value = "/get/{id}")
+    public ResponseEntity<Object> getClothById(@PathVariable String id){
+        ClothDTO clothByID = null;
+
+       try {
+           clothByID = this.clothService.getClothByID(Long.parseLong(id));
+       }catch (NoSuchElementException e) {
+           return ResponseEntity.status(HttpStatus.NOT_FOUND).body("We couldn't found the item");
+       } catch (NumberFormatException ex) {
+           return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("Please bu sure that you write number not string");
+       }
+
+        return ResponseEntity.ok(clothByID);
     }
 }

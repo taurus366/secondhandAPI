@@ -15,4 +15,5 @@ public interface ClothService {
 
     Page<ClothDTO> getAllClothes(int pageNo, int pageSize, String brand, String size, Long discount, String color, Long priceLow, Long priceHigh, String sex, List<String> type, String itemType, String sortBy);
 
+    ClothDTO getClothByID(Long id);
 }

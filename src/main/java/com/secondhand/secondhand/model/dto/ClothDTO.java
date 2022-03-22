@@ -27,13 +27,15 @@ public class ClothDTO {
 
     private Long newPrice;
 
-    private Integer likes;
+    private int likes;
 
     private List<PictureDTO> sidePictures = new ArrayList<>();
 
     private PictureDTO coverPicture;
 
     private PictureDTO frontPicture;
+
+    private int quantity;
 
     public ClothDTO() {
     }
@@ -170,6 +172,15 @@ public class ClothDTO {
 
     public ClothDTO setFrontPicture(PictureDTO frontPicture) {
         this.frontPicture = frontPicture;
+        return this;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public ClothDTO setQuantity(Integer quantity) {
+        this.quantity = quantity;
         return this;
     }
 }

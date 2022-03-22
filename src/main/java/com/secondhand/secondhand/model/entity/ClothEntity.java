@@ -66,6 +66,10 @@ public class ClothEntity extends BaseEntity{
     @OneToOne(cascade = CascadeType.ALL)
     private PictureEntity frontPicture;
 
+    @Column(nullable = false)
+    @Positive
+    private int quantity;
+
     public ClothEntity() {
     }
 
@@ -201,6 +205,15 @@ public class ClothEntity extends BaseEntity{
 
     public ClothEntity setFrontPicture(PictureEntity frontPicture) {
         this.frontPicture = frontPicture;
+        return this;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public ClothEntity setQuantity(int quantity) {
+        this.quantity = quantity;
         return this;
     }
 }

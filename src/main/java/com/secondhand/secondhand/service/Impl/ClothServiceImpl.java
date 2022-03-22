@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -64,6 +65,7 @@ public class ClothServiceImpl implements ClothService {
                 .setLikes(0)
                 .setStartPrice(clothServiceModel.getStartPrice())
                 .setNewPrice(clothServiceModel.getNewPrice())
+                .setQuantity(1)
                 .setCreated(Instant.now())
                 .setModified(Instant.now());
 
@@ -146,6 +148,13 @@ public class ClothServiceImpl implements ClothService {
                 .map(this::asClothDTO);
     }
 
+    @Override
+    public ClothDTO getClothByID(Long id) {
+        ClothEntity clothById = this.clothRepository.findById(id).orElseThrow();
+
+        return asClothDTO(clothById);
+    }
+
     private boolean checkIfExists(String string,String type) {
 
         try {
@@ -198,7 +207,8 @@ public class ClothServiceImpl implements ClothService {
                 .setLikes(clothEntity.getLikes())
                 .setSidePictures(sidePictures)
                 .setCoverPicture(coverPicture)
-                .setFrontPicture(frontPicture);
+                .setFrontPicture(frontPicture)
+                .setQuantity(clothEntity.getQuantity());
 
 
         return clothDTO;

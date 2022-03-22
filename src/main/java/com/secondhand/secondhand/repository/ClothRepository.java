@@ -17,9 +17,6 @@ import java.util.List;
 @Repository
 public interface ClothRepository extends JpaRepository<ClothEntity, Long> {
 
-    //    @Query("SELECT c FROM Customer c WHERE (:name is null or c.name = :name) and (:email is null"
-//            + " or c.email = :email)")
-//    List<Customer> findCustomerByNameAndEmail(@Param("name") String name, @Param("email") String email);
     @Query("SELECT c FROM ClothEntity  c WHERE (:brand is null or c.clothBrandEntity.name = :brand) " +
             "and (:size is null or c.clothSize = :size) " +
             "and (:discount is null or ((c.startPrice - c.newPrice)/c.startPrice)* 100 <= :discount) " +
@@ -56,4 +53,5 @@ public interface ClothRepository extends JpaRepository<ClothEntity, Long> {
                                           @Param("discountStart") Long discountStart,
                                           @Param("itemType") ItemTypeEnum itemType,
                                           Pageable pageable);
+
 }
