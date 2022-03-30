@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.secondhand.secondhand.model.dto.UserInformationDTO;
 import com.secondhand.secondhand.model.entity.enums.RoleEnum;
+import com.secondhand.secondhand.service.CartService;
+import com.secondhand.secondhand.service.ClothService;
 import com.secondhand.secondhand.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +21,6 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -29,7 +30,6 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
 @Configuration
@@ -40,14 +40,18 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
     private final ObjectMapper objectMapper;
     private final UserService userService;
     private final Gson gson;
+    private final ClothService clothService;
+    private final CartService cartService;
 
 
-    public ApplicationSecurityConfiguration(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder, ObjectMapper objectMapper, UserService userService, Gson gson) {
+    public ApplicationSecurityConfiguration(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder, ObjectMapper objectMapper, UserService userService, Gson gson, ClothService clothService, CartService cartService) {
         this.userDetailsService = userDetailsService;
         this.passwordEncoder = passwordEncoder;
         this.objectMapper = objectMapper;
         this.userService = userService;
         this.gson = gson;
+        this.clothService = clothService;
+        this.cartService = cartService;
     }
 
     @Bean
@@ -89,7 +93,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .cors().configurationSource(corsConfigurationSource())
                 .and()
                 .authorizeRequests()
-                .antMatchers("/users/register","/users/login","/users/validate","/clothes/**","/fields/**").permitAll()
+                .antMatchers("/users/register","/users/login","/users/validate","/clothes/**","/fields/**","/cart/**","/like/**").permitAll()
                 .antMatchers("/admin/**").hasRole(RoleEnum.ADMINISTRATOR.name())
                 .antMatchers("/**").authenticated()
                 .and()
@@ -121,9 +125,22 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
         UserInformationDTO userByEmail = userService.findUserByEmail(authentication.getName());
 //                .orElseThrow(() -> new UsernameNotFoundException("User not found: " + authentication.getName()));
 
+//        clothService.changeGuestClothToUserCloth(request,response,userByEmail.getId());
+
+        cartService
+                .changeGuestCartToUserCart(userByEmail.getEmail(),request.getCookies());
+
+         Cookie cookie = new Cookie("GSESSIONID","");
+         cookie.setPath("/");
+         cookie.setMaxAge(1);
+        response
+                .addCookie(cookie);
+
         objectMapper.writeValue(response.getWriter(), userByEmail);
 
         response.setStatus(HttpStatus.OK.value());
+
+
 
 //        <<<<<<<<<<<<<<<<<<<<<< HERE I MUST IMPLEMENT/CALL METHOD TO MERGE TOKEN ID CARD ITEMS WITH SPRING SECURITY CARD ITEMS! >>>>>>>>>>>>>>>>>>
 //        objectMapper.writeValueAsString("test");

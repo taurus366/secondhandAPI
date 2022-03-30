@@ -1,7 +1,7 @@
 package com.secondhand.secondhand.service.Impl;
 
+import com.secondhand.secondhand.common.MapperFunction;
 import com.secondhand.secondhand.model.dto.ClothDTO;
-import com.secondhand.secondhand.model.dto.PictureDTO;
 import com.secondhand.secondhand.model.entity.*;
 import com.secondhand.secondhand.model.entity.enums.*;
 import com.secondhand.secondhand.model.service.ClothCreateServiceModel;
@@ -18,10 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.time.Instant;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class ClothServiceImpl implements ClothService {
@@ -33,8 +30,10 @@ public class ClothServiceImpl implements ClothService {
     private final ModelMapper modelMapper;
     private final CloudinaryService cloudinaryService;
     private final PictureRepository pictureRepository;
+    private final GuestTokenRepository guestTokenRepository;
+    private final MapperFunction toClothDTO;
 
-    public ClothServiceImpl(ClothRepository clothRepository, ClothBrandRepository clothBrandRepository, ClothTypeRepository clothTypeRepository, ClothCompositionRepository clothCompositionRepository, ModelMapper modelMapper, CloudinaryService cloudinaryService, PictureRepository pictureRepository) {
+    public ClothServiceImpl(ClothRepository clothRepository, ClothBrandRepository clothBrandRepository, ClothTypeRepository clothTypeRepository, ClothCompositionRepository clothCompositionRepository, ModelMapper modelMapper, CloudinaryService cloudinaryService, PictureRepository pictureRepository, GuestTokenRepository guestTokenRepository, MapperFunction toClothDTO) {
         this.clothRepository = clothRepository;
         this.clothBrandRepository = clothBrandRepository;
         this.clothTypeRepository = clothTypeRepository;
@@ -42,6 +41,8 @@ public class ClothServiceImpl implements ClothService {
         this.modelMapper = modelMapper;
         this.cloudinaryService = cloudinaryService;
         this.pictureRepository = pictureRepository;
+        this.guestTokenRepository = guestTokenRepository;
+        this.toClothDTO = toClothDTO;
     }
 
 
@@ -155,6 +156,73 @@ public class ClothServiceImpl implements ClothService {
         return asClothDTO(clothById);
     }
 
+//    @Override
+//    public List<ClothDTO> getUserCart(Long userId) {
+//
+//        return this.clothRepository
+//                .findAllByUserId(userId)
+//                .stream()
+//                .map(this::asClothDTO)
+//                .collect(Collectors.toList());
+//    }
+
+//    @Override
+//    public List<ClothDTO> getGuestCart(String cookie) {
+//
+//        GuestTokenEntity guest = this.guestTokenRepository
+//                .findByToken(cookie);
+//
+//
+//        return this.clothRepository
+//                .findAllByGuestId(guest.getId())
+//                .stream()
+//                .map(this::asClothDTO)
+//                .collect(Collectors.toList());
+//    }
+
+//    @Override
+//    public void changeGuestClothToUserCloth(HttpServletRequest request, HttpServletResponse response,Long userId) {
+//
+//        Cookie[] cookies = request.getCookies();
+//        String cookieValue = "";
+//        if (cookies != null && cookies.length > 0){
+//            for (Cookie cookie : cookies) {
+//                if (cookie.getName().equals("GSESSIONID") && cookie.getValue().length() > 0){
+//                    cookieValue = cookie.getValue();
+//                    break;
+//                }
+//            }
+//        }
+//
+//        if (cookieValue.length() > 0) {
+//            GuestTokenEntity guest = this.guestTokenRepository.findByToken(cookieValue);
+////            IS EXISTS IN GUEST DB
+//            if (guest != null){
+//
+//                List<ClothEntity> allByGuestId = clothRepository.findAllByGuestId(guest.getId());
+//
+////                IF GUEST HAS CLOTHES INTO CART
+//                if (allByGuestId.size() > 0) {
+////                    TODO
+//
+//
+//                    List<ClothEntity> allByUserId = this.clothRepository
+//                            .findAllByUserId(userId);
+//
+//                    allByUserId
+//                    .addAll(allByGuestId);
+//                    clothRepository.saveAll(allByUserId);
+//
+//
+//                }
+//
+//
+//            }
+//        }
+//
+//
+//    }
+
     private boolean checkIfExists(String string,String type) {
 
         try {
@@ -173,45 +241,7 @@ public class ClothServiceImpl implements ClothService {
 
     private ClothDTO asClothDTO(ClothEntity clothEntity) {
 
-        PictureDTO coverPicture = new PictureDTO();
-        coverPicture.setUrl(clothEntity.getCoverPicture().getUrl())
-                .setPublicId(clothEntity.getCoverPicture().getPublicId());
-
-        PictureDTO frontPicture = new PictureDTO();
-        frontPicture.setUrl(clothEntity.getFrontPicture().getUrl())
-                .setPublicId(clothEntity.getFrontPicture().getPublicId());
-
-        List<PictureDTO> sidePictures = clothEntity.getSidePictures()
-                .stream()
-                .map(pictureEntity -> {
-                    return new PictureDTO()
-                            .setUrl(pictureEntity.getUrl())
-                            .setPublicId(pictureEntity.getPublicId());
-                })
-                .collect(Collectors.toList());
-
-
-        ClothDTO clothDTO = new ClothDTO();
-        clothDTO
-                .setId(clothEntity.getId())
-                .setType(clothEntity.getClothType().getName())
-                .setBrand(clothEntity.getClothBrandEntity().getName())
-                .setSize(clothEntity.getClothSize().name())
-                .setSex(clothEntity.getClothSex().name())
-                .setColor(clothEntity.getClothColor().name())
-                .setSeason(clothEntity.getClothSeason().name())
-                .setComposition(clothEntity.getClothComposition().getName())
-                .setDescription(clothEntity.getDescription())
-                .setStartPrice(clothEntity.getStartPrice())
-                .setNewPrice(clothEntity.getNewPrice())
-                .setLikes(clothEntity.getLikes())
-                .setSidePictures(sidePictures)
-                .setCoverPicture(coverPicture)
-                .setFrontPicture(frontPicture)
-                .setQuantity(clothEntity.getQuantity());
-
-
-        return clothDTO;
+        return toClothDTO.asClothDTO(clothEntity);
     }
 
     private PictureEntity createPictureEntity(MultipartFile picture) throws IOException {

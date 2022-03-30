@@ -1,6 +1,8 @@
 package com.secondhand.secondhand.repository;
 
 import com.secondhand.secondhand.model.entity.ClothEntity;
+import com.secondhand.secondhand.model.entity.GuestTokenEntity;
+import com.secondhand.secondhand.model.entity.UserEntity;
 import com.secondhand.secondhand.model.entity.enums.ClothColorEnum;
 import com.secondhand.secondhand.model.entity.enums.ClothSexEnum;
 import com.secondhand.secondhand.model.entity.enums.ClothSizeEnum;
@@ -54,4 +56,9 @@ public interface ClothRepository extends JpaRepository<ClothEntity, Long> {
                                           @Param("itemType") ItemTypeEnum itemType,
                                           Pageable pageable);
 
+//    List<ClothEntity> findAllByUserId(Long userId);
+//    List<ClothEntity> findAllByGuestId(Long guestId);
+
+
 }
+

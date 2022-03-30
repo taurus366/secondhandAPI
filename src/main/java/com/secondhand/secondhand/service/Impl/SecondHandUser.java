@@ -7,8 +7,11 @@ import java.util.Collection;
 
 public class SecondHandUser extends User {
 
-    public SecondHandUser(String username, String password, Collection<? extends GrantedAuthority> authorities) {
+    private Long userId = null;
+
+    public SecondHandUser(String username, String password, Collection<? extends GrantedAuthority> authorities, Long userId) {
         super(username, password, authorities);
+        this.userId = userId;
     }
 
     public SecondHandUser(String username, String password, boolean enabled, boolean accountNonExpired, boolean credentialsNonExpired, boolean accountNonLocked, Collection<? extends GrantedAuthority> authorities) {
@@ -17,5 +20,9 @@ public class SecondHandUser extends User {
 
     public String getUserIdentifierEmail() {
         return this.getUsername();
+    }
+
+    public Long getUserId() {
+        return this.userId;
     }
 }

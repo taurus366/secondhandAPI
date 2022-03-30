@@ -27,7 +27,7 @@ public class SecondHandUserServiceImpl implements UserDetailsService {
         System.out.println(email + " LOGGED _____________________2__________________________________________");
 
         UserEntity userEntity = userRepository
-                .findByEmail(email)
+                .findByEmailGraph(email)
                 .orElseThrow(() -> {
                    throw  new UsernameNotFoundException("User with that email " + email + " not found!");
 
@@ -49,7 +49,8 @@ public class SecondHandUserServiceImpl implements UserDetailsService {
         return new SecondHandUser(
                 user.getEmail(),
                 user.getPassword(),
-                authorities
+                authorities,
+                user.getId()
         );
 
     }

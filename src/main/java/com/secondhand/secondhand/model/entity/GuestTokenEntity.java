@@ -1,11 +1,15 @@
 package com.secondhand.secondhand.model.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+
+@NamedEntityGraph(
+        name = "guest-likes",
+        attributeNodes = {
+                @NamedAttributeNode("likeList")
+        }
+)
 
 @Entity
 @Table(name = "guest_token")
@@ -14,8 +18,11 @@ public class GuestTokenEntity extends BaseEntity{
     @Column(nullable = false)
     private String token;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<ClothEntity> clothesList = new ArrayList<>();
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    private List<ClothEntity> likeList = new ArrayList<>();
 
     public GuestTokenEntity() {
     }
@@ -35,6 +42,15 @@ public class GuestTokenEntity extends BaseEntity{
 
     public GuestTokenEntity setClothesList(List<ClothEntity> clothesList) {
         this.clothesList = clothesList;
+        return this;
+    }
+
+    public List<ClothEntity> getLikeList() {
+        return likeList;
+    }
+
+    public GuestTokenEntity setLikeList(List<ClothEntity> likeList) {
+        this.likeList = likeList;
         return this;
     }
 }

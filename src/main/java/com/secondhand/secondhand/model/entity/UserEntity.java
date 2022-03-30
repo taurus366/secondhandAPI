@@ -1,10 +1,39 @@
 package com.secondhand.secondhand.model.entity;
 
 import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+
+
+@NamedEntityGraph(
+        name="user-roles",
+        attributeNodes = {
+                @NamedAttributeNode("roles")
+        }
+)
+@NamedEntityGraph(
+        name = "user-likes",
+        attributeNodes = {
+                @NamedAttributeNode("likesList"),
+                @NamedAttributeNode(value = "likesList", subgraph = "likes"),
+        },
+        subgraphs = {
+                @NamedSubgraph(
+                        name = "likes",
+                        attributeNodes = {
+                                @NamedAttributeNode("coverPicture"),
+                                @NamedAttributeNode("clothComposition"),
+                                @NamedAttributeNode("frontPicture"),
+                                @NamedAttributeNode("clothType"),
+                                @NamedAttributeNode("clothBrandEntity")
+                        }
+                )
+        }
+)
 
 @Entity
 @Table(name = "users")
@@ -31,11 +60,15 @@ public class UserEntity extends BaseEntity {
     @OneToMany()
     private List<AddressEntity> addresses = new ArrayList<>();
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany()
+//    @LazyCollection(LazyCollectionOption.FALSE)
     private List<RoleEntity> roles = new ArrayList<>();
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<ClothEntity> clothesList = new ArrayList<>();
+
+    @ManyToMany()
+    private List<ClothEntity> likesList = new ArrayList<>();
 
     public UserEntity() {
     }
@@ -109,6 +142,24 @@ public class UserEntity extends BaseEntity {
 
     public UserEntity setRoles(List<RoleEntity> roles) {
         this.roles = roles;
+        return this;
+    }
+
+    public List<ClothEntity> getClothesList() {
+        return clothesList;
+    }
+
+    public UserEntity setClothesList(List<ClothEntity> clothesList) {
+        this.clothesList = clothesList;
+        return this;
+    }
+
+    public List<ClothEntity> getLikesList() {
+        return likesList;
+    }
+
+    public UserEntity setLikesList(List<ClothEntity> likesList) {
+        this.likesList = likesList;
         return this;
     }
 }
