@@ -90,26 +90,28 @@ public class LikeController {
     @DeleteMapping(value = "unlike/{id}")
     public ResponseEntity<Object> unlikeCloth(@AuthenticationPrincipal SecondHandUser secondHandUser, HttpServletRequest request, HttpServletResponse response, @PathVariable Long id) {
 
+        ClothDTO unlikedCloth = null;
+
         if (id != null && id > 0) {
             try {
 
                 try {
                     String userIdentifierEmail = secondHandUser.getUserIdentifierEmail();
 
-                    this.likeService
+                  unlikedCloth =  this.likeService
                             .deleteUserLikeFromCloth(userIdentifierEmail, id);
 
-                    return ResponseEntity.ok().build();
+                    return ResponseEntity.ok().body(unlikedCloth);
 
                 } catch (NullPointerException ex) {
 
                     String cookieValue = this.cookieFunction
                             .CheckThenIfNecessaryAddNewCookie(request, response).getValue();
 
-                    this.likeService
+                    unlikedCloth = this.likeService
                             .deleteGuestLikeFromCloth(cookieValue, id);
 
-                    return ResponseEntity.ok().build();
+                    return ResponseEntity.ok().body(unlikedCloth);
 
                 }
 

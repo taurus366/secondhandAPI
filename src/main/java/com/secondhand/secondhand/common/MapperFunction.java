@@ -3,6 +3,7 @@ package com.secondhand.secondhand.common;
 import com.secondhand.secondhand.model.dto.ClothDTO;
 import com.secondhand.secondhand.model.dto.PictureDTO;
 import com.secondhand.secondhand.model.entity.ClothEntity;
+import com.secondhand.secondhand.repository.ClothRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -11,6 +12,11 @@ import java.util.stream.Collectors;
 @Component
 public class MapperFunction {
 
+    private final ClothRepository clothRepository;
+
+    public MapperFunction(ClothRepository clothRepository) {
+        this.clothRepository = clothRepository;
+    }
 
     public ClothDTO asClothDTO(ClothEntity clothEntity,String ...arg){
         PictureDTO coverPicture = new PictureDTO();
@@ -35,8 +41,7 @@ public class MapperFunction {
                     .collect(Collectors.toList());
         }
 
-
-
+        int allLikes = this.clothRepository.getCountedUserLikesByClothId(clothEntity.getId()) + this.clothRepository.getCountedGuestLikesByClothId(clothEntity.getId());
 
         ClothDTO clothDTO = new ClothDTO();
         clothDTO
@@ -51,7 +56,7 @@ public class MapperFunction {
                 .setDescription(clothEntity.getDescription())
                 .setStartPrice(clothEntity.getStartPrice())
                 .setNewPrice(clothEntity.getNewPrice())
-                .setLikes(clothEntity.getLikes())
+                .setLikes(allLikes)
                 .setSidePictures(sidePictures)
                 .setCoverPicture(coverPicture)
                 .setFrontPicture(frontPicture)

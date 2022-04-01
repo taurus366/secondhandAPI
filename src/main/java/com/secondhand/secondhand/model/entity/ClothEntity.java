@@ -10,6 +10,15 @@ import javax.validation.constraints.*;
 import java.util.ArrayList;
 import java.util.List;
 
+//@NamedEntityGraph(
+//        name = "cloth-likes",
+//        attributeNodes = {
+//                @NamedAttributeNode("guestLikes"),
+//                @NamedAttributeNode("userLikes")
+//        }
+//
+//)
+
 @Entity
 @Table(name = "clothes")
 public class ClothEntity extends BaseEntity{
@@ -69,6 +78,12 @@ public class ClothEntity extends BaseEntity{
     @Column(nullable = false)
     @Positive
     private int quantity;
+
+    @ManyToMany(mappedBy = "likeList")
+    private List<GuestTokenEntity> guestLikes = new ArrayList<>();
+
+    @ManyToMany(mappedBy = "likesList")
+    private List<UserEntity> userLikes = new ArrayList<>();
 
     public ClothEntity() {
     }
@@ -214,6 +229,24 @@ public class ClothEntity extends BaseEntity{
 
     public ClothEntity setQuantity(int quantity) {
         this.quantity = quantity;
+        return this;
+    }
+
+    public List<GuestTokenEntity> getGuestLikes() {
+        return guestLikes;
+    }
+
+    public ClothEntity setGuestLikes(List<GuestTokenEntity> guestLikes) {
+        this.guestLikes = guestLikes;
+        return this;
+    }
+
+    public List<UserEntity> getUserLikes() {
+        return userLikes;
+    }
+
+    public ClothEntity setUserLikes(List<UserEntity> userLikes) {
+        this.userLikes = userLikes;
         return this;
     }
 }

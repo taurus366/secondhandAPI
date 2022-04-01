@@ -7,7 +7,21 @@ import java.util.List;
 @NamedEntityGraph(
         name = "guest-likes",
         attributeNodes = {
-                @NamedAttributeNode("likeList")
+                @NamedAttributeNode("likeList"),
+                @NamedAttributeNode(value = "likeList", subgraph = "likes"),
+        },
+        subgraphs = {
+                @NamedSubgraph(
+                        name = "likes",
+                        attributeNodes = {
+                                @NamedAttributeNode("coverPicture"),
+                                @NamedAttributeNode("clothComposition"),
+                                @NamedAttributeNode("frontPicture"),
+                                @NamedAttributeNode("clothType"),
+                                @NamedAttributeNode("clothBrandEntity")
+
+                        }
+                )
         }
 )
 
@@ -21,7 +35,7 @@ public class GuestTokenEntity extends BaseEntity{
     @ManyToMany(fetch = FetchType.EAGER)
     private List<ClothEntity> clothesList = new ArrayList<>();
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany()
     private List<ClothEntity> likeList = new ArrayList<>();
 
     public GuestTokenEntity() {

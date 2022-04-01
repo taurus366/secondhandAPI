@@ -92,14 +92,14 @@ public class LikeServiceImpl implements LikeService {
     }
 
     @Override
-    public boolean deleteUserLikeFromCloth(String userEmail, Long itemId) {
+    public ClothDTO deleteUserLikeFromCloth(String userEmail, Long itemId) {
 
         UserEntity user = this.userRepository
                 .findByEmailGraphLikes(userEmail).orElseThrow(() -> new UsernameNotFoundException("Couldn't find user!"));
 
         ClothEntity clothEntity = getItemById(itemId);
 
-        int oldUserLikes = user.getLikesList().size();
+//        int oldUserLikes = user.getLikesList().size();
 
         user
                 .setLikesList(user
@@ -107,23 +107,24 @@ public class LikeServiceImpl implements LikeService {
                         .stream()
                         .filter(clothEntity1 -> !Objects.equals(clothEntity1.getId(), clothEntity.getId()))
                         .collect(Collectors.toList()));
-        int lastUserLikes = user.getLikesList().size();
+//        int lastUserLikes = user.getLikesList().size();
 
         this.userRepository
                 .save(user);
 
-        return oldUserLikes > lastUserLikes;
+        return asClothDTO(clothEntity);
+//        return oldUserLikes > lastUserLikes;
     }
 
     @Override
-    public boolean deleteGuestLikeFromCloth(String guestCookie, Long itemId) {
+    public ClothDTO deleteGuestLikeFromCloth(String guestCookie, Long itemId) {
 
         GuestTokenEntity guest = this.guestTokenRepository
                 .findByTokenGraphLikes(guestCookie).orElseThrow(() -> new UsernameNotFoundException("Couldn't find guest"));
 
         ClothEntity clothEntity = getItemById(itemId);
 
-        int oldGuestLikes = guest.getLikeList().size();
+//        int oldGuestLikes = guest.getLikeList().size();
 
         guest
                 .setLikeList(
@@ -133,12 +134,13 @@ public class LikeServiceImpl implements LikeService {
                                 .filter(clothEntity1 -> !Objects.equals(clothEntity1.getId(), clothEntity.getId()))
                                 .collect(Collectors.toList()));
 
-        int lastGuestLikes = guest.getLikeList().size();
+//        int lastGuestLikes = guest.getLikeList().size();
 
         this.guestTokenRepository
                 .save(guest);
 
-        return oldGuestLikes > lastGuestLikes;
+        return asClothDTO(clothEntity);
+//        return oldGuestLikes > lastGuestLikes;
     }
 
     @Override
@@ -159,8 +161,7 @@ public class LikeServiceImpl implements LikeService {
 
         GuestTokenEntity byToken = this.guestTokenRepository
                 .findByTokenGraphLikes(guestCookie).orElseThrow(() -> new UsernameNotFoundException("Couldn't find the guest!"));
-        System.out.println(byToken.getLikeList().size());
-        System.out.println(byToken.getId());
+
         return byToken
                 .getLikeList()
                 .stream()

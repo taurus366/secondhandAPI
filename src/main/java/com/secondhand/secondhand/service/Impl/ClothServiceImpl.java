@@ -108,6 +108,7 @@ public class ClothServiceImpl implements ClothService {
     @Override
     public Page<ClothDTO> getAllClothes(int pageNo, int pageSize, String brand, String size, Long discount, String color, Long priceLow, Long priceHigh,String sex, List<String> type, String itemType, String sortBy) {
 
+
         Sort sortPrice = sortBy.equals("desc") ? Sort.by("newPrice").descending() : Sort.by("newPrice").ascending();
 
         Pageable pageable = PageRequest.of(pageNo,pageSize, sortPrice);
