@@ -1,25 +1,17 @@
 package com.secondhand.secondhand.service.Impl;
 
-import com.secondhand.secondhand.exception.ItemAlreadyExistsException;
-import com.secondhand.secondhand.model.dto.ClothDTO;
-import com.secondhand.secondhand.model.dto.PictureDTO;
+import com.secondhand.secondhand.exception.UserAddressesLimitException;
+import com.secondhand.secondhand.model.binding.UserAddressBindingModel;
+import com.secondhand.secondhand.model.binding.UserChangePersonalDataBindingModel;
 import com.secondhand.secondhand.model.dto.UserInformationDTO;
-import com.secondhand.secondhand.model.entity.ClothEntity;
-import com.secondhand.secondhand.model.entity.GuestTokenEntity;
-import com.secondhand.secondhand.model.entity.RoleEntity;
-import com.secondhand.secondhand.model.entity.UserEntity;
+import com.secondhand.secondhand.model.entity.*;
 import com.secondhand.secondhand.model.entity.enums.RoleEnum;
 import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
+import com.secondhand.secondhand.model.service.UserChangePasswordServiceModel;
 import com.secondhand.secondhand.model.service.UserRegistrationServiceModel;
-import com.secondhand.secondhand.repository.ClothRepository;
-import com.secondhand.secondhand.repository.GuestTokenRepository;
-import com.secondhand.secondhand.repository.RoleRepository;
-import com.secondhand.secondhand.repository.UserRepository;
+import com.secondhand.secondhand.repository.*;
 import com.secondhand.secondhand.service.UserService;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.crossstore.ChangeSetPersister;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -28,13 +20,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.servlet.http.Cookie;
 import java.time.Instant;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -46,8 +34,9 @@ public class UserServiceImpl implements UserService {
     private final SecondHandUserServiceImpl secondHandUserService;
     private final GuestTokenRepository guestTokenRepository;
     private final ClothRepository clothRepository;
+    private final AddressRepository addressRepository;
 
-    public UserServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder, RoleRepository roleRepository, ModelMapper modelMapper, SecondHandUserServiceImpl secondHandUserService, GuestTokenRepository guestTokenRepository, ClothRepository clothRepository) {
+    public UserServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder, RoleRepository roleRepository, ModelMapper modelMapper, SecondHandUserServiceImpl secondHandUserService, GuestTokenRepository guestTokenRepository, ClothRepository clothRepository, AddressRepository addressRepository) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.roleRepository = roleRepository;
@@ -55,6 +44,7 @@ public class UserServiceImpl implements UserService {
         this.secondHandUserService = secondHandUserService;
         this.guestTokenRepository = guestTokenRepository;
         this.clothRepository = clothRepository;
+        this.addressRepository = addressRepository;
     }
 
     @Override
@@ -112,10 +102,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserInformationDTO findUserByEmail(String email) {
-        UserEntity userEntity = userRepository.findByEmailGraph(email).orElseThrow(() -> new UsernameNotFoundException("The user couldn't found"));
+    public UserEntity findUserByEmail(String email) {
 
-        return modelMapper.map(userEntity, UserInformationDTO.class);
+//        return modelMapper.map(userEntity, UserInformationDTO.class);
+        UserEntity userEntityAddresses = userRepository.findByEmailGraphAddress(email).orElseThrow( () -> new UsernameNotFoundException("The user couldn't found"));
+
+
+        UserEntity userEntity = userRepository.findByEmailGraph(email).orElseThrow(() -> new UsernameNotFoundException("The user couldn't found"));
+        return this.putAddresses(userEntityAddresses,userEntity);
     }
 
     @Override
@@ -129,217 +123,85 @@ public class UserServiceImpl implements UserService {
                 .anyMatch(roleEnum -> roleEnum.equals(RoleEnum.ADMINISTRATOR));
     }
 
-//    @Override
-//    public List<ClothDTO> getUserCart(String userEmail) {
+    @Override
+    public UserEntity userChangePassword(UserChangePasswordServiceModel serviceModel) {
+
+        UserEntity userEntity = this.userRepository
+                .findByEmailGraph(serviceModel.getUserEmail())
+                .orElseThrow(() -> new UsernameNotFoundException("Couldn't find the user !"));
+
+        userEntity
+                .setPassword(passwordEncoder.encode(serviceModel.getNewPassword()));
+
+       return this.userRepository
+                .save(userEntity);
+    }
+
+    @Override
+    public UserEntity userChangeData(UserChangePersonalDataBindingModel userChangePersonalDataBindingModel) {
+
+        UserEntity userEntity= this.userRepository
+                .findByEmailGraph(userChangePersonalDataBindingModel.getUserEmail()).orElseThrow(() -> new UsernameNotFoundException("Couldn't find the user!"));
+
+      if (userChangePersonalDataBindingModel.getFirstName() != null && userChangePersonalDataBindingModel.getFirstName().length() > 0){
+          userEntity.setFirstName(userChangePersonalDataBindingModel.getFirstName());
+      }
+      if (userChangePersonalDataBindingModel.getPhoneNumber() != null && userChangePersonalDataBindingModel.getPhoneNumber().length() > 0) {
+          userEntity.setPhoneNumber(userChangePersonalDataBindingModel.getPhoneNumber());
+      }
+      if (userChangePersonalDataBindingModel.getLastName() != null && userChangePersonalDataBindingModel.getLastName().length() > 0){
+          userEntity.setLastName(userChangePersonalDataBindingModel.getLastName());
+      }
+
+        return this.userRepository
+                .save(userEntity);
+    }
+
+    @Override
+    public AddressEntity addNewAddress(UserAddressBindingModel userAddressBindingModel) {
+
+        UserEntity userByEmail = this.userRepository
+                .findByEmailGraphAddress(userAddressBindingModel.getUserEmail()).orElseThrow( () -> new UsernameNotFoundException("Couldn't find user!"));
+
+
+        AddressEntity newAddress = new AddressEntity();;
+
+        if (userByEmail.getAddresses().size() < 3) {
+
+            newAddress
+                    .setApartment(userAddressBindingModel.getApartment())
+                    .setBlock(userAddressBindingModel.getBlock())
+                    .setCity(userAddressBindingModel.getCity())
+                    .setDetailsAboutAddress(userAddressBindingModel.getDetailsAboutAddress())
+                    .setEntry(userAddressBindingModel.getEntry())
+                    .setFirstName(userAddressBindingModel.getFirstName())
+                    .setFloor(userAddressBindingModel.getFloor())
+                    .setLastName(userAddressBindingModel.getLastName())
+                    .setMunicipality(userAddressBindingModel.getMunicipality())
+                    .setNeighborhood(userAddressBindingModel.getNeighborhood())
+                    .setPhoneNumber(userAddressBindingModel.getPhoneNumber())
+                    .setZip(userAddressBindingModel.getZip())
+                    .setCreated(Instant.now())
+                    .setModified(Instant.now());
+
+            userByEmail
+                    .getAddresses()
+                    .add(newAddress);
 //
-//        UserEntity byEmail = userRepository.findByEmail(userEmail).orElseThrow();
-//
-//        return byEmail.getClothesList()
-//                .stream()
-//                .map(this::asClothDTO)
-//                .collect(Collectors.toList());
-//    }
-//
-//    @Override
-//    public List<ClothDTO> getGuestCart(String cookie) {
-//
-//        GuestTokenEntity byToken = this.guestTokenRepository
-//                .findByToken(cookie);
-//
-//        return byToken
-//                .getClothesList()
-//                .stream()
-//                .map(this::asClothDTO)
-//                .collect(Collectors.toList());
-//    }
-//
-//    @Override
-//    public void changeGuestCartToUserCart(String userEmail, Cookie[] guestCookie) {
-//        String cookieValue = "";
-//        UserEntity user = null;
-//
-//        if (guestCookie.length > 0) {
-//
-//            for (Cookie cookie : guestCookie) {
-//                if (cookie.getName().equals("GSESSIONID")) {
-//                    cookieValue = cookie.getValue();
-//                    break;
-//                }
-//            }
-//
-//            if (cookieValue.length() > 0) {
-//
-//                user = this.userRepository
-//                        .findByEmail(userEmail).orElseThrow((() -> new UsernameNotFoundException("Couldn't find user!")));
-//
-//                GuestTokenEntity guest = this.guestTokenRepository
-//                        .findByToken(cookieValue);
-//                if (guest.getClothesList().size() > 0) {
-//
-//                    user.getClothesList().addAll(guest.getClothesList());
-//                    guest.setClothesList(new ArrayList<>());
-//
-//                    userRepository
-//                            .save(user);
-//
-//                    guestTokenRepository
-//                            .save(guest);
-//                }
-//
-//            }
-//
-//        }
-//
-//    }
-//
-//    @Override
-//    public ClothDTO addItemToUserCart(String userEmail, Long itemId) {
-//
-//        UserEntity userByEmail = this.userRepository
-//                .findByEmail(userEmail).orElseThrow(() -> new UsernameNotFoundException("User doesn't exists in DB"));
-//
-//        ClothEntity clothById = getItemById(itemId);
-//
-//        if (userByEmail.getClothesList().contains(clothById)){
-//
-////            IMPLEMENTED OWN EXCEPTION !
-//            throw new ItemAlreadyExistsException("");
-//
-//        }
-//
-//        userByEmail
-//                .getClothesList()
-//                .add(clothById);
-//        this.userRepository
-//                .save(userByEmail);
-//
-//        return asClothDTO(clothById);
-//    }
-//
-//    @Override
-//    public boolean removeItemFromUserCart(String userEmail, Long itemId) {
-//        UserEntity user = this.userRepository
-//                .findByEmail(userEmail).orElseThrow(() -> new UsernameNotFoundException("Couldn't find user !"));
-//
-//        ClothEntity clothByID = getItemById(itemId);
-//
-//        int oldUserCart = user.getClothesList().size();
-//
-//        user
-//                .setClothesList(
-//                        user.getClothesList()
-//                                .stream()
-//                                .filter(clothEntity -> !Objects.equals(clothEntity.getId(), clothByID.getId()))
-//                                .collect(Collectors.toList()));
-//
-//
-//        this.userRepository
-//                .save(user);
-//
-//        int lastUserCart = user.getClothesList().size();
-//
-//        return oldUserCart > lastUserCart;
-//    }
-//
-//    @Override
-//    public ClothDTO addItemToGuestCart(String guestCookie, Long itemId) {
-//
-//        GuestTokenEntity guestByCookie = this.guestTokenRepository
-//                .findByToken(guestCookie);
-//
-//        ClothEntity clothById = getItemById(itemId);
-//
-//       guestByCookie.getClothesList()
-//               .forEach(clothEntity -> {
-//                   if (Objects.equals(clothEntity.getId(), clothById.getId())){
-//                       //            IMPLEMENTED OWN EXCEPTION !
-//                       System.out.println("works");
-//                       throw new ItemAlreadyExistsException("");
-//                   }
-//               });
-//
-//        guestByCookie
-//                .getClothesList()
-//                .add(clothById);
-//        this.guestTokenRepository
-//                .save(guestByCookie);
-//
-//        return asClothDTO(clothById);
-//    }
-//
-//    @Override
-//    public boolean removeItemFromGuestCart(String guestCookie, Long itemId) {
-////        SHOULD IMPLEMENT IF GUEST DOESN'T EXISTS IN DB
-//
-//        GuestTokenEntity guest = this.guestTokenRepository
-//                .findByToken(guestCookie);
-//
-//        ClothEntity clothByID = getItemById(itemId);
-//
-//
-//        int oldGuestCart = guest.getClothesList().size();
-//
-//
-//        guest
-//                .setClothesList(
-//                        guest
-//                                .getClothesList()
-//                                .stream().filter(clothEntity -> !Objects.equals(clothEntity.getId(), clothByID.getId()))
-//                                .collect(Collectors.toList()));
-//
-//        this.guestTokenRepository
-//                .save(guest);
-//        int lastGuestCart = guest.getClothesList().size();
-//        return oldGuestCart > lastGuestCart;
-//    }
-//
-//
-//    private ClothDTO asClothDTO(ClothEntity clothEntity) {
-//
-//        PictureDTO coverPicture = new PictureDTO();
-//        coverPicture.setUrl(clothEntity.getCoverPicture().getUrl())
-//                .setPublicId(clothEntity.getCoverPicture().getPublicId());
-//
-//        PictureDTO frontPicture = new PictureDTO();
-//        frontPicture.setUrl(clothEntity.getFrontPicture().getUrl())
-//                .setPublicId(clothEntity.getFrontPicture().getPublicId());
-//
-//        List<PictureDTO> sidePictures = clothEntity.getSidePictures()
-//                .stream()
-//                .map(pictureEntity -> {
-//                    return new PictureDTO()
-//                            .setUrl(pictureEntity.getUrl())
-//                            .setPublicId(pictureEntity.getPublicId());
-//                })
-//                .collect(Collectors.toList());
-//
-//
-//        ClothDTO clothDTO = new ClothDTO();
-//        clothDTO
-//                .setId(clothEntity.getId())
-//                .setType(clothEntity.getClothType().getName())
-//                .setBrand(clothEntity.getClothBrandEntity().getName())
-//                .setSize(clothEntity.getClothSize().name())
-//                .setSex(clothEntity.getClothSex().name())
-//                .setColor(clothEntity.getClothColor().name())
-//                .setSeason(clothEntity.getClothSeason().name())
-//                .setComposition(clothEntity.getClothComposition().getName())
-//                .setDescription(clothEntity.getDescription())
-//                .setStartPrice(clothEntity.getStartPrice())
-//                .setNewPrice(clothEntity.getNewPrice())
-//                .setLikes(clothEntity.getLikes())
-//                .setSidePictures(sidePictures)
-//                .setCoverPicture(coverPicture)
-//                .setFrontPicture(frontPicture)
-//                .setQuantity(clothEntity.getQuantity());
-//
-//
-//        return clothDTO;
-//    }
-//
-//    private ClothEntity getItemById(Long itemId) {
-//        return this.clothRepository
-//                .findById(itemId).orElseThrow(() -> new NullPointerException("Item doesn't exists in DB"));
-//    }
+            this.userRepository
+                    .save(userByEmail);
+
+
+        }else {
+            throw new UserAddressesLimitException("User can't have more addresses than 3!");
+        }
+        return newAddress;
+//        return null;
+    }
+
+    private UserEntity putAddresses(UserEntity userEntityAddresses,UserEntity userEntity) {
+      return userEntity
+               .setAddresses(userEntityAddresses.getAddresses());
+    }
 
 }

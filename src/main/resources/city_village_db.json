@@ -1,0 +1,6869 @@
+[
+  {
+    "city": "Sofia",
+    "lat": "42.6979",
+    "postCode": "6979",
+    "lng": "23.3217",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Varna",
+    "lat": "43.2114",
+    "postCode": "2114",
+    "lng": "27.9111",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Plovdiv",
+    "lat": "42.1433",
+    "postCode": "1433",
+    "lng": "24.7489",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Burgas",
+    "lat": "42.5000",
+    "postCode": "5000",
+    "lng": "27.4667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Ruse",
+    "lat": "43.8445",
+    "postCode": "8445",
+    "lng": "25.9539",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Stara Zagora",
+    "lat": "42.4257",
+    "postCode": "4257",
+    "lng": "25.6346",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Pleven",
+    "lat": "43.4132",
+    "postCode": "4132",
+    "lng": "24.6169",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Sliven",
+    "lat": "42.6781",
+    "postCode": "6781",
+    "lng": "26.3260",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Dobrich",
+    "lat": "43.5667",
+    "postCode": "5667",
+    "lng": "27.8333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Shumen",
+    "lat": "43.2700",
+    "postCode": "2700",
+    "lng": "26.9244",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Haskovo",
+    "lat": "41.9346",
+    "postCode": "9346",
+    "lng": "25.5556",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Pazardzhik",
+    "lat": "42.1892",
+    "postCode": "1892",
+    "lng": "24.3317",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Yambol",
+    "lat": "42.4824",
+    "postCode": "4824",
+    "lng": "26.5038",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Yambol"
+  },
+  {
+    "city": "Pernik",
+    "lat": "42.6097",
+    "postCode": "6097",
+    "lng": "23.0308",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Blagoevgrad",
+    "lat": "42.0119",
+    "postCode": "0119",
+    "lng": "23.0897",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Veliko Tarnovo",
+    "lat": "43.0822",
+    "postCode": "0822",
+    "lng": "25.6317",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Vratsa",
+    "lat": "43.2121",
+    "postCode": "2121",
+    "lng": "23.5444",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Kardzhali",
+    "lat": "41.6400",
+    "postCode": "6400",
+    "lng": "25.3708",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Kyustendil",
+    "lat": "42.2811",
+    "postCode": "2811",
+    "lng": "22.6889",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Gabrovo",
+    "lat": "42.8711",
+    "postCode": "8711",
+    "lng": "25.3150",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Gabrovo"
+  },
+  {
+    "city": "Asenovgrad",
+    "lat": "42.0082",
+    "postCode": "0082",
+    "lng": "24.8773",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Vidin",
+    "lat": "43.9887",
+    "postCode": "9887",
+    "lng": "22.8741",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Kazanlak",
+    "lat": "42.6167",
+    "postCode": "6167",
+    "lng": "25.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Montana",
+    "lat": "43.4055",
+    "postCode": "4055",
+    "lng": "23.2242",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Targovishte",
+    "lat": "43.2414",
+    "postCode": "2414",
+    "lng": "26.5719",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Dimitrovgrad",
+    "lat": "42.0611",
+    "postCode": "0611",
+    "lng": "25.5933",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Silistra",
+    "lat": "44.1186",
+    "postCode": "1186",
+    "lng": "27.2603",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Lovech",
+    "lat": "43.1342",
+    "postCode": "1342",
+    "lng": "24.7172",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Razgrad",
+    "lat": "43.5267",
+    "postCode": "5267",
+    "lng": "26.5242",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Petrich",
+    "lat": "41.3981",
+    "postCode": "3981",
+    "lng": "23.2069",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Dupnitsa",
+    "lat": "42.2650",
+    "postCode": "2650",
+    "lng": "23.1185",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Gorna Oryahovitsa",
+    "lat": "43.1222",
+    "postCode": "1222",
+    "lng": "25.6897",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Smolyan",
+    "lat": "41.5753",
+    "postCode": "5753",
+    "lng": "24.7128",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Sandanski",
+    "lat": "41.5589",
+    "postCode": "5589",
+    "lng": "23.2744",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Samokov",
+    "lat": "42.3381",
+    "postCode": "3381",
+    "lng": "23.5600",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Nova Zagora",
+    "lat": "42.4903",
+    "postCode": "4903",
+    "lng": "26.0122",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Karlovo",
+    "lat": "42.6420",
+    "postCode": "6420",
+    "lng": "24.8082",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Velingrad",
+    "lat": "42.0276",
+    "postCode": "0276",
+    "lng": "23.9913",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Sevlievo",
+    "lat": "43.0258",
+    "postCode": "0258",
+    "lng": "25.1039",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Gabrovo"
+  },
+  {
+    "city": "Lom",
+    "lat": "43.8272",
+    "postCode": "8272",
+    "lng": "23.2364",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Aytos",
+    "lat": "42.6990",
+    "postCode": "6990",
+    "lng": "27.2490",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Svishtov",
+    "lat": "43.6113",
+    "postCode": "6113",
+    "lng": "25.3569",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Harmanli",
+    "lat": "41.9238",
+    "postCode": "9238",
+    "lng": "25.9183",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Troyan",
+    "lat": "42.8844",
+    "postCode": "8844",
+    "lng": "24.7094",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Botevgrad",
+    "lat": "42.9073",
+    "postCode": "9073",
+    "lng": "23.7937",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Gotse Delchev",
+    "lat": "41.5737",
+    "postCode": "5737",
+    "lng": "23.7291",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Peshtera",
+    "lat": "42.0340",
+    "postCode": "0340",
+    "lng": "24.3025",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Karnobat",
+    "lat": "42.6513",
+    "postCode": "6513",
+    "lng": "26.9855",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Svilengrad",
+    "lat": "41.7652",
+    "postCode": "7652",
+    "lng": "26.2030",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Momchilgrad",
+    "lat": "41.5297",
+    "postCode": "5297",
+    "lng": "25.4064",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Panagyurishte",
+    "lat": "42.5026",
+    "postCode": "5026",
+    "lng": "24.1802",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Popovo",
+    "lat": "43.3481",
+    "postCode": "3481",
+    "lng": "26.2275",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Chirpan",
+    "lat": "42.1981",
+    "postCode": "1981",
+    "lng": "25.3304",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Rakovski",
+    "lat": "42.2884",
+    "postCode": "2884",
+    "lng": "24.9655",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Parvomay",
+    "lat": "42.0994",
+    "postCode": "0994",
+    "lng": "25.2242",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Provadia",
+    "lat": "43.1694",
+    "postCode": "1694",
+    "lng": "27.4428",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Berkovitsa",
+    "lat": "43.2371",
+    "postCode": "2371",
+    "lng": "23.1251",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Novi Pazar",
+    "lat": "43.3476",
+    "postCode": "3476",
+    "lng": "27.1981",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Radomir",
+    "lat": "42.5467",
+    "postCode": "5467",
+    "lng": "22.9642",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Ihtiman",
+    "lat": "42.4333",
+    "postCode": "4333",
+    "lng": "23.8167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Pomorie",
+    "lat": "42.5569",
+    "postCode": "5569",
+    "lng": "27.6405",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Novi Iskar",
+    "lat": "42.8031",
+    "postCode": "8031",
+    "lng": "23.3436",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Nesebar",
+    "lat": "42.6608",
+    "postCode": "6608",
+    "lng": "27.7139",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Radnevo",
+    "lat": "42.2886",
+    "postCode": "2886",
+    "lng": "25.9336",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Balchik",
+    "lat": "43.4078",
+    "postCode": "4078",
+    "lng": "28.1622",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Razlog",
+    "lat": "41.8865",
+    "postCode": "8865",
+    "lng": "23.4680",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Byala Slatina",
+    "lat": "43.4688",
+    "postCode": "4688",
+    "lng": "23.9454",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Kozloduy",
+    "lat": "43.7764",
+    "postCode": "7764",
+    "lng": "23.7294",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Kavarna",
+    "lat": "43.4333",
+    "postCode": "4333",
+    "lng": "28.3389",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Stamboliyski",
+    "lat": "42.1332",
+    "postCode": "1332",
+    "lng": "24.5379",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Pavlikeni",
+    "lat": "43.2375",
+    "postCode": "2375",
+    "lng": "25.3074",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Isperih",
+    "lat": "43.7204",
+    "postCode": "7204",
+    "lng": "26.8281",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Mezdra",
+    "lat": "43.1425",
+    "postCode": "1425",
+    "lng": "23.7142",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Kostinbrod",
+    "lat": "42.8101",
+    "postCode": "8101",
+    "lng": "23.2168",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Etropole",
+    "lat": "42.8333",
+    "postCode": "8333",
+    "lng": "24.0000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Bankya",
+    "lat": "42.7069",
+    "postCode": "7069",
+    "lng": "23.1472",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Knezha",
+    "lat": "43.4931",
+    "postCode": "4931",
+    "lng": "24.0806",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Elhovo",
+    "lat": "42.1719",
+    "postCode": "1719",
+    "lng": "26.5658",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Yambol"
+  },
+  {
+    "city": "Omurtag",
+    "lat": "43.1072",
+    "postCode": "1072",
+    "lng": "26.4192",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Tutrakan",
+    "lat": "44.0481",
+    "postCode": "0481",
+    "lng": "26.6044",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Ardino",
+    "lat": "41.5829",
+    "postCode": "5829",
+    "lng": "25.1332",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Lukovit",
+    "lat": "43.2102",
+    "postCode": "2102",
+    "lng": "24.1629",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Teteven",
+    "lat": "42.9177",
+    "postCode": "9177",
+    "lng": "24.2574",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Kubrat",
+    "lat": "43.7967",
+    "postCode": "7967",
+    "lng": "26.5011",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Tryavna",
+    "lat": "42.8667",
+    "postCode": "8667",
+    "lng": "25.4919",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Gabrovo"
+  },
+  {
+    "city": "Bansko",
+    "lat": "41.8385",
+    "postCode": "8385",
+    "lng": "23.4888",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Sredets",
+    "lat": "42.3461",
+    "postCode": "3461",
+    "lng": "27.1808",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Veliki Preslav",
+    "lat": "43.1614",
+    "postCode": "1614",
+    "lng": "26.8125",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Krichim",
+    "lat": "42.0426",
+    "postCode": "0426",
+    "lng": "24.4646",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Devnya",
+    "lat": "43.2180",
+    "postCode": "2180",
+    "lng": "27.5580",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Rakitovo",
+    "lat": "41.9900",
+    "postCode": "9900",
+    "lng": "24.0872",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Septemvri",
+    "lat": "42.2164",
+    "postCode": "2164",
+    "lng": "24.1250",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Krumovgrad",
+    "lat": "41.4709",
+    "postCode": "4709",
+    "lng": "25.6546",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Belo Pole",
+    "lat": "42.0328",
+    "postCode": "0328",
+    "lng": "23.0500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Lyaskovets",
+    "lat": "43.1081",
+    "postCode": "1081",
+    "lng": "25.7132",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Simeonovgrad",
+    "lat": "42.0324",
+    "postCode": "0324",
+    "lng": "25.8345",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Dzhebel",
+    "lat": "41.5000",
+    "postCode": "5000",
+    "lng": "25.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Dulovo",
+    "lat": "43.8229",
+    "postCode": "8229",
+    "lng": "27.1412",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Aksakovo",
+    "lat": "43.2608",
+    "postCode": "2608",
+    "lng": "27.8159",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Belene",
+    "lat": "43.6456",
+    "postCode": "6456",
+    "lng": "25.1258",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Beloslav",
+    "lat": "43.1892",
+    "postCode": "1892",
+    "lng": "27.7050",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Svoge",
+    "lat": "42.9594",
+    "postCode": "9594",
+    "lng": "23.3477",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Dryanovo",
+    "lat": "42.9736",
+    "postCode": "9736",
+    "lng": "25.4747",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Gabrovo"
+  },
+  {
+    "city": "Lyubimets",
+    "lat": "41.8445",
+    "postCode": "8445",
+    "lng": "26.0810",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Tervel",
+    "lat": "43.7500",
+    "postCode": "7500",
+    "lng": "27.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Zlatograd",
+    "lat": "41.3797",
+    "postCode": "3797",
+    "lng": "25.0928",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Dolni Chiflik",
+    "lat": "42.9931",
+    "postCode": "9931",
+    "lng": "27.7158",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Simitli",
+    "lat": "41.8914",
+    "postCode": "8914",
+    "lng": "23.1117",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Pirdop",
+    "lat": "42.7000",
+    "postCode": "7000",
+    "lng": "24.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Kuklen",
+    "lat": "42.0343",
+    "postCode": "0343",
+    "lng": "24.7878",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Slivnitsa",
+    "lat": "42.8515",
+    "postCode": "8515",
+    "lng": "23.0383",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Elin Pelin",
+    "lat": "42.6689",
+    "postCode": "6689",
+    "lng": "23.6025",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "General Toshevo",
+    "lat": "43.7006",
+    "postCode": "7006",
+    "lng": "28.0367",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Devin",
+    "lat": "41.7425",
+    "postCode": "7425",
+    "lng": "24.3992",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Aydemir",
+    "lat": "44.1000",
+    "postCode": "1000",
+    "lng": "27.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Kostenets",
+    "lat": "42.3075",
+    "postCode": "3075",
+    "lng": "23.8575",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Tvarditsa",
+    "lat": "42.7017",
+    "postCode": "7017",
+    "lng": "25.8975",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Straldzha",
+    "lat": "42.6000",
+    "postCode": "6000",
+    "lng": "26.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Yambol"
+  },
+  {
+    "city": "Varshets",
+    "lat": "43.1953",
+    "postCode": "1953",
+    "lng": "23.2858",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Tsarevo",
+    "lat": "42.1708",
+    "postCode": "1708",
+    "lng": "27.8511",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Kotel",
+    "lat": "42.8863",
+    "postCode": "8863",
+    "lng": "26.4500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Lozen",
+    "lat": "42.6000",
+    "postCode": "6000",
+    "lng": "23.4833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Yakoruda",
+    "lat": "42.0183",
+    "postCode": "0183",
+    "lng": "23.6697",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Kameno",
+    "lat": "42.5667",
+    "postCode": "5667",
+    "lng": "27.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Belogradchik",
+    "lat": "43.6269",
+    "postCode": "6269",
+    "lng": "22.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Elena",
+    "lat": "42.9298",
+    "postCode": "9298",
+    "lng": "25.8787",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Vetovo",
+    "lat": "43.7000",
+    "postCode": "7000",
+    "lng": "26.2667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Topolovgrad",
+    "lat": "42.0842",
+    "postCode": "0842",
+    "lng": "26.3375",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Bobov Dol",
+    "lat": "42.3638",
+    "postCode": "3638",
+    "lng": "22.9979",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Strazhitsa",
+    "lat": "43.2333",
+    "postCode": "2333",
+    "lng": "25.9667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Riltsi",
+    "lat": "42.0401",
+    "postCode": "0401",
+    "lng": "23.0656",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Benkovski",
+    "lat": "41.3833",
+    "postCode": "3833",
+    "lng": "25.2667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Oryahovo",
+    "lat": "43.7389",
+    "postCode": "7389",
+    "lng": "23.9612",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Chepelare",
+    "lat": "41.7233",
+    "postCode": "7233",
+    "lng": "24.6861",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Suvorovo",
+    "lat": "43.3300",
+    "postCode": "3300",
+    "lng": "27.5925",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Perushtitsa",
+    "lat": "42.0561",
+    "postCode": "0561",
+    "lng": "24.5444",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Zlatitsa",
+    "lat": "42.7134",
+    "postCode": "7134",
+    "lng": "24.1391",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Yablanovo",
+    "lat": "42.9833",
+    "postCode": "9833",
+    "lng": "26.5500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Bozhurishte",
+    "lat": "42.7500",
+    "postCode": "7500",
+    "lng": "23.2000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Draginovo",
+    "lat": "42.0667",
+    "postCode": "0667",
+    "lng": "24.0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Bistritsa",
+    "lat": "42.5861",
+    "postCode": "5861",
+    "lng": "23.3600",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Polski Trambesh",
+    "lat": "43.3676",
+    "postCode": "3676",
+    "lng": "25.6319",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Dalgopol",
+    "lat": "43.0498",
+    "postCode": "0498",
+    "lng": "27.3463",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Rozino",
+    "lat": "42.7000",
+    "postCode": "7000",
+    "lng": "24.5500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Sozopol",
+    "lat": "42.4187",
+    "postCode": "4187",
+    "lng": "27.6943",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Dolna Banya",
+    "lat": "42.3000",
+    "postCode": "3000",
+    "lng": "23.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Logodazh",
+    "lat": "41.9892",
+    "postCode": "9892",
+    "lng": "22.9358",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Koynare",
+    "lat": "43.3573",
+    "postCode": "3573",
+    "lng": "24.1450",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Trastenik",
+    "lat": "43.5207",
+    "postCode": "5207",
+    "lng": "24.4716",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Dolni Dabnik",
+    "lat": "43.4089",
+    "postCode": "4089",
+    "lng": "24.4402",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Kazichene",
+    "lat": "42.6667",
+    "postCode": "6667",
+    "lng": "23.4667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Dve Mogili",
+    "lat": "43.6000",
+    "postCode": "6000",
+    "lng": "25.8667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Kostandovo",
+    "lat": "42.0167",
+    "postCode": "0167",
+    "lng": "24.1167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Ignatievo",
+    "lat": "43.2500",
+    "postCode": "2500",
+    "lng": "27.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Kalipetrovo",
+    "lat": "44.0833",
+    "postCode": "0833",
+    "lng": "27.2333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Shivachevo",
+    "lat": "42.6833",
+    "postCode": "6833",
+    "lng": "26.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Varbitsa",
+    "lat": "42.9931",
+    "postCode": "9931",
+    "lng": "26.6721",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Pravets",
+    "lat": "42.8944",
+    "postCode": "8944",
+    "lng": "23.9156",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Nikopol",
+    "lat": "43.6986",
+    "postCode": "6986",
+    "lng": "24.8924",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Nedelino",
+    "lat": "41.4597",
+    "postCode": "4597",
+    "lng": "25.0770",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Slavyanovo",
+    "lat": "43.4652",
+    "postCode": "4652",
+    "lng": "24.8722",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Strelcha",
+    "lat": "42.5064",
+    "postCode": "5064",
+    "lng": "24.3211",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Glodzhevo",
+    "lat": "43.7329",
+    "postCode": "7329",
+    "lng": "26.3878",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Godech",
+    "lat": "43.0150",
+    "postCode": "0150",
+    "lng": "23.0442",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Bukovlak",
+    "lat": "43.4500",
+    "postCode": "4500",
+    "lng": "24.6167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Letnitsa",
+    "lat": "43.3167",
+    "postCode": "3167",
+    "lng": "25.0667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Bratsigovo",
+    "lat": "42.0231",
+    "postCode": "0231",
+    "lng": "24.3696",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Malo Konare",
+    "lat": "42.2000",
+    "postCode": "2000",
+    "lng": "24.4333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Sapareva Banya",
+    "lat": "42.2874",
+    "postCode": "2874",
+    "lng": "23.2589",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Belovo",
+    "lat": "42.2146",
+    "postCode": "2146",
+    "lng": "24.0201",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Dyankovo",
+    "lat": "43.6167",
+    "postCode": "6167",
+    "lng": "26.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Breznik",
+    "lat": "42.7400",
+    "postCode": "7400",
+    "lng": "22.9083",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Trud",
+    "lat": "42.2333",
+    "postCode": "2333",
+    "lng": "24.7333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Smyadovo",
+    "lat": "43.0667",
+    "postCode": "0667",
+    "lng": "27.0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Rudozem",
+    "lat": "41.4892",
+    "postCode": "4892",
+    "lng": "24.8454",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Slivo Pole",
+    "lat": "43.9419",
+    "postCode": "9419",
+    "lng": "26.2064",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Zavet",
+    "lat": "43.7591",
+    "postCode": "7591",
+    "lng": "26.6751",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Belozem",
+    "lat": "42.2000",
+    "postCode": "2000",
+    "lng": "25.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Debelets",
+    "lat": "43.0438",
+    "postCode": "0438",
+    "lng": "25.6218",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Breznitsa",
+    "lat": "41.6719",
+    "postCode": "6719",
+    "lng": "23.6580",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Ivaylovgrad",
+    "lat": "41.5281",
+    "postCode": "5281",
+    "lng": "26.1244",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Tsalapitsa",
+    "lat": "42.1833",
+    "postCode": "1833",
+    "lng": "24.5667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Sarnitsa",
+    "lat": "41.7375",
+    "postCode": "7375",
+    "lng": "24.0243",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Marten",
+    "lat": "43.9204",
+    "postCode": "9204",
+    "lng": "26.0848",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Kresna",
+    "lat": "41.7202",
+    "postCode": "7202",
+    "lng": "23.1608",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Sungurlare",
+    "lat": "42.7619",
+    "postCode": "7619",
+    "lng": "26.7736",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Vladaya",
+    "lat": "42.6333",
+    "postCode": "6333",
+    "lng": "23.2000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Stara Kresna",
+    "lat": "41.7900",
+    "postCode": "7900",
+    "lng": "23.1808",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Brestovene",
+    "lat": "43.7667",
+    "postCode": "7667",
+    "lng": "26.5833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Chorbadzhiysko",
+    "lat": "41.3736",
+    "postCode": "3736",
+    "lng": "25.4065",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Iskar",
+    "lat": "43.4500",
+    "postCode": "4500",
+    "lng": "24.2667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Yasenovets",
+    "lat": "43.5733",
+    "postCode": "5733",
+    "lng": "26.6247",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Kran",
+    "lat": "42.6667",
+    "postCode": "6667",
+    "lng": "25.3833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Pokrovnik",
+    "lat": "41.9823",
+    "postCode": "9823",
+    "lng": "23.0538",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Dolna Mitropolia",
+    "lat": "43.4678",
+    "postCode": "4678",
+    "lng": "24.5206",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Primorsko",
+    "lat": "42.2669",
+    "postCode": "2669",
+    "lng": "27.7550",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Selanovtsi",
+    "lat": "43.6833",
+    "postCode": "6833",
+    "lng": "24.0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Kochan",
+    "lat": "41.5833",
+    "postCode": "5833",
+    "lng": "24.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Zarnevo",
+    "lat": "43.6333",
+    "postCode": "6333",
+    "lng": "27.3333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Vrachesh",
+    "lat": "42.8921",
+    "postCode": "8921",
+    "lng": "23.7494",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Gulyantsi",
+    "lat": "43.6371",
+    "postCode": "6371",
+    "lng": "24.6904",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Yagodovo",
+    "lat": "42.1000",
+    "postCode": "1000",
+    "lng": "24.8500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Maglizh",
+    "lat": "42.6083",
+    "postCode": "6083",
+    "lng": "25.5456",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Valchedram",
+    "lat": "43.6961",
+    "postCode": "6961",
+    "lng": "23.4448",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Krivodol",
+    "lat": "43.3717",
+    "postCode": "3717",
+    "lng": "23.4813",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Belitsa",
+    "lat": "41.9478",
+    "postCode": "9478",
+    "lng": "23.5629",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Aleko Konstantinovo",
+    "lat": "42.1597",
+    "postCode": "1597",
+    "lng": "24.2844",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Yoakim-Gruevo",
+    "lat": "42.1167",
+    "postCode": "1167",
+    "lng": "24.5667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Nikolaevo",
+    "lat": "42.6296",
+    "postCode": "6296",
+    "lng": "25.7888",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Shabla",
+    "lat": "43.5333",
+    "postCode": "5333",
+    "lng": "28.5333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Dragoman",
+    "lat": "42.9217",
+    "postCode": "9217",
+    "lng": "22.9297",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Smirnenski",
+    "lat": "43.7667",
+    "postCode": "7667",
+    "lng": "26.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Yasenkovo",
+    "lat": "43.5456",
+    "postCode": "5456",
+    "lng": "26.8381",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Branipole",
+    "lat": "42.0833",
+    "postCode": "0833",
+    "lng": "24.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Kaolinovo",
+    "lat": "43.6167",
+    "postCode": "6167",
+    "lng": "27.0917",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Sveti Vlas",
+    "lat": "42.7167",
+    "postCode": "7167",
+    "lng": "27.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Valchidol",
+    "lat": "43.4000",
+    "postCode": "4000",
+    "lng": "27.5500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Gurkovo",
+    "lat": "42.6606",
+    "postCode": "6606",
+    "lng": "25.7919",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Ezerche",
+    "lat": "43.5500",
+    "postCode": "5500",
+    "lng": "26.3167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Ivaylo",
+    "lat": "42.2167",
+    "postCode": "2167",
+    "lng": "24.3333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Roman",
+    "lat": "43.1500",
+    "postCode": "1500",
+    "lng": "23.9167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Mizia",
+    "lat": "43.6833",
+    "postCode": "6833",
+    "lng": "23.8500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Ruen",
+    "lat": "42.8000",
+    "postCode": "8000",
+    "lng": "27.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Kula",
+    "lat": "43.8833",
+    "postCode": "8833",
+    "lng": "22.5167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Rogosh",
+    "lat": "42.1833",
+    "postCode": "1833",
+    "lng": "24.8667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Batak",
+    "lat": "41.9440",
+    "postCode": "9440",
+    "lng": "24.2178",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Ribnovo",
+    "lat": "41.7167",
+    "postCode": "7167",
+    "lng": "23.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Yagoda",
+    "lat": "42.5500",
+    "postCode": "5500",
+    "lng": "25.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Topoli",
+    "lat": "43.2183",
+    "postCode": "2183",
+    "lng": "27.8214",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Trudovets",
+    "lat": "42.9167",
+    "postCode": "9167",
+    "lng": "23.8333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Ostrovo",
+    "lat": "43.6839",
+    "postCode": "6839",
+    "lng": "26.6072",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Kalofer",
+    "lat": "42.6112",
+    "postCode": "6112",
+    "lng": "24.9748",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Kamenar",
+    "lat": "43.2493",
+    "postCode": "2493",
+    "lng": "27.8999",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Krumovo",
+    "lat": "42.0833",
+    "postCode": "0833",
+    "lng": "24.8167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Voluyak",
+    "lat": "42.7667",
+    "postCode": "7667",
+    "lng": "23.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Pancharevo",
+    "lat": "42.5830",
+    "postCode": "5830",
+    "lng": "23.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Pavel Banya",
+    "lat": "42.5972",
+    "postCode": "5972",
+    "lng": "25.2075",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Banya",
+    "lat": "41.8794",
+    "postCode": "8794",
+    "lng": "23.5269",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Kableshkovo",
+    "lat": "42.6601",
+    "postCode": "6601",
+    "lng": "27.5680",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Dorkovo",
+    "lat": "42.0469",
+    "postCode": "0469",
+    "lng": "24.1319",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Koprinka",
+    "lat": "42.6333",
+    "postCode": "6333",
+    "lng": "25.3333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Draganovo",
+    "lat": "43.2167",
+    "postCode": "2167",
+    "lng": "25.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Manole",
+    "lat": "42.1833",
+    "postCode": "1833",
+    "lng": "24.9333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Dolna Oryahovitsa",
+    "lat": "43.1565",
+    "postCode": "1565",
+    "lng": "25.7391",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Ustina",
+    "lat": "42.0333",
+    "postCode": "0333",
+    "lng": "24.5167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Opaka",
+    "lat": "43.4474",
+    "postCode": "4474",
+    "lng": "26.1736",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Hadzhidimovo",
+    "lat": "41.5155",
+    "postCode": "5155",
+    "lng": "23.8526",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Staro Oryahovo",
+    "lat": "42.9896",
+    "postCode": "9896",
+    "lng": "27.7998",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Borino",
+    "lat": "41.6833",
+    "postCode": "6833",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Archar",
+    "lat": "43.8108",
+    "postCode": "8108",
+    "lng": "22.9181",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Iskra",
+    "lat": "44.0000",
+    "postCode": "0000",
+    "lng": "26.9833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Dobrinishte",
+    "lat": "41.8210",
+    "postCode": "8210",
+    "lng": "23.5634",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Yablanitsa",
+    "lat": "43.0250",
+    "postCode": "0250",
+    "lng": "24.1000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Loznitsa",
+    "lat": "43.3715",
+    "postCode": "3715",
+    "lng": "26.5987",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Sotirya",
+    "lat": "42.6833",
+    "postCode": "6833",
+    "lng": "26.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Tsonevo",
+    "lat": "43.0333",
+    "postCode": "0333",
+    "lng": "27.4333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Bezmer",
+    "lat": "43.7667",
+    "postCode": "7667",
+    "lng": "27.4167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Novo Selo",
+    "lat": "42.1050",
+    "postCode": "1050",
+    "lng": "24.4830",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Valkosel",
+    "lat": "41.5333",
+    "postCode": "5333",
+    "lng": "23.9833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Zlataritsa",
+    "lat": "43.0442",
+    "postCode": "0442",
+    "lng": "25.8897",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Buhovo",
+    "lat": "42.7638",
+    "postCode": "7638",
+    "lng": "23.5658",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Bolyartsi",
+    "lat": "42.0667",
+    "postCode": "0667",
+    "lng": "24.9667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Kalekovets",
+    "lat": "42.2333",
+    "postCode": "2333",
+    "lng": "24.8167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Ugarchin",
+    "lat": "43.1000",
+    "postCode": "1000",
+    "lng": "24.4167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Samuil",
+    "lat": "43.5167",
+    "postCode": "5167",
+    "lng": "26.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Byala Cherkva",
+    "lat": "43.2051",
+    "postCode": "2051",
+    "lng": "25.3106",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Kliment",
+    "lat": "43.6167",
+    "postCode": "6167",
+    "lng": "27.0000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Nova Mahala",
+    "lat": "41.9333",
+    "postCode": "9333",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Tran",
+    "lat": "42.8365",
+    "postCode": "8365",
+    "lng": "22.6510",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Kurtovo Konare",
+    "lat": "42.0928",
+    "postCode": "0928",
+    "lng": "24.5019",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Sadovo",
+    "lat": "42.1304",
+    "postCode": "1304",
+    "lng": "24.9385",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Markovo",
+    "lat": "42.0667",
+    "postCode": "0667",
+    "lng": "24.7000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Galata",
+    "lat": "43.0167",
+    "postCode": "0167",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Debren",
+    "lat": "41.5843",
+    "postCode": "5843",
+    "lng": "23.8228",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "German",
+    "lat": "42.6167",
+    "postCode": "6167",
+    "lng": "23.4167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Byal Izvor",
+    "lat": "41.5500",
+    "postCode": "5500",
+    "lng": "25.0833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Podayva",
+    "lat": "43.6719",
+    "postCode": "6719",
+    "lng": "26.9161",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Grozdyovo",
+    "lat": "43.0167",
+    "postCode": "0167",
+    "lng": "27.5333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Novi Han",
+    "lat": "42.6000",
+    "postCode": "6000",
+    "lng": "23.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Apriltsi",
+    "lat": "42.8399",
+    "postCode": "8399",
+    "lng": "24.9200",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Ognyanovo",
+    "lat": "42.1500",
+    "postCode": "1500",
+    "lng": "24.4167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Rila",
+    "lat": "42.1268",
+    "postCode": "1268",
+    "lng": "23.1307",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Parvomaytsi",
+    "lat": "43.1530",
+    "postCode": "1530",
+    "lng": "25.6521",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Valnari",
+    "lat": "43.6000",
+    "postCode": "6000",
+    "lng": "27.2167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Skutare",
+    "lat": "42.1833",
+    "postCode": "1833",
+    "lng": "24.8333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Kilifarevo",
+    "lat": "42.9943",
+    "postCode": "9943",
+    "lng": "25.6205",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Glavinitsa",
+    "lat": "42.1581",
+    "postCode": "1581",
+    "lng": "24.3103",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Dospat",
+    "lat": "41.6458",
+    "postCode": "6458",
+    "lng": "24.1605",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Gluhar",
+    "lat": "41.5953",
+    "postCode": "5953",
+    "lng": "25.3935",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Satovcha",
+    "lat": "41.6193",
+    "postCode": "6193",
+    "lng": "23.9769",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Chepintsi",
+    "lat": "42.7667",
+    "postCode": "7667",
+    "lng": "23.4333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Sevar",
+    "lat": "43.8333",
+    "postCode": "8333",
+    "lng": "26.5833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Bregovo",
+    "lat": "44.1500",
+    "postCode": "1500",
+    "lng": "22.6500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Branichevo",
+    "lat": "43.6800",
+    "postCode": "6800",
+    "lng": "27.0994",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Shtraklevo",
+    "lat": "43.7167",
+    "postCode": "7167",
+    "lng": "26.0500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Kornitsa",
+    "lat": "41.6406",
+    "postCode": "6406",
+    "lng": "23.6764",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Dermantsi",
+    "lat": "43.1500",
+    "postCode": "1500",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Rani List",
+    "lat": "41.6833",
+    "postCode": "6833",
+    "lng": "25.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Sadovets",
+    "lat": "43.3000",
+    "postCode": "3000",
+    "lng": "24.3500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Obrochishte",
+    "lat": "43.4031",
+    "postCode": "4031",
+    "lng": "28.0455",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Dabnitsa",
+    "lat": "41.5667",
+    "postCode": "5667",
+    "lng": "23.8333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Svetovrachane",
+    "lat": "42.7833",
+    "postCode": "7833",
+    "lng": "23.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Kitanchevo",
+    "lat": "43.7319",
+    "postCode": "7319",
+    "lng": "26.8922",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Startsevo",
+    "lat": "41.4167",
+    "postCode": "4167",
+    "lng": "25.0667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Slashten",
+    "lat": "41.5000",
+    "postCode": "5000",
+    "lng": "24.0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Buzovgrad",
+    "lat": "42.5667",
+    "postCode": "5667",
+    "lng": "25.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Enina",
+    "lat": "42.6669",
+    "postCode": "6669",
+    "lng": "25.4083",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Fotinovo",
+    "lat": "41.3731",
+    "postCode": "3731",
+    "lng": "25.3417",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Borovo",
+    "lat": "43.4907",
+    "postCode": "4907",
+    "lng": "25.8115",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Katunitsa",
+    "lat": "42.1000",
+    "postCode": "1000",
+    "lng": "24.8667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Bratanitsa",
+    "lat": "42.1667",
+    "postCode": "1667",
+    "lng": "24.2167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Shiroko Pole",
+    "lat": "41.6167",
+    "postCode": "6167",
+    "lng": "25.4583",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Malko Tarnovo",
+    "lat": "41.9806",
+    "postCode": "9806",
+    "lng": "27.5236",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Pristoe",
+    "lat": "43.6500",
+    "postCode": "6500",
+    "lng": "27.0833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Tsaratsovo",
+    "lat": "42.2000",
+    "postCode": "2000",
+    "lng": "24.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Sborishte",
+    "lat": "42.6833",
+    "postCode": "6833",
+    "lng": "25.9667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Polikrayshte",
+    "lat": "43.1807",
+    "postCode": "1807",
+    "lng": "25.6199",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Koprivshtitsa",
+    "lat": "42.6401",
+    "postCode": "6401",
+    "lng": "24.3583",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Batanovtsi",
+    "lat": "42.6000",
+    "postCode": "6000",
+    "lng": "22.9500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Chernomorets",
+    "lat": "42.4444",
+    "postCode": "4444",
+    "lng": "27.6387",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Aheloy",
+    "lat": "42.6489",
+    "postCode": "6489",
+    "lng": "27.6481",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Belovets",
+    "lat": "43.8167",
+    "postCode": "8167",
+    "lng": "26.3833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Borovan",
+    "lat": "43.4277",
+    "postCode": "4277",
+    "lng": "23.7542",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Musomishta",
+    "lat": "41.5531",
+    "postCode": "5531",
+    "lng": "23.7476",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Isperihovo",
+    "lat": "42.0833",
+    "postCode": "0833",
+    "lng": "24.4333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Krushare",
+    "lat": "42.5500",
+    "postCode": "5500",
+    "lng": "26.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Garmen",
+    "lat": "41.5982",
+    "postCode": "5982",
+    "lng": "23.8032",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Dragichevo",
+    "lat": "42.6167",
+    "postCode": "6167",
+    "lng": "23.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Semchinovo",
+    "lat": "42.1789",
+    "postCode": "1789",
+    "lng": "24.0975",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Pordim",
+    "lat": "43.3781",
+    "postCode": "3781",
+    "lng": "24.8476",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Voyvodinovo",
+    "lat": "42.1999",
+    "postCode": "1999",
+    "lng": "24.7942",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Obzor",
+    "lat": "42.8230",
+    "postCode": "8230",
+    "lng": "27.8787",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Lazhnitsa",
+    "lat": "41.6167",
+    "postCode": "6167",
+    "lng": "23.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Ayrovo",
+    "lat": "41.6167",
+    "postCode": "6167",
+    "lng": "25.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Tetovo",
+    "lat": "43.8167",
+    "postCode": "8167",
+    "lng": "26.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Laki",
+    "lat": "41.8326",
+    "postCode": "8326",
+    "lng": "24.8315",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Harlets",
+    "lat": "43.7000",
+    "postCode": "7000",
+    "lng": "23.8333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Chernogorovo",
+    "lat": "42.2772",
+    "postCode": "2772",
+    "lng": "24.3981",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Medovets",
+    "lat": "43.0000",
+    "postCode": "0000",
+    "lng": "27.1333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Yahinovo",
+    "lat": "42.2833",
+    "postCode": "2833",
+    "lng": "23.1500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Gabarevo",
+    "lat": "42.6167",
+    "postCode": "6167",
+    "lng": "25.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Sheynovo",
+    "lat": "42.6833",
+    "postCode": "6833",
+    "lng": "25.3167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Chalakovi",
+    "lat": "42.1500",
+    "postCode": "1500",
+    "lng": "25.0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Vladimirovtsi",
+    "lat": "43.6333",
+    "postCode": "6333",
+    "lng": "26.8667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Gorni Dabnik",
+    "lat": "43.3833",
+    "postCode": "3833",
+    "lng": "24.3500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Tranak",
+    "lat": "42.9500",
+    "postCode": "9500",
+    "lng": "27.2167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Pletena",
+    "lat": "41.6383",
+    "postCode": "6383",
+    "lng": "23.9578",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Balgarovo",
+    "lat": "42.6201",
+    "postCode": "6201",
+    "lng": "27.3059",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Glavinitsa",
+    "lat": "43.9116",
+    "postCode": "9116",
+    "lng": "26.8345",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Mokrishte",
+    "lat": "42.1833",
+    "postCode": "1833",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Gorno Prahovo",
+    "lat": "41.6456",
+    "postCode": "6456",
+    "lng": "25.1595",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Aleksandrovo",
+    "lat": "43.2500",
+    "postCode": "2500",
+    "lng": "24.9500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Petarch",
+    "lat": "42.8333",
+    "postCode": "8333",
+    "lng": "23.1333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Bisertsi",
+    "lat": "43.8842",
+    "postCode": "8842",
+    "lng": "26.5036",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Sinitovo",
+    "lat": "42.1500",
+    "postCode": "1500",
+    "lng": "24.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Timarevo",
+    "lat": "43.4000",
+    "postCode": "4000",
+    "lng": "26.8833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Mramor",
+    "lat": "42.7861",
+    "postCode": "7861",
+    "lng": "23.2736",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Opalchensko",
+    "lat": "41.6000",
+    "postCode": "6000",
+    "lng": "25.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Suhindol",
+    "lat": "43.1917",
+    "postCode": "1917",
+    "lng": "25.1808",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Zvanichevo",
+    "lat": "42.1833",
+    "postCode": "1833",
+    "lng": "24.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Oreshak",
+    "lat": "42.8833",
+    "postCode": "8833",
+    "lng": "24.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Kocherinovo",
+    "lat": "42.0856",
+    "postCode": "0856",
+    "lng": "23.0581",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Veselina",
+    "lat": "43.4500",
+    "postCode": "4500",
+    "lng": "26.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Most",
+    "lat": "41.7350",
+    "postCode": "7350",
+    "lng": "25.5211",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Byala Reka",
+    "lat": "43.0000",
+    "postCode": "0000",
+    "lng": "26.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Polkovnik Zhelyazovo",
+    "lat": "41.4657",
+    "postCode": "4657",
+    "lng": "25.6724",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Gradezhnitsa",
+    "lat": "43.0167",
+    "postCode": "0167",
+    "lng": "24.2333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Okorsh",
+    "lat": "43.7500",
+    "postCode": "7500",
+    "lng": "27.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Popintsi",
+    "lat": "42.4167",
+    "postCode": "4167",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Nova Cherna",
+    "lat": "44.0108",
+    "postCode": "0108",
+    "lng": "26.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Brestnik",
+    "lat": "42.0500",
+    "postCode": "0500",
+    "lng": "24.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Gigen",
+    "lat": "43.7000",
+    "postCode": "7000",
+    "lng": "24.4833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Debelt",
+    "lat": "42.4021",
+    "postCode": "4021",
+    "lng": "27.2604",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Kraynitsi",
+    "lat": "42.3167",
+    "postCode": "3167",
+    "lng": "23.2000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Smilyan",
+    "lat": "41.5000",
+    "postCode": "5000",
+    "lng": "24.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Slokoshtitsa",
+    "lat": "42.2667",
+    "postCode": "2667",
+    "lng": "22.7072",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Kokalyane",
+    "lat": "42.5833",
+    "postCode": "5833",
+    "lng": "23.4167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Radanovo",
+    "lat": "43.3399",
+    "postCode": "3399",
+    "lng": "25.6366",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Hrishteni",
+    "lat": "42.4500",
+    "postCode": "4500",
+    "lng": "25.7000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Litakovo",
+    "lat": "42.9500",
+    "postCode": "9500",
+    "lng": "23.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Chernolik",
+    "lat": "43.8667",
+    "postCode": "8667",
+    "lng": "27.0833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Zheglartsi",
+    "lat": "43.6667",
+    "postCode": "6667",
+    "lng": "27.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Malorad",
+    "lat": "43.4889",
+    "postCode": "4889",
+    "lng": "23.6875",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Resen",
+    "lat": "43.2000",
+    "postCode": "2000",
+    "lng": "25.5500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Hristo-Danovo",
+    "lat": "42.7333",
+    "postCode": "7333",
+    "lng": "24.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Barutin",
+    "lat": "41.6000",
+    "postCode": "6000",
+    "lng": "24.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Kostievo",
+    "lat": "42.1766",
+    "postCode": "1766",
+    "lng": "24.6237",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Korten",
+    "lat": "42.5500",
+    "postCode": "5500",
+    "lng": "26.0000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Chiprovtsi",
+    "lat": "43.3846",
+    "postCode": "3846",
+    "lng": "22.8825",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Karageorgievo",
+    "lat": "42.7357",
+    "postCode": "7357",
+    "lng": "27.1845",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Lehchevo",
+    "lat": "43.5333",
+    "postCode": "5333",
+    "lng": "23.5333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Komuniga",
+    "lat": "41.8000",
+    "postCode": "8000",
+    "lng": "25.2330",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Gruevo",
+    "lat": "41.5661",
+    "postCode": "5661",
+    "lng": "25.4055",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Asenovtsi",
+    "lat": "43.3167",
+    "postCode": "3167",
+    "lng": "25.1000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Mortagonovo",
+    "lat": "43.5167",
+    "postCode": "5167",
+    "lng": "26.6500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Antonovo",
+    "lat": "43.1500",
+    "postCode": "1500",
+    "lng": "26.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Karnalovo",
+    "lat": "41.4634",
+    "postCode": "4634",
+    "lng": "23.2236",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Iskrets",
+    "lat": "42.9833",
+    "postCode": "9833",
+    "lng": "23.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Gorna Mitropolia",
+    "lat": "43.4667",
+    "postCode": "4667",
+    "lng": "24.4500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Zgorigrad",
+    "lat": "43.1801",
+    "postCode": "1801",
+    "lng": "23.5169",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Brezovo",
+    "lat": "42.3488",
+    "postCode": "3488",
+    "lng": "25.0768",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Izgrev",
+    "lat": "43.5833",
+    "postCode": "5833",
+    "lng": "27.0000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Vakarel",
+    "lat": "42.5500",
+    "postCode": "5500",
+    "lng": "23.7167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Belogradets",
+    "lat": "43.3521",
+    "postCode": "3521",
+    "lng": "27.3312",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Popitsa",
+    "lat": "43.4271",
+    "postCode": "4271",
+    "lng": "23.9559",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Seliminovo",
+    "lat": "42.6500",
+    "postCode": "6500",
+    "lng": "26.1500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Karamantsi",
+    "lat": "41.8344",
+    "postCode": "8344",
+    "lng": "25.3294",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Uzundzhovo",
+    "lat": "41.9631",
+    "postCode": "9631",
+    "lng": "25.6558",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Graf Ignatievo",
+    "lat": "42.2833",
+    "postCode": "2833",
+    "lng": "24.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Stremtsi",
+    "lat": "41.7333",
+    "postCode": "7333",
+    "lng": "25.4167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Busmantsi",
+    "lat": "42.6833",
+    "postCode": "6833",
+    "lng": "23.4333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Merichleri",
+    "lat": "42.1329",
+    "postCode": "1329",
+    "lng": "25.4993",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Sashevo",
+    "lat": "43.3014",
+    "postCode": "3014",
+    "lng": "25.6497",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Medkovets",
+    "lat": "43.6333",
+    "postCode": "6333",
+    "lng": "23.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Mogilyane",
+    "lat": "41.3667",
+    "postCode": "3667",
+    "lng": "25.2333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Golesh",
+    "lat": "43.9500",
+    "postCode": "9500",
+    "lng": "27.6167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Lesnovo",
+    "lat": "42.6333",
+    "postCode": "6333",
+    "lng": "23.6333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Samoranovo",
+    "lat": "42.2500",
+    "postCode": "2500",
+    "lng": "23.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Skravena",
+    "lat": "42.9519",
+    "postCode": "9519",
+    "lng": "23.7678",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Kermen",
+    "lat": "42.5003",
+    "postCode": "5003",
+    "lng": "26.2590",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Plachkovtsi",
+    "lat": "42.8255",
+    "postCode": "8255",
+    "lng": "25.4832",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Gabrovo"
+  },
+  {
+    "city": "Divotino",
+    "lat": "42.6667",
+    "postCode": "6667",
+    "lng": "23.0500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Glogovo",
+    "lat": "42.9667",
+    "postCode": "9667",
+    "lng": "24.2333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Galiche",
+    "lat": "43.5602",
+    "postCode": "5602",
+    "lng": "23.8640",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Pchelnik",
+    "lat": "43.0133",
+    "postCode": "0133",
+    "lng": "27.6686",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Lyuben Karavelovo",
+    "lat": "43.3500",
+    "postCode": "3500",
+    "lng": "27.7833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Dolni Tsibar",
+    "lat": "43.8167",
+    "postCode": "8167",
+    "lng": "23.5167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Muldava",
+    "lat": "41.9833",
+    "postCode": "9833",
+    "lng": "24.9500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Kavrakirovo",
+    "lat": "41.4333",
+    "postCode": "4333",
+    "lng": "23.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Milkovitsa",
+    "lat": "43.6333",
+    "postCode": "6333",
+    "lng": "24.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Sredishte",
+    "lat": "43.9000",
+    "postCode": "9000",
+    "lng": "27.4833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Ovoshtnik",
+    "lat": "42.5833",
+    "postCode": "5833",
+    "lng": "25.4500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Stavertsi",
+    "lat": "43.5667",
+    "postCode": "5667",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Boyantsi",
+    "lat": "42.0500",
+    "postCode": "0500",
+    "lng": "24.9500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Venets",
+    "lat": "43.5500",
+    "postCode": "5500",
+    "lng": "26.9333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Stroevo",
+    "lat": "42.2333",
+    "postCode": "2333",
+    "lng": "24.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Maglen",
+    "lat": "42.7273",
+    "postCode": "7273",
+    "lng": "27.3702",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Dolno Osenovo",
+    "lat": "41.9552",
+    "postCode": "9552",
+    "lng": "23.2406",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Petarnitsa",
+    "lat": "43.3267",
+    "postCode": "3267",
+    "lng": "24.4728",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Bachevo",
+    "lat": "41.9219",
+    "postCode": "9219",
+    "lng": "23.4528",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Vransko",
+    "lat": "41.4830",
+    "postCode": "4830",
+    "lng": "25.6426",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Dushevo",
+    "lat": "42.9667",
+    "postCode": "9667",
+    "lng": "25.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Gabrovo"
+  },
+  {
+    "city": "Kukorevo",
+    "lat": "42.4500",
+    "postCode": "4500",
+    "lng": "26.5333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Yambol"
+  },
+  {
+    "city": "Zverino",
+    "lat": "43.0833",
+    "postCode": "0833",
+    "lng": "23.5500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Bistritsa",
+    "lat": "42.2333",
+    "postCode": "2333",
+    "lng": "23.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Vetren Dol",
+    "lat": "42.1500",
+    "postCode": "1500",
+    "lng": "24.1500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Razhitsa",
+    "lat": "42.7833",
+    "postCode": "7833",
+    "lng": "27.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Varbovka",
+    "lat": "43.2333",
+    "postCode": "2333",
+    "lng": "25.2000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Kamburovo",
+    "lat": "43.1000",
+    "postCode": "1000",
+    "lng": "26.3333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Sveta Petka",
+    "lat": "42.0333",
+    "postCode": "0333",
+    "lng": "23.8667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Radomirtsi",
+    "lat": "43.2472",
+    "postCode": "2472",
+    "lng": "24.1956",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Stozher",
+    "lat": "43.4500",
+    "postCode": "4500",
+    "lng": "27.8167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Gorno Sakhrane",
+    "lat": "42.6500",
+    "postCode": "6500",
+    "lng": "25.2167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Boychinovtsi",
+    "lat": "43.4719",
+    "postCode": "4719",
+    "lng": "23.3356",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Anton",
+    "lat": "42.7500",
+    "postCode": "7500",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Toros",
+    "lat": "43.1000",
+    "postCode": "1000",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Yunatsite",
+    "lat": "42.2333",
+    "postCode": "2333",
+    "lng": "24.2667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Orizare",
+    "lat": "42.7498",
+    "postCode": "7498",
+    "lng": "27.6204",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Zheleznitsa",
+    "lat": "42.5333",
+    "postCode": "5333",
+    "lng": "23.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Yakimovo",
+    "lat": "43.6347",
+    "postCode": "6347",
+    "lng": "23.3536",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Ivanski",
+    "lat": "43.1333",
+    "postCode": "1333",
+    "lng": "27.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Yabalchevo",
+    "lat": "42.7833",
+    "postCode": "7833",
+    "lng": "27.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Dabene",
+    "lat": "42.6000",
+    "postCode": "6000",
+    "lng": "24.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Trivoditsi",
+    "lat": "42.1358",
+    "postCode": "1358",
+    "lng": "24.4661",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Grivitsa",
+    "lat": "43.4167",
+    "postCode": "4167",
+    "lng": "24.7000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Trastenik",
+    "lat": "43.6582",
+    "postCode": "6582",
+    "lng": "25.8400",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Krepcha",
+    "lat": "43.4833",
+    "postCode": "4833",
+    "lng": "26.1333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Chelopech",
+    "lat": "42.7000",
+    "postCode": "7000",
+    "lng": "24.0833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Osetenovo",
+    "lat": "42.6000",
+    "postCode": "6000",
+    "lng": "25.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Stratsin",
+    "lat": "42.7667",
+    "postCode": "7667",
+    "lng": "27.4667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Mirkovo",
+    "lat": "42.7000",
+    "postCode": "7000",
+    "lng": "23.9833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Dragor",
+    "lat": "42.2333",
+    "postCode": "2333",
+    "lng": "24.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Oresh",
+    "lat": "43.5773",
+    "postCode": "5773",
+    "lng": "25.2436",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Zemen",
+    "lat": "42.4789",
+    "postCode": "4789",
+    "lng": "22.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Kesarevo",
+    "lat": "43.1526",
+    "postCode": "1526",
+    "lng": "25.9681",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Vazovo",
+    "lat": "43.7667",
+    "postCode": "7667",
+    "lng": "26.8167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Tarnak",
+    "lat": "43.4500",
+    "postCode": "4500",
+    "lng": "24.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Obretenik",
+    "lat": "43.5808",
+    "postCode": "5808",
+    "lng": "25.8092",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Mirovyane",
+    "lat": "42.7833",
+    "postCode": "7833",
+    "lng": "23.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Gornik",
+    "lat": "43.2833",
+    "postCode": "2833",
+    "lng": "24.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Alfatar",
+    "lat": "43.9467",
+    "postCode": "9467",
+    "lng": "27.2911",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Negovan",
+    "lat": "42.7688",
+    "postCode": "7688",
+    "lng": "23.4064",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Tserovo",
+    "lat": "43.0038",
+    "postCode": "0038",
+    "lng": "23.3479",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Govedare",
+    "lat": "42.1500",
+    "postCode": "1500",
+    "lng": "24.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Senovo",
+    "lat": "43.6480",
+    "postCode": "6480",
+    "lng": "26.3615",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Chintulovo",
+    "lat": "42.6500",
+    "postCode": "6500",
+    "lng": "26.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Zmeitsa",
+    "lat": "41.6333",
+    "postCode": "6333",
+    "lng": "24.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Samovodene",
+    "lat": "43.1389",
+    "postCode": "1389",
+    "lng": "25.6105",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Feldfebel Denkovo",
+    "lat": "43.7147",
+    "postCode": "7147",
+    "lng": "27.5317",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Tenevo",
+    "lat": "42.3500",
+    "postCode": "3500",
+    "lng": "26.5333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Yambol"
+  },
+  {
+    "city": "Tazha",
+    "lat": "42.6500",
+    "postCode": "6500",
+    "lng": "25.0833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Dabravino",
+    "lat": "43.0500",
+    "postCode": "0500",
+    "lng": "27.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Sklave",
+    "lat": "41.5167",
+    "postCode": "5167",
+    "lng": "23.3167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Lilyache",
+    "lat": "43.3215",
+    "postCode": "3215",
+    "lng": "23.5220",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Ryahovtsite",
+    "lat": "43.0167",
+    "postCode": "0167",
+    "lng": "25.0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Gabrovo"
+  },
+  {
+    "city": "Gorski Izvor",
+    "lat": "41.3500",
+    "postCode": "3500",
+    "lng": "25.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Barzia",
+    "lat": "43.1981",
+    "postCode": "1981",
+    "lng": "23.1608",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Hvostyane",
+    "lat": "41.5500",
+    "postCode": "5500",
+    "lng": "23.8500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Krushari",
+    "lat": "43.8177",
+    "postCode": "8177",
+    "lng": "27.7580",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Krivina",
+    "lat": "42.6833",
+    "postCode": "6833",
+    "lng": "23.4667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Obruchishte",
+    "lat": "42.1333",
+    "postCode": "1333",
+    "lng": "25.9333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Perperek",
+    "lat": "41.6861",
+    "postCode": "6861",
+    "lng": "25.5453",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Zaychar",
+    "lat": "42.7833",
+    "postCode": "7833",
+    "lng": "27.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Partizani",
+    "lat": "43.0092",
+    "postCode": "0092",
+    "lng": "27.2510",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Glava",
+    "lat": "43.4000",
+    "postCode": "4000",
+    "lng": "24.2000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Rogach",
+    "lat": "41.4542",
+    "postCode": "4542",
+    "lng": "25.6990",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Manolich",
+    "lat": "42.8917",
+    "postCode": "8917",
+    "lng": "26.8000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Maysko",
+    "lat": "42.9333",
+    "postCode": "9333",
+    "lng": "26.1500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Gorna Kula",
+    "lat": "41.4955",
+    "postCode": "4955",
+    "lng": "25.6145",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Boyno",
+    "lat": "41.6011",
+    "postCode": "6011",
+    "lng": "25.2769",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Ludogortsi",
+    "lat": "43.6500",
+    "postCode": "6500",
+    "lng": "26.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Ryahovo",
+    "lat": "43.9833",
+    "postCode": "9833",
+    "lng": "26.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Vinogradets",
+    "lat": "42.2833",
+    "postCode": "2833",
+    "lng": "24.1333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Leshko",
+    "lat": "41.9318",
+    "postCode": "9318",
+    "lng": "22.9788",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Dalboki",
+    "lat": "42.4833",
+    "postCode": "4833",
+    "lng": "25.7667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Bozveliysko",
+    "lat": "43.1000",
+    "postCode": "1000",
+    "lng": "27.4667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Byaga",
+    "lat": "42.0661",
+    "postCode": "0661",
+    "lng": "24.3775",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Duhovets",
+    "lat": "43.6667",
+    "postCode": "6667",
+    "lng": "27.0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Dolno Dryanovo",
+    "lat": "41.5871",
+    "postCode": "5871",
+    "lng": "23.8977",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Eleshnitsa",
+    "lat": "41.8677",
+    "postCode": "8677",
+    "lng": "23.6225",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Yonkovo",
+    "lat": "43.6333",
+    "postCode": "6333",
+    "lng": "26.7167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Dobromirtsi",
+    "lat": "41.3810",
+    "postCode": "3810",
+    "lng": "25.2098",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Potochnitsa",
+    "lat": "41.6083",
+    "postCode": "6083",
+    "lng": "25.6750",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Orizovo",
+    "lat": "42.2089",
+    "postCode": "2089",
+    "lng": "25.1703",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Dobrovnitsa",
+    "lat": "42.2167",
+    "postCode": "2167",
+    "lng": "24.3833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Tsarev Brod",
+    "lat": "43.3333",
+    "postCode": "3333",
+    "lng": "27.0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Chakalarovo",
+    "lat": "41.3111",
+    "postCode": "3111",
+    "lng": "25.3139",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Drenovets",
+    "lat": "43.6931",
+    "postCode": "6931",
+    "lng": "22.9806",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Nedan",
+    "lat": "43.3033",
+    "postCode": "3033",
+    "lng": "25.2666",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Paprat",
+    "lat": "41.5155",
+    "postCode": "5155",
+    "lng": "25.2780",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Bezhanovo",
+    "lat": "43.2333",
+    "postCode": "2333",
+    "lng": "24.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Zagoriche",
+    "lat": "43.7000",
+    "postCode": "7000",
+    "lng": "27.0833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Paisievo",
+    "lat": "43.7833",
+    "postCode": "7833",
+    "lng": "26.9667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Kitna",
+    "lat": "41.3833",
+    "postCode": "3833",
+    "lng": "25.2667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Gorna Malina",
+    "lat": "42.6936",
+    "postCode": "6936",
+    "lng": "23.7061",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Gramada",
+    "lat": "43.8348",
+    "postCode": "8348",
+    "lng": "22.6610",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Zvezdel",
+    "lat": "41.4762",
+    "postCode": "4762",
+    "lng": "25.5259",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Drumevo",
+    "lat": "43.1333",
+    "postCode": "1333",
+    "lng": "27.1500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Zvanarka",
+    "lat": "41.4500",
+    "postCode": "4500",
+    "lng": "25.6333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Malchika",
+    "lat": "43.4167",
+    "postCode": "4167",
+    "lng": "25.1000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Lilyak",
+    "lat": "43.2300",
+    "postCode": "2300",
+    "lng": "26.4792",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Balgarski Izvor",
+    "lat": "43.0333",
+    "postCode": "0333",
+    "lng": "24.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Dzherman",
+    "lat": "42.2167",
+    "postCode": "2167",
+    "lng": "23.0833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Sokolino",
+    "lat": "41.5132",
+    "postCode": "5132",
+    "lng": "25.4314",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Zlatitrap",
+    "lat": "42.1167",
+    "postCode": "1167",
+    "lng": "24.6333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Iskra",
+    "lat": "41.9333",
+    "postCode": "9333",
+    "lng": "25.1333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Zhinzifovo",
+    "lat": "41.6647",
+    "postCode": "6647",
+    "lng": "25.4864",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Hayredin",
+    "lat": "43.6000",
+    "postCode": "6000",
+    "lng": "23.6667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Koprivlen",
+    "lat": "41.5204",
+    "postCode": "5204",
+    "lng": "23.7949",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Polenitsa",
+    "lat": "41.5667",
+    "postCode": "5667",
+    "lng": "23.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Semerdzhievo",
+    "lat": "43.7667",
+    "postCode": "7667",
+    "lng": "26.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Mlechino",
+    "lat": "41.6247",
+    "postCode": "6247",
+    "lng": "25.1736",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Ostrov",
+    "lat": "43.6755",
+    "postCode": "6755",
+    "lng": "24.1300",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Dobromir",
+    "lat": "42.9500",
+    "postCode": "9500",
+    "lng": "27.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Vaklinovo",
+    "lat": "41.5959",
+    "postCode": "5959",
+    "lng": "24.0636",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Vladimirovo",
+    "lat": "43.5333",
+    "postCode": "5333",
+    "lng": "23.3833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Morozovo",
+    "lat": "42.5736",
+    "postCode": "5736",
+    "lng": "25.3164",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Karabunar",
+    "lat": "42.2658",
+    "postCode": "2658",
+    "lng": "24.1751",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Kobilyane",
+    "lat": "41.5970",
+    "postCode": "5970",
+    "lng": "25.2355",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Tulovo",
+    "lat": "42.5833",
+    "postCode": "5833",
+    "lng": "25.5500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Chernevo",
+    "lat": "43.3000",
+    "postCode": "3000",
+    "lng": "27.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Popovitsa",
+    "lat": "42.1356",
+    "postCode": "1356",
+    "lng": "25.0567",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Bazan",
+    "lat": "43.7333",
+    "postCode": "7333",
+    "lng": "26.1167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Belomortsi",
+    "lat": "43.1333",
+    "postCode": "1333",
+    "lng": "26.4333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Razhevo Konare",
+    "lat": "42.3333",
+    "postCode": "3333",
+    "lng": "24.8000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Bozhan",
+    "lat": "43.7600",
+    "postCode": "7600",
+    "lng": "27.4570",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Golyamo Gradishte",
+    "lat": "43.4500",
+    "postCode": "4500",
+    "lng": "26.0500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Sofronievo",
+    "lat": "43.6365",
+    "postCode": "6365",
+    "lng": "23.7867",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Zlatar",
+    "lat": "43.1000",
+    "postCode": "1000",
+    "lng": "26.9667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Damyanitsa",
+    "lat": "41.5167",
+    "postCode": "5167",
+    "lng": "23.2667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Benkovski",
+    "lat": "42.2167",
+    "postCode": "2167",
+    "lng": "24.6500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Mineralni Bani",
+    "lat": "41.9333",
+    "postCode": "9333",
+    "lng": "25.3500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Radilovo",
+    "lat": "42.0833",
+    "postCode": "0833",
+    "lng": "24.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Beli Lom",
+    "lat": "43.4333",
+    "postCode": "4333",
+    "lng": "26.7167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Baniska",
+    "lat": "43.4581",
+    "postCode": "4581",
+    "lng": "25.9014",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Kanchevo",
+    "lat": "42.5333",
+    "postCode": "5333",
+    "lng": "25.4500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Kranevo",
+    "lat": "43.3418",
+    "postCode": "3418",
+    "lng": "28.0538",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Lopushna",
+    "lat": "43.0045",
+    "postCode": "0045",
+    "lng": "27.1863",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Staliyska Mahala",
+    "lat": "43.7383",
+    "postCode": "7383",
+    "lng": "23.1642",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Kirchevo",
+    "lat": "42.9833",
+    "postCode": "9833",
+    "lng": "24.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Shipka",
+    "lat": "42.7103",
+    "postCode": "7103",
+    "lng": "25.3356",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Ahtopol",
+    "lat": "42.1003",
+    "postCode": "1003",
+    "lng": "27.9414",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Tankovo",
+    "lat": "42.6946",
+    "postCode": "6946",
+    "lng": "27.6496",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Gorno Kraishte",
+    "lat": "41.9000",
+    "postCode": "9000",
+    "lng": "23.5833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Ruets",
+    "lat": "43.2131",
+    "postCode": "2131",
+    "lng": "26.6233",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Sipey",
+    "lat": "41.6500",
+    "postCode": "6500",
+    "lng": "25.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Rezbartsi",
+    "lat": "41.6193",
+    "postCode": "6193",
+    "lng": "25.3591",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Aldomirovtsi",
+    "lat": "42.8500",
+    "postCode": "8500",
+    "lng": "22.9808",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Dinkata",
+    "lat": "42.2833",
+    "postCode": "2833",
+    "lng": "24.2333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Kralevo",
+    "lat": "43.1833",
+    "postCode": "1833",
+    "lng": "26.7000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Grashevo",
+    "lat": "41.9667",
+    "postCode": "9667",
+    "lng": "23.9333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Dabnik",
+    "lat": "42.6833",
+    "postCode": "6833",
+    "lng": "27.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Ustren",
+    "lat": "41.4595",
+    "postCode": "4595",
+    "lng": "25.2266",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Orehovitsa",
+    "lat": "43.5833",
+    "postCode": "5833",
+    "lng": "24.3833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Konstantinovo",
+    "lat": "43.1627",
+    "postCode": "1627",
+    "lng": "27.7806",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Bortsi",
+    "lat": "43.5333",
+    "postCode": "5333",
+    "lng": "26.8833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Basarbovo",
+    "lat": "43.7833",
+    "postCode": "7833",
+    "lng": "25.9500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Zhelyazkovets",
+    "lat": "43.5167",
+    "postCode": "5167",
+    "lng": "26.7000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Vresovo",
+    "lat": "42.8124",
+    "postCode": "8124",
+    "lng": "27.1985",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Minzuhar",
+    "lat": "41.7667",
+    "postCode": "7667",
+    "lng": "25.4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Kozlovets",
+    "lat": "43.5000",
+    "postCode": "5000",
+    "lng": "25.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Katuntsi",
+    "lat": "41.4423",
+    "postCode": "4423",
+    "lng": "23.4274",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Marikostinovo",
+    "lat": "41.4308",
+    "postCode": "4308",
+    "lng": "23.3428",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Novachene",
+    "lat": "42.9667",
+    "postCode": "9667",
+    "lng": "23.7167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Dolni Bogrov",
+    "lat": "42.7000",
+    "postCode": "7000",
+    "lng": "23.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Pirgovo",
+    "lat": "43.7333",
+    "postCode": "7333",
+    "lng": "25.8667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Kovachitsa",
+    "lat": "43.8000",
+    "postCode": "8000",
+    "lng": "23.3603",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Byala",
+    "lat": "42.7333",
+    "postCode": "7333",
+    "lng": "26.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Visoka Polyana",
+    "lat": "41.6667",
+    "postCode": "6667",
+    "lng": "25.5167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Takach",
+    "lat": "43.6000",
+    "postCode": "6000",
+    "lng": "27.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Rudartsi",
+    "lat": "42.5833",
+    "postCode": "5833",
+    "lng": "23.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Kosharitsa",
+    "lat": "42.7500",
+    "postCode": "7500",
+    "lng": "27.7000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Starovo",
+    "lat": "41.4165",
+    "postCode": "4165",
+    "lng": "25.3155",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Dalbok Izvor",
+    "lat": "42.0333",
+    "postCode": "0333",
+    "lng": "25.1000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Tserovishte",
+    "lat": "43.0500",
+    "postCode": "0500",
+    "lng": "26.5833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Boyadzhik",
+    "lat": "42.4000",
+    "postCode": "4000",
+    "lng": "26.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Yambol"
+  },
+  {
+    "city": "Yurukovo",
+    "lat": "41.9729",
+    "postCode": "9729",
+    "lng": "23.6159",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Varben",
+    "lat": "41.4058",
+    "postCode": "4058",
+    "lng": "25.3674",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Chavdar",
+    "lat": "42.6500",
+    "postCode": "6500",
+    "lng": "24.0500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Bata",
+    "lat": "42.7333",
+    "postCode": "7333",
+    "lng": "27.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Sindel",
+    "lat": "43.1102",
+    "postCode": "1102",
+    "lng": "27.6051",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Yabalkovo",
+    "lat": "42.0667",
+    "postCode": "0667",
+    "lng": "25.4333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Banitsa",
+    "lat": "43.3439",
+    "postCode": "3439",
+    "lng": "23.6902",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Karapelit",
+    "lat": "43.6500",
+    "postCode": "6500",
+    "lng": "27.5667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Tihomir",
+    "lat": "41.3000",
+    "postCode": "3000",
+    "lng": "25.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Novo Selo",
+    "lat": "43.8000",
+    "postCode": "8000",
+    "lng": "26.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Filaretovo",
+    "lat": "42.9833",
+    "postCode": "9833",
+    "lng": "26.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Razhena",
+    "lat": "42.5333",
+    "postCode": "5333",
+    "lng": "25.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Sandrovo",
+    "lat": "43.9330",
+    "postCode": "9330",
+    "lng": "26.1170",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Prelez",
+    "lat": "43.8333",
+    "postCode": "8333",
+    "lng": "26.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Popgruevo",
+    "lat": "43.7417",
+    "postCode": "7417",
+    "lng": "27.4812",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Gara Lakatnik",
+    "lat": "43.0833",
+    "postCode": "0833",
+    "lng": "23.3833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Sveshtari",
+    "lat": "43.7500",
+    "postCode": "7500",
+    "lng": "26.7833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Belasitsa",
+    "lat": "41.3667",
+    "postCode": "3667",
+    "lng": "23.1333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Govedartsi",
+    "lat": "42.2500",
+    "postCode": "2500",
+    "lng": "23.4833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Balgarevo",
+    "lat": "43.4026",
+    "postCode": "4026",
+    "lng": "28.4130",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Vlado Trichkov",
+    "lat": "42.8667",
+    "postCode": "8667",
+    "lng": "23.3667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Pokrayna",
+    "lat": "44.0315",
+    "postCode": "0315",
+    "lng": "22.9074",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Pasarel",
+    "lat": "42.5333",
+    "postCode": "5333",
+    "lng": "23.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Gradets",
+    "lat": "44.0333",
+    "postCode": "0333",
+    "lng": "22.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Byala Palanka",
+    "lat": "42.7667",
+    "postCode": "7667",
+    "lng": "26.1000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Konstantin",
+    "lat": "42.9479",
+    "postCode": "9479",
+    "lng": "26.0737",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Chiflik",
+    "lat": "41.6855",
+    "postCode": "6855",
+    "lng": "25.4991",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Vaglen",
+    "lat": "43.2944",
+    "postCode": "2944",
+    "lng": "27.8488",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Sredkovets",
+    "lat": "43.6833",
+    "postCode": "6833",
+    "lng": "27.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Vedrare",
+    "lat": "42.5833",
+    "postCode": "5833",
+    "lng": "24.8833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Boboshevo",
+    "lat": "42.1505",
+    "postCode": "1505",
+    "lng": "23.0020",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Resilovo",
+    "lat": "42.2667",
+    "postCode": "2667",
+    "lng": "23.2000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Zamfirovo",
+    "lat": "43.2958",
+    "postCode": "2958",
+    "lng": "23.2422",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Dabovo",
+    "lat": "42.6000",
+    "postCode": "6000",
+    "lng": "25.6500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Vardun",
+    "lat": "43.1339",
+    "postCode": "1339",
+    "lng": "26.5339",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Marchaevo",
+    "lat": "42.6000",
+    "postCode": "6000",
+    "lng": "23.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Momchilovtsi",
+    "lat": "41.6589",
+    "postCode": "6589",
+    "lng": "24.7744",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Sindeltsi",
+    "lat": "41.4641",
+    "postCode": "4641",
+    "lng": "25.5750",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Ruyno",
+    "lat": "43.8333",
+    "postCode": "8333",
+    "lng": "27.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Prileptsi",
+    "lat": "41.6268",
+    "postCode": "6268",
+    "lng": "25.3458",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Brestnitsa",
+    "lat": "43.0667",
+    "postCode": "0667",
+    "lng": "24.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Yana",
+    "lat": "42.7333",
+    "postCode": "7333",
+    "lng": "23.5667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Lyaskovets",
+    "lat": "41.7167",
+    "postCode": "7167",
+    "lng": "25.7000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Petlino",
+    "lat": "41.6000",
+    "postCode": "6000",
+    "lng": "25.3500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Klisura",
+    "lat": "42.7000",
+    "postCode": "7000",
+    "lng": "24.4500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Bolyarovo",
+    "lat": "42.1504",
+    "postCode": "1504",
+    "lng": "26.8115",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Yambol"
+  },
+  {
+    "city": "Petko Slaveykov",
+    "lat": "43.0500",
+    "postCode": "0500",
+    "lng": "24.9667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Gabrovo"
+  },
+  {
+    "city": "Gorni Bogrov",
+    "lat": "42.7167",
+    "postCode": "7167",
+    "lng": "23.5333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Dzhurovo",
+    "lat": "42.9333",
+    "postCode": "9333",
+    "lng": "24.0500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia"
+  },
+  {
+    "city": "Gavrailovo",
+    "lat": "42.6500",
+    "postCode": "6500",
+    "lng": "26.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Elhovets",
+    "lat": "41.4500",
+    "postCode": "4500",
+    "lng": "24.8000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Zidarovo",
+    "lat": "42.3275",
+    "postCode": "3275",
+    "lng": "27.4025",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Mishevsko",
+    "lat": "41.5267",
+    "postCode": "5267",
+    "lng": "25.2396",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Dimovo",
+    "lat": "43.7415",
+    "postCode": "7415",
+    "lng": "22.7267",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Patalenitsa",
+    "lat": "42.1167",
+    "postCode": "1167",
+    "lng": "24.2000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Ekzarh-Antimovo",
+    "lat": "42.5333",
+    "postCode": "5333",
+    "lng": "26.9833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Novo Delchevo",
+    "lat": "41.5060",
+    "postCode": "5060",
+    "lng": "23.2839",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Obitel",
+    "lat": "43.0667",
+    "postCode": "0667",
+    "lng": "26.5667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Pisarevo",
+    "lat": "43.1500",
+    "postCode": "1500",
+    "lng": "25.7833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Zhilentsi",
+    "lat": "42.2667",
+    "postCode": "2667",
+    "lng": "22.6500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Tushovtsa",
+    "lat": "43.0167",
+    "postCode": "0167",
+    "lng": "26.8000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Kichenitsa",
+    "lat": "43.6044",
+    "postCode": "6044",
+    "lng": "26.5064",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Madrevo",
+    "lat": "43.8667",
+    "postCode": "8667",
+    "lng": "26.5500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Razgrad"
+  },
+  {
+    "city": "Brusartsi",
+    "lat": "43.6667",
+    "postCode": "6667",
+    "lng": "23.0667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Altimir",
+    "lat": "43.5330",
+    "postCode": "5330",
+    "lng": "23.7998",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Krastava",
+    "lat": "41.9609",
+    "postCode": "9609",
+    "lng": "23.8205",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Katina",
+    "lat": "42.8433",
+    "postCode": "8433",
+    "lng": "23.3194",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Dobri Dyal",
+    "lat": "43.1167",
+    "postCode": "1167",
+    "lng": "25.8333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Rusokastro",
+    "lat": "42.4656",
+    "postCode": "4656",
+    "lng": "27.1866",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Cherniche",
+    "lat": "41.8500",
+    "postCode": "8500",
+    "lng": "23.1333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Kaloyantsi",
+    "lat": "41.6662",
+    "postCode": "6662",
+    "lng": "25.5541",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Oborishte",
+    "lat": "42.5167",
+    "postCode": "5167",
+    "lng": "24.0833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Karadzhalovo",
+    "lat": "42.0833",
+    "postCode": "0833",
+    "lng": "25.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Novachene",
+    "lat": "43.5500",
+    "postCode": "5500",
+    "lng": "24.9333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Dobroslavtsi",
+    "lat": "42.8167",
+    "postCode": "8167",
+    "lng": "23.2833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sofia-Grad"
+  },
+  {
+    "city": "Gyulyovtsa",
+    "lat": "42.7667",
+    "postCode": "7667",
+    "lng": "27.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Marinka",
+    "lat": "42.4015",
+    "postCode": "4015",
+    "lng": "27.4821",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Cherven Breg",
+    "lat": "42.3111",
+    "postCode": "3111",
+    "lng": "23.1731",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Tsarevets",
+    "lat": "43.5863",
+    "postCode": "5863",
+    "lng": "25.3644",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Novachevo",
+    "lat": "42.7500",
+    "postCode": "7500",
+    "lng": "26.1500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Sliven"
+  },
+  {
+    "city": "Hadzhievo",
+    "lat": "42.1431",
+    "postCode": "1431",
+    "lng": "24.4553",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Rasovo",
+    "lat": "43.7000",
+    "postCode": "7000",
+    "lng": "23.2333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Montana"
+  },
+  {
+    "city": "Zvezditsa",
+    "lat": "43.1558",
+    "postCode": "1558",
+    "lng": "27.8372",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  },
+  {
+    "city": "Varbitsa",
+    "lat": "43.1833",
+    "postCode": "1833",
+    "lng": "25.8167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Veliko Tarnovo"
+  },
+  {
+    "city": "Tarnicheni",
+    "lat": "42.6167",
+    "postCode": "6167",
+    "lng": "25.1167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Stara Zagora"
+  },
+  {
+    "city": "Gorno Dryanovo",
+    "lat": "41.6515",
+    "postCode": "6515",
+    "lng": "23.8283",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Sekulovo",
+    "lat": "43.7000",
+    "postCode": "7000",
+    "lng": "27.1667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Zhivkovo",
+    "lat": "43.4500",
+    "postCode": "4500",
+    "lng": "27.0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Karadzhovo",
+    "lat": "42.1000",
+    "postCode": "1000",
+    "lng": "24.9000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Topchiysko",
+    "lat": "42.8520",
+    "postCode": "8520",
+    "lng": "27.3439",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Voynyagovo",
+    "lat": "42.5667",
+    "postCode": "5667",
+    "lng": "24.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Nanovitsa",
+    "lat": "41.5500",
+    "postCode": "5500",
+    "lng": "25.5667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "General Geshevo",
+    "lat": "41.4340",
+    "postCode": "4340",
+    "lng": "25.1940",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Kadievo",
+    "lat": "42.1333",
+    "postCode": "1333",
+    "lng": "24.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Beli Vir",
+    "lat": "41.7333",
+    "postCode": "7333",
+    "lng": "25.3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Konche",
+    "lat": "41.4500",
+    "postCode": "4500",
+    "lng": "25.5333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Gabare",
+    "lat": "43.3167",
+    "postCode": "3167",
+    "lng": "23.9167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Topolitsa",
+    "lat": "42.7366",
+    "postCode": "7366",
+    "lng": "27.1251",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Mihnevo",
+    "lat": "41.4534",
+    "postCode": "4534",
+    "lng": "23.1959",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Sestrimo",
+    "lat": "42.2167",
+    "postCode": "2167",
+    "lng": "23.9167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pazardzhik"
+  },
+  {
+    "city": "Rupite",
+    "lat": "41.4419",
+    "postCode": "4419",
+    "lng": "23.2417",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Pchelari",
+    "lat": "41.6333",
+    "postCode": "6333",
+    "lng": "25.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Yabalkovets",
+    "lat": "41.6024",
+    "postCode": "6024",
+    "lng": "25.1906",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Ridino",
+    "lat": "41.4397",
+    "postCode": "4397",
+    "lng": "25.2822",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Plastina",
+    "lat": "43.0667",
+    "postCode": "0667",
+    "lng": "26.6167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Targovishte"
+  },
+  {
+    "city": "Nikola-Kozlevo",
+    "lat": "43.5667",
+    "postCode": "5667",
+    "lng": "27.2333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Gabrovo",
+    "lat": "41.7970",
+    "postCode": "7970",
+    "lng": "25.2701",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Dolno Cherkovishte",
+    "lat": "41.6333",
+    "postCode": "6333",
+    "lng": "25.7500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Kladnitsa",
+    "lat": "42.5667",
+    "postCode": "5667",
+    "lng": "23.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pernik"
+  },
+  {
+    "city": "Kolobar",
+    "lat": "43.7833",
+    "postCode": "7833",
+    "lng": "27.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Stambolovo",
+    "lat": "41.7667",
+    "postCode": "7667",
+    "lng": "25.6500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Tarnene",
+    "lat": "43.3967",
+    "postCode": "3967",
+    "lng": "24.5153",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Zhabokrat",
+    "lat": "42.3028",
+    "postCode": "3028",
+    "lng": "22.7581",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Glozhene",
+    "lat": "42.9833",
+    "postCode": "9833",
+    "lng": "24.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Lovech"
+  },
+  {
+    "city": "Varbina",
+    "lat": "41.5667",
+    "postCode": "5667",
+    "lng": "24.9667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Shishmanovo",
+    "lat": "41.9833",
+    "postCode": "9833",
+    "lng": "25.9333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Haskovo"
+  },
+  {
+    "city": "Pelin",
+    "lat": "41.4675",
+    "postCode": "4675",
+    "lng": "25.7319",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Preseka",
+    "lat": "41.3833",
+    "postCode": "3833",
+    "lng": "25.1833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Gusla",
+    "lat": "43.6667",
+    "postCode": "6667",
+    "lng": "27.0500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Bozhuritsa",
+    "lat": "43.5167",
+    "postCode": "5167",
+    "lng": "24.6000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Yavornitsa",
+    "lat": "41.3681",
+    "postCode": "3681",
+    "lng": "23.0509",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Trem",
+    "lat": "43.4500",
+    "postCode": "4500",
+    "lng": "26.8000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Klyuch",
+    "lat": "41.3622",
+    "postCode": "3622",
+    "lng": "23.0214",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Blagoevgrad"
+  },
+  {
+    "city": "Telerig",
+    "lat": "43.8500",
+    "postCode": "8500",
+    "lng": "27.6667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Voysil",
+    "lat": "42.2167",
+    "postCode": "2167",
+    "lng": "24.6333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Plovdiv"
+  },
+  {
+    "city": "Drangovo",
+    "lat": "41.3333",
+    "postCode": "3333",
+    "lng": "25.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Mramoren",
+    "lat": "43.3000",
+    "postCode": "3000",
+    "lng": "23.6833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vratsa"
+  },
+  {
+    "city": "Chomakovtsi",
+    "lat": "43.3167",
+    "postCode": "3167",
+    "lng": "24.0667",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Klikach",
+    "lat": "42.7049",
+    "postCode": "7049",
+    "lng": "27.0591",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Burgas"
+  },
+  {
+    "city": "Madara",
+    "lat": "43.2833",
+    "postCode": "2833",
+    "lng": "27.1000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Shumen"
+  },
+  {
+    "city": "Yudelnik",
+    "lat": "43.8500",
+    "postCode": "8500",
+    "lng": "26.2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Spasovo",
+    "lat": "43.7023",
+    "postCode": "7023",
+    "lng": "28.3010",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Dobrich"
+  },
+  {
+    "city": "Novo Selo",
+    "lat": "44.1582",
+    "postCode": "1582",
+    "lng": "22.7869",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Ivanovo",
+    "lat": "43.6850",
+    "postCode": "6850",
+    "lng": "25.9560",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Ruzhintsi",
+    "lat": "43.6239",
+    "postCode": "6239",
+    "lng": "22.8308",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Kirkovo",
+    "lat": "41.3300",
+    "postCode": "3300",
+    "lng": "25.3653",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kardzhali"
+  },
+  {
+    "city": "Kaynardzha",
+    "lat": "43.9833",
+    "postCode": "9833",
+    "lng": "27.5000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Nevestino",
+    "lat": "42.2564",
+    "postCode": "2564",
+    "lng": "22.8533",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Kyustendil"
+  },
+  {
+    "city": "Shiroka Laka",
+    "lat": "41.6833",
+    "postCode": "6833",
+    "lng": "24.5833",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Chuprene",
+    "lat": "43.5193",
+    "postCode": "5193",
+    "lng": "22.6665",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Boynitsa",
+    "lat": "43.9500",
+    "postCode": "9500",
+    "lng": "22.5333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Makresh",
+    "lat": "43.7680",
+    "postCode": "7680",
+    "lng": "22.6694",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Vidin"
+  },
+  {
+    "city": "Madan",
+    "lat": "41.4987",
+    "postCode": "4987",
+    "lng": "24.9397",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Smolyan"
+  },
+  {
+    "city": "Iskar",
+    "lat": "43.6708",
+    "postCode": "6708",
+    "lng": "24.4523",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Pleven"
+  },
+  {
+    "city": "Sitovo",
+    "lat": "44.0273",
+    "postCode": "0273",
+    "lng": "27.0198",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Silistra"
+  },
+  {
+    "city": "Tsenovo",
+    "lat": "43.5359",
+    "postCode": "5359",
+    "lng": "25.6576",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Ruse"
+  },
+  {
+    "city": "Byala",
+    "lat": "42.8743",
+    "postCode": "8743",
+    "lng": "27.8886",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna"
+  }
+]

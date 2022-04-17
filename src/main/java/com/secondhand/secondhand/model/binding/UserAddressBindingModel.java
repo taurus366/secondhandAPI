@@ -1,23 +1,25 @@
-package com.secondhand.secondhand.model.entity;
+package com.secondhand.secondhand.model.binding;
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.Column;
 
-@Entity
-@Table(name = "addresses")
-public class AddressEntity extends BaseEntity{
+public class UserAddressBindingModel {
 
+    @Column(nullable = false)
     private String firstName;
 
+    @Column(nullable = false)
     private String lastName;
 
+    @Column(nullable = false)
     private String phoneNumber;
 
+    @Column(nullable = false)
     private String city;
+
 
     private String municipality;
 
+    @Column(nullable = false)
     private String zip;
 
     private String neighborhood;
@@ -36,21 +38,16 @@ public class AddressEntity extends BaseEntity{
 
     private String detailsAboutAddress;
 
-//    @ManyToOne()
-//    private UserEntity user;
+    private String userEmail;
 
-//    @ManyToOne()
-//    private UserEntity user;
-
-
-    public AddressEntity() {
+    public UserAddressBindingModel() {
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public AddressEntity setFirstName(String firstName) {
+    public UserAddressBindingModel setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -59,7 +56,7 @@ public class AddressEntity extends BaseEntity{
         return lastName;
     }
 
-    public AddressEntity setLastName(String lastName) {
+    public UserAddressBindingModel setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -68,7 +65,7 @@ public class AddressEntity extends BaseEntity{
         return phoneNumber;
     }
 
-    public AddressEntity setPhoneNumber(String phoneNumber) {
+    public UserAddressBindingModel setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
         return this;
     }
@@ -77,7 +74,7 @@ public class AddressEntity extends BaseEntity{
         return city;
     }
 
-    public AddressEntity setCity(String city) {
+    public UserAddressBindingModel setCity(String city) {
         this.city = city;
         return this;
     }
@@ -86,7 +83,7 @@ public class AddressEntity extends BaseEntity{
         return municipality;
     }
 
-    public AddressEntity setMunicipality(String municipality) {
+    public UserAddressBindingModel setMunicipality(String municipality) {
         this.municipality = municipality;
         return this;
     }
@@ -95,7 +92,7 @@ public class AddressEntity extends BaseEntity{
         return zip;
     }
 
-    public AddressEntity setZip(String zip) {
+    public UserAddressBindingModel setZip(String zip) {
         this.zip = zip;
         return this;
     }
@@ -104,7 +101,7 @@ public class AddressEntity extends BaseEntity{
         return neighborhood;
     }
 
-    public AddressEntity setNeighborhood(String neighborhood) {
+    public UserAddressBindingModel setNeighborhood(String neighborhood) {
         this.neighborhood = neighborhood;
         return this;
     }
@@ -113,7 +110,7 @@ public class AddressEntity extends BaseEntity{
         return street;
     }
 
-    public AddressEntity setStreet(String street) {
+    public UserAddressBindingModel setStreet(String street) {
         this.street = street;
         return this;
     }
@@ -122,7 +119,7 @@ public class AddressEntity extends BaseEntity{
         return streetNumber;
     }
 
-    public AddressEntity setStreetNumber(String streetNumber) {
+    public UserAddressBindingModel setStreetNumber(String streetNumber) {
         this.streetNumber = streetNumber;
         return this;
     }
@@ -131,7 +128,7 @@ public class AddressEntity extends BaseEntity{
         return block;
     }
 
-    public AddressEntity setBlock(String block) {
+    public UserAddressBindingModel setBlock(String block) {
         this.block = block;
         return this;
     }
@@ -140,7 +137,7 @@ public class AddressEntity extends BaseEntity{
         return entry;
     }
 
-    public AddressEntity setEntry(String entry) {
+    public UserAddressBindingModel setEntry(String entry) {
         this.entry = entry;
         return this;
     }
@@ -149,7 +146,7 @@ public class AddressEntity extends BaseEntity{
         return floor;
     }
 
-    public AddressEntity setFloor(String floor) {
+    public UserAddressBindingModel setFloor(String floor) {
         this.floor = floor;
         return this;
     }
@@ -158,7 +155,7 @@ public class AddressEntity extends BaseEntity{
         return apartment;
     }
 
-    public AddressEntity setApartment(String apartment) {
+    public UserAddressBindingModel setApartment(String apartment) {
         this.apartment = apartment;
         return this;
     }
@@ -167,17 +164,17 @@ public class AddressEntity extends BaseEntity{
         return detailsAboutAddress;
     }
 
-    public AddressEntity setDetailsAboutAddress(String detailsAboutAddress) {
+    public UserAddressBindingModel setDetailsAboutAddress(String detailsAboutAddress) {
         this.detailsAboutAddress = detailsAboutAddress;
         return this;
     }
 
-//    public UserEntity getUser() {
-//        return user;
-//    }
-//
-//    public AddressEntity setUser(UserEntity user) {
-//        this.user = user;
-//        return this;
-//    }
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public UserAddressBindingModel setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+        return this;
+    }
 }

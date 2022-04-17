@@ -34,6 +34,22 @@ import java.util.List;
                 )
         }
 )
+@NamedEntityGraph(
+        name = "user-addresses",
+        attributeNodes = {
+                @NamedAttributeNode("addresses"),
+//                @NamedAttributeNode(value = "addresses", subgraph = "address"),
+        }
+//        ,
+//        subgraphs = {
+//                @NamedSubgraph(
+//                        name = "address",
+//                        attributeNodes = {
+//                                @NamedAttributeNode("")
+//                        }
+//                )
+//        }
+)
 
 @Entity
 @Table(name = "users")
@@ -57,7 +73,10 @@ public class UserEntity extends BaseEntity {
 
     private boolean isActive = true;
 
-    @OneToMany()
+    @Column(nullable = true)
+    private String phoneNumber;
+
+    @OneToMany(cascade = CascadeType.ALL)
     private List<AddressEntity> addresses = new ArrayList<>();
 
     @ManyToMany()
@@ -160,6 +179,15 @@ public class UserEntity extends BaseEntity {
 
     public UserEntity setLikesList(List<ClothEntity> likesList) {
         this.likesList = likesList;
+        return this;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public UserEntity setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
         return this;
     }
 }

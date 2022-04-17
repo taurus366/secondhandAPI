@@ -1,5 +1,6 @@
 package com.secondhand.secondhand.model.dto;
 
+import com.secondhand.secondhand.model.entity.AddressEntity;
 import com.secondhand.secondhand.model.entity.RoleEntity;
 import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
 
@@ -14,6 +15,8 @@ public class UserInformationDTO {
     private String email;
     private List<RoleEntity> roles = new ArrayList<>();
     private UserSexEnum sex;
+    private String phoneNumber;
+    private List<AddressEntity> addresses = new ArrayList<>();
 
     public Long getId() {
         return id;
@@ -21,6 +24,15 @@ public class UserInformationDTO {
 
     public UserInformationDTO setId(Long id) {
         this.id = id;
+        return this;
+    }
+
+    public List<AddressEntity> getAddresses() {
+        return addresses;
+    }
+
+    public UserInformationDTO setAddresses(List<AddressEntity> addresses) {
+        this.addresses = addresses;
         return this;
     }
 
@@ -66,6 +78,15 @@ public class UserInformationDTO {
 
     public UserInformationDTO setSex(UserSexEnum sex) {
         this.sex = sex;
+        return this;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public UserInformationDTO setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
         return this;
     }
 }

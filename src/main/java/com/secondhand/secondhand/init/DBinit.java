@@ -1,13 +1,19 @@
 package com.secondhand.secondhand.init;
-
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.secondhand.secondhand.model.dto.CityDTO;
+import com.secondhand.secondhand.model.service.JsonCityVillageServiceModel;
 import com.secondhand.secondhand.model.entity.*;
 import com.secondhand.secondhand.model.entity.enums.ItemTypeEnum;
 import com.secondhand.secondhand.model.entity.enums.RoleEnum;
 import com.secondhand.secondhand.repository.*;
+import com.secondhand.secondhand.service.CityService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.List;
 
 @Component
@@ -17,15 +23,15 @@ public class DBinit implements CommandLineRunner {
     private final ClothBrandRepository clothBrandRepository;
     private final ClothTypeRepository clothTypeRepository;
     private final ClothCompositionRepository clothCompositionRepository;
-    private final UserRepository userRepository;
+    private final CityService cityService;
 
 
-    public DBinit(RoleRepository roleRepository, ClothBrandRepository clothBrandRepository, ClothTypeRepository clothTypeRepository, ClothCompositionRepository clothCompositionRepository, UserRepository userRepository) {
+    public DBinit(RoleRepository roleRepository, ClothBrandRepository clothBrandRepository, ClothTypeRepository clothTypeRepository, ClothCompositionRepository clothCompositionRepository, CityService cityService) {
         this.roleRepository = roleRepository;
         this.clothBrandRepository = clothBrandRepository;
         this.clothTypeRepository = clothTypeRepository;
         this.clothCompositionRepository = clothCompositionRepository;
-        this.userRepository = userRepository;
+        this.cityService = cityService;
     }
 
 
@@ -35,24 +41,33 @@ public class DBinit implements CommandLineRunner {
         initBrands();
         initTypes();
         initCompositions();
-//        initUser();
+        initCityDB();
     }
 
-//    private void initUser() {
-//        RoleEntity byId = roleRepository.getById(1L);
-//        RoleEntity byId1 = roleRepository.getById(2L);
-//
-//        UserEntity user = new UserEntity();
-//        user.setCreated(Instant.now())
-//                .setModified(Instant.now());
-//        user
-//                .setActive(true)
-//                .getRoles().addAll(List.of(byId,byId1));
-//        user
-//                .se
-//
-//
-//    }
+    private void initCityDB() {
+
+        List<CityDTO> allCitiesVillages = this.cityService
+                .getAllCitiesVillages();
+
+        if (allCitiesVillages.size() > 1){
+                return;
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        Path path = Paths.get("src/main/resources/city_village_db.json");
+
+        try {
+            List<JsonCityVillageServiceModel> citiesAndVillages = Arrays.asList(mapper.readValue(path.toFile(), JsonCityVillageServiceModel[].class));
+
+            this.cityService
+                    .postCitiesVillages(citiesAndVillages);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 
     private void initUserRoles() {
         List<RoleEntity> roleEntities = roleRepository

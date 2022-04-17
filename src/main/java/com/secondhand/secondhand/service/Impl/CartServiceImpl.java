@@ -68,7 +68,7 @@ public class CartServiceImpl implements CartService {
         String cookieValue = "";
         UserEntity user = null;
 
-        if (guestCookie.length > 0) {
+        if ( guestCookie != null && guestCookie.length > 0) {
 
             for (Cookie cookie : guestCookie) {
                 if (cookie.getName().equals("GSESSIONID")) {

@@ -23,4 +23,8 @@ public interface UserRepository extends JpaRepository<UserEntity,Long> {
     @Query("SELECT u FROM UserEntity u where u.email = :email")
     Optional<UserEntity> findByEmailGraphLikes(@Param("email") String email);
 
+    @EntityGraph(value = "user-addresses")
+    @Query("SELECT u FROM UserEntity u where u.email = :email")
+    Optional<UserEntity> findByEmailGraphAddress(@Param("email") String email);
+
 }

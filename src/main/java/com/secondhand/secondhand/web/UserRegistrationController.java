@@ -58,16 +58,8 @@ public class UserRegistrationController {
 
             System.out.println(bindingResult.getAllErrors().size());
             System.out.println(bindingResult.getAllErrors());
-//            System.out.println(bindingResult.getFieldError().);
 
-
-//            HERE I MUST RETURN THE ERROR!
-
-//            bindingResult.getAllErrors().forEach(objectError -> System.out.println(objectError.getDefaultMessage() + " " + objectError.getCodes()[1].split("\\.")[1] ));
-
-//            return ResponseEntity.status(HttpStatus.CONFLICT).body(bindingResult.getModel().values().toString());
             return ResponseEntity.status(HttpStatus.CONFLICT).body(bindingResult.getAllErrors());
-//            return ResponseEntity.status(HttpStatus.CONFLICT).body(userRegistrationBindingModel);
         }
 
 // HERE I CONVERT THE REQUEST FROM FRONT END / from   userRegistrationBindingModel >to> UserRegistrationServiceModel
