@@ -169,6 +169,8 @@ public class UserServiceImpl implements UserService {
         if (userByEmail.getAddresses().size() < 3) {
 
             newAddress
+                    .setStreet(userAddressBindingModel.getStreet())
+                    .setStreetNumber(userAddressBindingModel.getStreetNumber())
                     .setApartment(userAddressBindingModel.getApartment())
                     .setBlock(userAddressBindingModel.getBlock())
                     .setCity(userAddressBindingModel.getCity())

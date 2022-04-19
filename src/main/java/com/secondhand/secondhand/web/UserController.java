@@ -209,7 +209,9 @@ public class UserController {
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/new/address")
     public ResponseEntity<Object> createNewAddress(@AuthenticationPrincipal SecondHandUser secondHandUser, @Valid @RequestBody UserAddressBindingModel userAddressBindingModel,BindingResult bindingResult,RedirectAttributes redirectAttributes) {
-        System.out.println(userAddressBindingModel.getCity());
+
+        System.out.println(userAddressBindingModel.getStreetNumber());
+
         if (bindingResult.hasErrors()){
             redirectAttributes
                     .addFlashAttribute("userAddressBindingModel",userAddressBindingModel)
@@ -240,6 +242,13 @@ public class UserController {
         return ResponseEntity.ok().body(modelMapper.map(addressEntity, addressDTO.class));
     }
 
+    @PreAuthorize("isAuthenticated()")
+    @PostMapping("/edit/address")
+    public ResponseEntity<Object> editCurrentAddress(@AuthenticationPrincipal SecondHandUser secondHandUser,@Valid @RequestBody UserAddressBindingModel userAddressBindingModel,BindingResult bindingResult,RedirectAttributes redirectAttributes) {
+        System.out.println("works");
+        return null;
+    }
+
 //    TODO : return location by [3]length
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/location")
@@ -256,4 +265,5 @@ public class UserController {
 
         return null;
     }
+
 }

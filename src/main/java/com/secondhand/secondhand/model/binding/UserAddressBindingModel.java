@@ -16,28 +16,37 @@ public class UserAddressBindingModel {
     @Column(nullable = false)
     private String city;
 
-
+    @Column()
     private String municipality;
 
     @Column(nullable = false)
     private String zip;
 
+    @Column()
     private String neighborhood;
 
+    @Column()
     private String street;
 
+    @Column()
     private String streetNumber;
 
+    @Column()
     private String block;
 
+    @Column()
     private String entry;
 
+    @Column()
     private String floor;
 
+    @Column()
     private String apartment;
 
+    @Column()
     private String detailsAboutAddress;
 
+    @Column()
     private String userEmail;
 
     public UserAddressBindingModel() {
