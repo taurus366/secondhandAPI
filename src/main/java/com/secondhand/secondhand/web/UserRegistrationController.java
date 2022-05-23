@@ -5,7 +5,6 @@ import com.secondhand.secondhand.model.dto.UserInformationDTO;
 import com.secondhand.secondhand.model.service.UserRegistrationServiceModel;
 
 import com.secondhand.secondhand.service.UserService;
-import io.micrometer.core.lang.Nullable;
 import org.modelmapper.ModelMapper;
 
 import org.springframework.http.HttpStatus;

@@ -1,7 +1,5 @@
 package com.secondhand.secondhand.model.entity;
 
-import org.aspectj.lang.annotation.AfterReturning;
-
 import javax.persistence.*;
 import java.time.Instant;
 

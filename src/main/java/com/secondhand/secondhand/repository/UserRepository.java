@@ -2,6 +2,7 @@ package com.secondhand.secondhand.repository;
 
 import com.secondhand.secondhand.model.entity.GuestTokenEntity;
 import com.secondhand.secondhand.model.entity.UserEntity;
+import org.apache.catalina.User;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -26,5 +27,14 @@ public interface UserRepository extends JpaRepository<UserEntity,Long> {
     @EntityGraph(value = "user-addresses")
     @Query("SELECT u FROM UserEntity u where u.email = :email")
     Optional<UserEntity> findByEmailGraphAddress(@Param("email") String email);
+
+    @EntityGraph(value = "speedyAddresses")
+    @Query("SELECT u FROM UserEntity u where u.email = :email")
+    Optional<UserEntity> findByEmailGraphSpeedyAddresses(@Param("email") String email);
+
+    @EntityGraph(value = "speedyAddressesCityAddress")
+    @Query("SELECT u FROM UserEntity u where u.email = :email")
+    Optional<UserEntity> findByEmailGraphSpeedyAddressesCityAddress(@Param("email") String email);
+
 
 }

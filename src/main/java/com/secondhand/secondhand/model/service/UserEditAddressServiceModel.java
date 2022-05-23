@@ -1,25 +1,20 @@
-package com.secondhand.secondhand.model.dto;
+package com.secondhand.secondhand.model.service;
 
-import javax.persistence.Column;
+public class UserEditAddressServiceModel {
 
-public class addressDTO {
+    private String userAuthEmail;
 
     private Long id;
 
     private String firstName;
 
-
     private String lastName;
-
 
     private String phoneNumber;
 
-
     private String city;
 
-
     private String municipality;
-
 
     private String zip;
 
@@ -41,11 +36,20 @@ public class addressDTO {
 
     private String userEmail;
 
+    public String getUserAuthEmail() {
+        return userAuthEmail;
+    }
+
+    public UserEditAddressServiceModel setUserAuthEmail(String userAuthEmail) {
+        this.userAuthEmail = userAuthEmail;
+        return this;
+    }
+
     public Long getId() {
         return id;
     }
 
-    public addressDTO setId(Long id) {
+    public UserEditAddressServiceModel setId(Long id) {
         this.id = id;
         return this;
     }
@@ -54,7 +58,7 @@ public class addressDTO {
         return firstName;
     }
 
-    public addressDTO setFirstName(String firstName) {
+    public UserEditAddressServiceModel setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -63,7 +67,7 @@ public class addressDTO {
         return lastName;
     }
 
-    public addressDTO setLastName(String lastName) {
+    public UserEditAddressServiceModel setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -72,7 +76,7 @@ public class addressDTO {
         return phoneNumber;
     }
 
-    public addressDTO setPhoneNumber(String phoneNumber) {
+    public UserEditAddressServiceModel setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
         return this;
     }
@@ -81,7 +85,7 @@ public class addressDTO {
         return city;
     }
 
-    public addressDTO setCity(String city) {
+    public UserEditAddressServiceModel setCity(String city) {
         this.city = city;
         return this;
     }
@@ -90,7 +94,7 @@ public class addressDTO {
         return municipality;
     }
 
-    public addressDTO setMunicipality(String municipality) {
+    public UserEditAddressServiceModel setMunicipality(String municipality) {
         this.municipality = municipality;
         return this;
     }
@@ -99,7 +103,7 @@ public class addressDTO {
         return zip;
     }
 
-    public addressDTO setZip(String zip) {
+    public UserEditAddressServiceModel setZip(String zip) {
         this.zip = zip;
         return this;
     }
@@ -108,7 +112,7 @@ public class addressDTO {
         return neighborhood;
     }
 
-    public addressDTO setNeighborhood(String neighborhood) {
+    public UserEditAddressServiceModel setNeighborhood(String neighborhood) {
         this.neighborhood = neighborhood;
         return this;
     }
@@ -117,7 +121,7 @@ public class addressDTO {
         return street;
     }
 
-    public addressDTO setStreet(String street) {
+    public UserEditAddressServiceModel setStreet(String street) {
         this.street = street;
         return this;
     }
@@ -126,7 +130,7 @@ public class addressDTO {
         return streetNumber;
     }
 
-    public addressDTO setStreetNumber(String streetNumber) {
+    public UserEditAddressServiceModel setStreetNumber(String streetNumber) {
         this.streetNumber = streetNumber;
         return this;
     }
@@ -135,7 +139,7 @@ public class addressDTO {
         return block;
     }
 
-    public addressDTO setBlock(String block) {
+    public UserEditAddressServiceModel setBlock(String block) {
         this.block = block;
         return this;
     }
@@ -144,7 +148,7 @@ public class addressDTO {
         return entry;
     }
 
-    public addressDTO setEntry(String entry) {
+    public UserEditAddressServiceModel setEntry(String entry) {
         this.entry = entry;
         return this;
     }
@@ -153,7 +157,7 @@ public class addressDTO {
         return floor;
     }
 
-    public addressDTO setFloor(String floor) {
+    public UserEditAddressServiceModel setFloor(String floor) {
         this.floor = floor;
         return this;
     }
@@ -162,7 +166,7 @@ public class addressDTO {
         return apartment;
     }
 
-    public addressDTO setApartment(String apartment) {
+    public UserEditAddressServiceModel setApartment(String apartment) {
         this.apartment = apartment;
         return this;
     }
@@ -171,7 +175,7 @@ public class addressDTO {
         return detailsAboutAddress;
     }
 
-    public addressDTO setDetailsAboutAddress(String detailsAboutAddress) {
+    public UserEditAddressServiceModel setDetailsAboutAddress(String detailsAboutAddress) {
         this.detailsAboutAddress = detailsAboutAddress;
         return this;
     }
@@ -180,7 +184,7 @@ public class addressDTO {
         return userEmail;
     }
 
-    public addressDTO setUserEmail(String userEmail) {
+    public UserEditAddressServiceModel setUserEmail(String userEmail) {
         this.userEmail = userEmail;
         return this;
     }

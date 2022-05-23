@@ -1,0 +1,872 @@
+[
+  {
+    "city": "Varna",
+    "postCode": "2114",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 14"
+      },
+      {
+        "name": "ul. petar 25"
+      }
+    ]
+  },
+  {
+    "city": "Provadia",
+    "postCode": "1694",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 16"
+      },
+      {
+        "name": "ul. petar 27"
+      }
+    ]
+  },
+  {
+    "city": "Devnya",
+    "postCode": "2180",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 18"
+      },
+      {
+        "name": "ul. petar 29"
+      }
+    ]
+  },
+  {
+    "city": "Aksakovo",
+    "postCode": "2608",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 110"
+      },
+      {
+        "name": "ul. petar 211"
+      }
+    ]
+  },
+  {
+    "city": "Beloslav",
+    "postCode": "1892",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 112"
+      },
+      {
+        "name": "ul. petar 213"
+      }
+    ]
+  },
+  {
+    "city": "Dolni Chiflik",
+    "postCode": "9931",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 114"
+      },
+      {
+        "name": "ul. petar 215"
+      }
+    ]
+  },
+  {
+    "city": "Suvorovo",
+    "postCode": "3300",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 116"
+      },
+      {
+        "name": "ul. petar 217"
+      }
+    ]
+  },
+  {
+    "city": "Dalgopol",
+    "postCode": "0498",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 118"
+      },
+      {
+        "name": "ul. petar 219"
+      }
+    ]
+  },
+  {
+    "city": "Ignatievo",
+    "postCode": "2500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 120"
+      },
+      {
+        "name": "ul. petar 221"
+      }
+    ]
+  },
+  {
+    "city": "Valchidol",
+    "postCode": "4000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 122"
+      },
+      {
+        "name": "ul. petar 223"
+      }
+    ]
+  },
+  {
+    "city": "Topoli",
+    "postCode": "2183",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 124"
+      },
+      {
+        "name": "ul. petar 225"
+      }
+    ]
+  },
+  {
+    "city": "Kamenar",
+    "postCode": "2493",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 126"
+      },
+      {
+        "name": "ul. petar 227"
+      }
+    ]
+  },
+  {
+    "city": "Staro Oryahovo",
+    "postCode": "9896",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 128"
+      },
+      {
+        "name": "ul. petar 229"
+      }
+    ]
+  },
+  {
+    "city": "Tsonevo",
+    "postCode": "0333",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Grozdyovo",
+    "postCode": "0167",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Medovets",
+    "postCode": "9238",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Belogradets",
+    "postCode": "3521",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Pchelnik",
+    "postCode": "0133",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Lyuben Karavelovo",
+    "postCode": "3500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Dabravino",
+    "postCode": "0500",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Partizani",
+    "postCode": "0092",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Bozveliysko",
+    "postCode": "1000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Chernevo",
+    "postCode": "3000",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Lopushna",
+    "postCode": "0045",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Konstantinovo",
+    "postCode": "1627",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Sindel",
+    "postCode": "1102",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Vaglen",
+    "postCode": "2944",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Zvezditsa",
+    "postCode": "1558",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Byala",
+    "postCode": "8743",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Varna",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Shumen",
+    "postCode": "2700",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Novi Pazar",
+    "postCode": "3476",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Veliki Preslav",
+    "postCode": "1614",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Varbitsa",
+    "postCode": "9931",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Smyadovo",
+    "postCode": "0667",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Yasenkovo",
+    "postCode": "5456",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Kaolinovo",
+    "postCode": "6167",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Kliment",
+    "postCode": "6167",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Valnari",
+    "postCode": "6000",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Branichevo",
+    "postCode": "6800",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Pristoe",
+    "postCode": "6500",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Timarevo",
+    "postCode": "4000",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Byala Reka",
+    "postCode": "9999",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Izgrev",
+    "postCode": "5833",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Venets",
+    "postCode": "5500",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Ivanski",
+    "postCode": "1333",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Tsarev Brod",
+    "postCode": "3333",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Zagoriche",
+    "postCode": "7000",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Drumevo",
+    "postCode": "1333",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Zlatar",
+    "postCode": "1000",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Bortsi",
+    "postCode": "5333",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Takach",
+    "postCode": "6000",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Sredkovets",
+    "postCode": "6833",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Tushovtsa",
+    "postCode": "0167",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Zhivkovo",
+    "postCode": "4500",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Nikola-Kozlevo",
+    "postCode": "5667",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Gusla",
+    "postCode": "6667",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Trem",
+    "postCode": "4500",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  },
+  {
+    "city": "Madara",
+    "postCode": "2833",
+    "region": "Shumen",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "address": [
+      {
+        "name": "ul. petar 1"
+      },
+      {
+        "name": "ul. petar 2"
+      }
+    ]
+  }
+]

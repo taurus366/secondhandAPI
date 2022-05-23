@@ -1,52 +1,61 @@
 package com.secondhand.secondhand.model.binding;
 
 import javax.persistence.Column;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class UserAddressBindingModel {
 
-    @Column(nullable = false)
+    @NotNull
+    @NotBlank
     private String firstName;
 
-    @Column(nullable = false)
+    @NotNull
+    @NotBlank
     private String lastName;
 
-    @Column(nullable = false)
+    @NotNull
+    @NotBlank
+    @Size(min = 10)
     private String phoneNumber;
 
-    @Column(nullable = false)
+    @NotNull
+    @NotBlank
     private String city;
 
-    @Column()
+
     private String municipality;
 
-    @Column(nullable = false)
+    @NotNull
+    @NotBlank
     private String zip;
 
-    @Column()
+
     private String neighborhood;
 
-    @Column()
+
     private String street;
 
-    @Column()
+
     private String streetNumber;
 
-    @Column()
+
     private String block;
 
-    @Column()
+
     private String entry;
 
-    @Column()
+
     private String floor;
 
-    @Column()
+
     private String apartment;
 
-    @Column()
+
     private String detailsAboutAddress;
 
-    @Column()
+
     private String userEmail;
 
     public UserAddressBindingModel() {

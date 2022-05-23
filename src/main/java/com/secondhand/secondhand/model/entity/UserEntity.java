@@ -50,6 +50,29 @@ import java.util.List;
 //                )
 //        }
 )
+@NamedEntityGraph(
+        name = "speedyAddresses",
+        attributeNodes = {
+                @NamedAttributeNode("speedyAddressList")
+        }
+)
+@NamedEntityGraph(
+        name = "speedyAddressesCityAddress",
+        attributeNodes = {
+                @NamedAttributeNode("speedyAddressList"),
+                @NamedAttributeNode(value = "speedyAddressList",subgraph = "addressCity")
+        },
+        subgraphs = {
+                @NamedSubgraph(
+                        name = "addressCity",
+                        attributeNodes = {
+                                @NamedAttributeNode("city"),
+                                @NamedAttributeNode("address")
+                        }
+                )
+        }
+)
+
 
 @Entity
 @Table(name = "users")
@@ -76,7 +99,7 @@ public class UserEntity extends BaseEntity {
     @Column(nullable = true)
     private String phoneNumber;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = {CascadeType.ALL,CascadeType.REMOVE})
     private List<AddressEntity> addresses = new ArrayList<>();
 
     @ManyToMany()
@@ -88,6 +111,9 @@ public class UserEntity extends BaseEntity {
 
     @ManyToMany()
     private List<ClothEntity> likesList = new ArrayList<>();
+
+    @OneToMany(cascade = {CascadeType.ALL,CascadeType.REMOVE})
+    private List<UserSpeedyAddressEntity> speedyAddressList = new ArrayList<>();
 
     public UserEntity() {
     }
@@ -188,6 +214,15 @@ public class UserEntity extends BaseEntity {
 
     public UserEntity setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+        return this;
+    }
+
+    public List<UserSpeedyAddressEntity> getSpeedyAddressList() {
+        return speedyAddressList;
+    }
+
+    public UserEntity setSpeedyAddressList(List<UserSpeedyAddressEntity> speedyAddressList) {
+        this.speedyAddressList = speedyAddressList;
         return this;
     }
 }

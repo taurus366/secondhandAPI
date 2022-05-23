@@ -1,15 +1,20 @@
 package com.secondhand.secondhand.service.Impl;
 
+import com.secondhand.secondhand.exception.ItemAlreadyExistsException;
 import com.secondhand.secondhand.exception.UserAddressesLimitException;
 import com.secondhand.secondhand.model.binding.UserAddressBindingModel;
 import com.secondhand.secondhand.model.binding.UserChangePersonalDataBindingModel;
+import com.secondhand.secondhand.model.dto.SpeedyAddressDTO;
 import com.secondhand.secondhand.model.dto.UserInformationDTO;
 import com.secondhand.secondhand.model.entity.*;
 import com.secondhand.secondhand.model.entity.enums.RoleEnum;
 import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
+import com.secondhand.secondhand.model.service.SpeedyNewAddressServiceModel;
 import com.secondhand.secondhand.model.service.UserChangePasswordServiceModel;
+import com.secondhand.secondhand.model.service.UserEditAddressServiceModel;
 import com.secondhand.secondhand.model.service.UserRegistrationServiceModel;
 import com.secondhand.secondhand.repository.*;
+import com.secondhand.secondhand.service.SpeedyCityService;
 import com.secondhand.secondhand.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -22,7 +27,9 @@ import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -35,8 +42,11 @@ public class UserServiceImpl implements UserService {
     private final GuestTokenRepository guestTokenRepository;
     private final ClothRepository clothRepository;
     private final AddressRepository addressRepository;
+    private AddressEntity changedAddress = null;
+    private final SpeedyCityService speedyCityService;
+    private final UserSpeedyAddressRepository userSpeedyAddressRepository;
 
-    public UserServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder, RoleRepository roleRepository, ModelMapper modelMapper, SecondHandUserServiceImpl secondHandUserService, GuestTokenRepository guestTokenRepository, ClothRepository clothRepository, AddressRepository addressRepository) {
+    public UserServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder, RoleRepository roleRepository, ModelMapper modelMapper, SecondHandUserServiceImpl secondHandUserService, GuestTokenRepository guestTokenRepository, ClothRepository clothRepository, AddressRepository addressRepository, SpeedyCityService speedyCityService, UserSpeedyAddressRepository userSpeedyAddressRepository) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.roleRepository = roleRepository;
@@ -45,6 +55,8 @@ public class UserServiceImpl implements UserService {
         this.guestTokenRepository = guestTokenRepository;
         this.clothRepository = clothRepository;
         this.addressRepository = addressRepository;
+        this.speedyCityService = speedyCityService;
+        this.userSpeedyAddressRepository = userSpeedyAddressRepository;
     }
 
     @Override
@@ -186,13 +198,20 @@ public class UserServiceImpl implements UserService {
                     .setCreated(Instant.now())
                     .setModified(Instant.now());
 
+//            newAddress = this.addressRepository
+//                            .save(newAddress);
+
             userByEmail
                     .getAddresses()
                     .add(newAddress);
-//
-            this.userRepository
+
+            UserEntity savedUserAddresses = this.userRepository
                     .save(userByEmail);
 
+            List<AddressEntity> addresses = savedUserAddresses
+                    .getAddresses();
+
+            newAddress = addresses.get(addresses.size() -1);
 
         }else {
             throw new UserAddressesLimitException("User can't have more addresses than 3!");
@@ -201,9 +220,157 @@ public class UserServiceImpl implements UserService {
 //        return null;
     }
 
+    @Override
+    public AddressEntity changeExistsAddress(UserEditAddressServiceModel userEditAddressServiceModel) {
+
+        UserEntity userEntity = userRepository
+                .findByEmailGraphAddress(userEditAddressServiceModel.getUserAuthEmail()).orElseThrow(() -> new UsernameNotFoundException("We couldn't find the user"));
+
+
+
+
+       userEntity.setAddresses(userEntity.getAddresses()
+               .stream()
+               .map(addressEntity -> asAddress(addressEntity,userEditAddressServiceModel))
+               .collect(Collectors.toList()));
+
+        UserEntity savedUserAddresses = userRepository
+                .save(userEntity);
+
+        return savedUserAddresses
+                .getAddresses()
+                .stream()
+                .filter(addressEntity -> Objects.equals(addressEntity.getId(), userEditAddressServiceModel.getId()))
+                .collect(Collectors.toList())
+                .stream().findFirst().get();
+    }
+
+    @Override
+    public boolean deleteOneOwnAddress(Long addressId, String userEmail) {
+
+        UserEntity userEntity = this.userRepository
+                .findByEmailGraphAddress(userEmail).orElseThrow(() -> new UsernameNotFoundException("We couldn't find user"));
+
+        AddressEntity addressForDelete = null;
+
+        List<AddressEntity> addresses = userEntity.getAddresses();
+
+        for (AddressEntity address : addresses) {
+            if (Objects.equals(address.getId(), addressId)){
+                userEntity.getAddresses().remove(address);
+                addressForDelete = address;
+                break;
+            }
+        }
+
+
+        UserEntity save = this.userRepository
+                .save(userEntity);
+
+
+        assert addressForDelete != null;
+        this.addressRepository
+                .deleteById(addressForDelete.getId());
+
+        return save.getId() != null;
+    }
+
+    @Override
+    public List<SpeedyAddressDTO> addSpeedyOfficeAddressToUser(SpeedyNewAddressServiceModel speedyNewAddressServiceModel) {
+
+        SpeedyCityEntity cityById = speedyCityService
+                .getCityByIdTogetherAddresses(speedyNewAddressServiceModel.getCityId());
+
+        SpeedyAddressEntity speedyAddressEntityFromDB = cityById.getSpeedyAddresses()
+                .stream()
+                .filter(speedyAddressEntity1 -> speedyAddressEntity1.getId() == speedyNewAddressServiceModel
+                        .getSpeedyOfficeId())
+                .collect(Collectors.toList())
+                .get(0);
+
+        UserSpeedyAddressEntity speedyAddressEntity = new UserSpeedyAddressEntity();
+        speedyAddressEntity
+                .setFirstName(speedyNewAddressServiceModel.getFirstName())
+                .setLastName(speedyNewAddressServiceModel.getLastName())
+                .setPhoneNumber(speedyNewAddressServiceModel.getPhoneNumber())
+                .setCity(cityById)
+                .setAddress(speedyAddressEntityFromDB)
+                .setCreated(Instant.now())
+                .setModified(Instant.now());
+
+        UserEntity byEmail = this.userRepository
+                .findByEmailGraphSpeedyAddresses(speedyNewAddressServiceModel.getUserEmail()).orElseThrow( () -> new UsernameNotFoundException("We couldn't find the user wirh email : " + " " + speedyNewAddressServiceModel.getUserEmail()));
+
+
+        if (byEmail.getSpeedyAddressList().size() >= 3) {
+
+//            TODO -> create new Exception for it !
+            throw new UserAddressesLimitException("You can't have more than 3 speedy office addresses!");
+        }
+
+       byEmail
+               .getSpeedyAddressList()
+               .add(speedyAddressEntity);
+
+       this.userRepository
+               .save(byEmail);
+
+
+
+
+        return this.userRepository
+                .findByEmailGraphSpeedyAddressesCityAddress(speedyNewAddressServiceModel.getUserEmail())
+                .orElseThrow()
+                .getSpeedyAddressList()
+                .stream()
+                .map(this::asSpeedyAddressDTO)
+                .collect(Collectors.toList());
+    }
+
+//    TODO -> complete it !
+    private SpeedyAddressDTO asSpeedyAddressDTO(UserSpeedyAddressEntity speedyAddressEntity){
+
+        SpeedyAddressDTO speedyAddressDTO = new SpeedyAddressDTO();
+
+      return speedyAddressDTO
+                .setId(speedyAddressEntity.getId())
+                .setFirstName(speedyAddressEntity.getFirstName())
+              .setLastName(speedyAddressEntity.getLastName())
+                .setPhoneNumber(speedyAddressEntity.getPhoneNumber())
+                .setCity(speedyAddressEntity.getCity().getName())
+                .setAddress(speedyAddressEntity.getAddress().getName());
+    }
+
+    //     HERE WHILE I AM TRYING TO RETURN USER INFORMATION I ALSO PUT ADDRESSES INTO INFO
     private UserEntity putAddresses(UserEntity userEntityAddresses,UserEntity userEntity) {
       return userEntity
                .setAddresses(userEntityAddresses.getAddresses());
+    }
+
+    private AddressEntity asAddress(AddressEntity addressEntity,UserEditAddressServiceModel userEditAddressServiceModel) {
+
+                    if (Objects.equals(addressEntity.getId(), userEditAddressServiceModel.getId())){
+                        this.changedAddress = (AddressEntity) addressEntity
+                                .setStreet(userEditAddressServiceModel.getStreet())
+                                .setStreetNumber(userEditAddressServiceModel.getStreetNumber())
+                                .setApartment(userEditAddressServiceModel.getApartment())
+                                .setBlock(userEditAddressServiceModel.getBlock())
+                                .setCity(userEditAddressServiceModel.getCity())
+                                .setDetailsAboutAddress(userEditAddressServiceModel.getDetailsAboutAddress())
+                                .setEntry(userEditAddressServiceModel.getEntry())
+                                .setFirstName(userEditAddressServiceModel.getFirstName())
+                                .setFloor(userEditAddressServiceModel.getFloor())
+                                .setLastName(userEditAddressServiceModel.getLastName())
+                                .setMunicipality(userEditAddressServiceModel.getMunicipality())
+                                .setNeighborhood(userEditAddressServiceModel.getNeighborhood())
+                                .setPhoneNumber(userEditAddressServiceModel.getPhoneNumber())
+                                .setZip(userEditAddressServiceModel.getZip())
+                                .setCreated(Instant.now())
+                                .setModified(Instant.now());
+
+                        return this.changedAddress;
+                    }
+        return addressEntity;
     }
 
 }

@@ -5,8 +5,14 @@ import com.secondhand.secondhand.model.service.JsonCityVillageServiceModel;
 import com.secondhand.secondhand.model.entity.*;
 import com.secondhand.secondhand.model.entity.enums.ItemTypeEnum;
 import com.secondhand.secondhand.model.entity.enums.RoleEnum;
+import com.secondhand.secondhand.model.service.JsonCountryServiceModel;
+import com.secondhand.secondhand.model.service.JsonRegionServiceModel;
+import com.secondhand.secondhand.model.service.JsonSpeedyCityServiceModel;
 import com.secondhand.secondhand.repository.*;
 import com.secondhand.secondhand.service.CityService;
+import com.secondhand.secondhand.service.CountryService;
+import com.secondhand.secondhand.service.RegionService;
+import com.secondhand.secondhand.service.SpeedyCityService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import java.io.IOException;
@@ -24,14 +30,20 @@ public class DBinit implements CommandLineRunner {
     private final ClothTypeRepository clothTypeRepository;
     private final ClothCompositionRepository clothCompositionRepository;
     private final CityService cityService;
+    private final CountryService countryService;
+    private final RegionService regionService;
+    private final SpeedyCityService speedyCityService;
 
 
-    public DBinit(RoleRepository roleRepository, ClothBrandRepository clothBrandRepository, ClothTypeRepository clothTypeRepository, ClothCompositionRepository clothCompositionRepository, CityService cityService) {
+    public DBinit(RoleRepository roleRepository, ClothBrandRepository clothBrandRepository, ClothTypeRepository clothTypeRepository, ClothCompositionRepository clothCompositionRepository, CityService cityService, CountryService countryService, RegionService regionService, SpeedyCityService speedyCityService) {
         this.roleRepository = roleRepository;
         this.clothBrandRepository = clothBrandRepository;
         this.clothTypeRepository = clothTypeRepository;
         this.clothCompositionRepository = clothCompositionRepository;
         this.cityService = cityService;
+        this.countryService = countryService;
+        this.regionService = regionService;
+        this.speedyCityService = speedyCityService;
     }
 
 
@@ -42,6 +54,78 @@ public class DBinit implements CommandLineRunner {
         initTypes();
         initCompositions();
         initCityDB();
+        initCountriesDB();
+        initRegions();
+        initSpeedyCityDB();
+
+    }
+
+    private void initRegions() {
+       if ( regionService
+               .getAllRegions().size() > 0){
+           return;
+       }
+
+        ObjectMapper mapper = new ObjectMapper();
+        Path path = Paths.get("src/main/resources/regions_db.json");
+
+        try {
+
+            List<JsonRegionServiceModel> regions = Arrays.asList(mapper.readValue(path.toFile(), JsonRegionServiceModel[].class));
+
+            this.regionService
+                    .postRegions(regions);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void initSpeedyCityDB() {
+
+    if (this.speedyCityService.getAllCities().size() > 0){
+        return;
+    }
+
+        ObjectMapper mapper = new ObjectMapper();
+        Path path = Paths.get("src/main/resources/speedy_city_address.json");
+
+        try {
+
+            List<JsonSpeedyCityServiceModel> speedyCityServiceModels = Arrays.asList(mapper.readValue(path.toFile(), JsonSpeedyCityServiceModel[].class));
+
+            this.speedyCityService
+                    .postAllCities(speedyCityServiceModels);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void initCountriesDB() {
+        List<CountryEntity> allCountries = this.countryService
+                .getAllCountries();
+
+        if (allCountries.size() > 0) {
+            return;
+        }
+
+            ObjectMapper mapper = new ObjectMapper();
+        Path path = Paths.get("src/main/resources/countries_db.json");
+
+        try {
+
+            List<JsonCountryServiceModel> countries = Arrays.asList(mapper.readValue(path.toFile(), JsonCountryServiceModel[].class));
+
+            this.countryService
+                    .postCountries(countries);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void initCityDB() {

@@ -1,51 +1,65 @@
-package com.secondhand.secondhand.model.dto;
+package com.secondhand.secondhand.model.binding;
 
 import javax.persistence.Column;
 
-public class addressDTO {
+public class UserEditAddressBindingModel {
 
+    @Column(nullable = false)
     private Long id;
 
+    @Column(nullable = false)
     private String firstName;
 
-
+    @Column(nullable = false)
     private String lastName;
 
-
+    @Column(nullable = false)
     private String phoneNumber;
 
-
+    @Column(nullable = false)
     private String city;
 
-
+    @Column()
     private String municipality;
 
-
+    @Column(nullable = false)
     private String zip;
 
+    @Column()
     private String neighborhood;
 
+    @Column()
     private String street;
 
+    @Column()
     private String streetNumber;
 
+    @Column()
     private String block;
 
+    @Column()
     private String entry;
 
+    @Column()
     private String floor;
 
+    @Column()
     private String apartment;
 
+    @Column()
     private String detailsAboutAddress;
 
+    @Column()
     private String userEmail;
+
+    public UserEditAddressBindingModel() {
+    }
 
     public Long getId() {
         return id;
     }
 
-    public addressDTO setId(Long id) {
+    public UserEditAddressBindingModel setId(Long id) {
         this.id = id;
         return this;
     }
@@ -54,7 +68,7 @@ public class addressDTO {
         return firstName;
     }
 
-    public addressDTO setFirstName(String firstName) {
+    public UserEditAddressBindingModel setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -63,7 +77,7 @@ public class addressDTO {
         return lastName;
     }
 
-    public addressDTO setLastName(String lastName) {
+    public UserEditAddressBindingModel setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -72,7 +86,7 @@ public class addressDTO {
         return phoneNumber;
     }
 
-    public addressDTO setPhoneNumber(String phoneNumber) {
+    public UserEditAddressBindingModel setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
         return this;
     }
@@ -81,7 +95,7 @@ public class addressDTO {
         return city;
     }
 
-    public addressDTO setCity(String city) {
+    public UserEditAddressBindingModel setCity(String city) {
         this.city = city;
         return this;
     }
@@ -90,7 +104,7 @@ public class addressDTO {
         return municipality;
     }
 
-    public addressDTO setMunicipality(String municipality) {
+    public UserEditAddressBindingModel setMunicipality(String municipality) {
         this.municipality = municipality;
         return this;
     }
@@ -99,7 +113,7 @@ public class addressDTO {
         return zip;
     }
 
-    public addressDTO setZip(String zip) {
+    public UserEditAddressBindingModel setZip(String zip) {
         this.zip = zip;
         return this;
     }
@@ -108,7 +122,7 @@ public class addressDTO {
         return neighborhood;
     }
 
-    public addressDTO setNeighborhood(String neighborhood) {
+    public UserEditAddressBindingModel setNeighborhood(String neighborhood) {
         this.neighborhood = neighborhood;
         return this;
     }
@@ -117,7 +131,7 @@ public class addressDTO {
         return street;
     }
 
-    public addressDTO setStreet(String street) {
+    public UserEditAddressBindingModel setStreet(String street) {
         this.street = street;
         return this;
     }
@@ -126,7 +140,7 @@ public class addressDTO {
         return streetNumber;
     }
 
-    public addressDTO setStreetNumber(String streetNumber) {
+    public UserEditAddressBindingModel setStreetNumber(String streetNumber) {
         this.streetNumber = streetNumber;
         return this;
     }
@@ -135,7 +149,7 @@ public class addressDTO {
         return block;
     }
 
-    public addressDTO setBlock(String block) {
+    public UserEditAddressBindingModel setBlock(String block) {
         this.block = block;
         return this;
     }
@@ -144,7 +158,7 @@ public class addressDTO {
         return entry;
     }
 
-    public addressDTO setEntry(String entry) {
+    public UserEditAddressBindingModel setEntry(String entry) {
         this.entry = entry;
         return this;
     }
@@ -153,7 +167,7 @@ public class addressDTO {
         return floor;
     }
 
-    public addressDTO setFloor(String floor) {
+    public UserEditAddressBindingModel setFloor(String floor) {
         this.floor = floor;
         return this;
     }
@@ -162,7 +176,7 @@ public class addressDTO {
         return apartment;
     }
 
-    public addressDTO setApartment(String apartment) {
+    public UserEditAddressBindingModel setApartment(String apartment) {
         this.apartment = apartment;
         return this;
     }
@@ -171,7 +185,7 @@ public class addressDTO {
         return detailsAboutAddress;
     }
 
-    public addressDTO setDetailsAboutAddress(String detailsAboutAddress) {
+    public UserEditAddressBindingModel setDetailsAboutAddress(String detailsAboutAddress) {
         this.detailsAboutAddress = detailsAboutAddress;
         return this;
     }
@@ -180,7 +194,7 @@ public class addressDTO {
         return userEmail;
     }
 
-    public addressDTO setUserEmail(String userEmail) {
+    public UserEditAddressBindingModel setUserEmail(String userEmail) {
         this.userEmail = userEmail;
         return this;
     }
