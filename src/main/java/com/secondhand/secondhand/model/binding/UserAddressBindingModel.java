@@ -1,5 +1,7 @@
 package com.secondhand.secondhand.model.binding;
 
+import com.secondhand.secondhand.model.validator.PhoneNumberExists;
+
 import javax.persistence.Column;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -17,7 +19,8 @@ public class UserAddressBindingModel {
 
     @NotNull
     @NotBlank
-    @Size(min = 10)
+    @PhoneNumberExists
+//    @Size(min = 10)
     private String phoneNumber;
 
     @NotNull

@@ -3,7 +3,6 @@ package com.secondhand.secondhand.service.Impl;
 import com.secondhand.secondhand.common.MapperFunction;
 import com.secondhand.secondhand.exception.ItemAlreadyExistsException;
 import com.secondhand.secondhand.model.dto.ClothDTO;
-import com.secondhand.secondhand.model.dto.PictureDTO;
 import com.secondhand.secondhand.model.entity.ClothEntity;
 import com.secondhand.secondhand.model.entity.GuestTokenEntity;
 import com.secondhand.secondhand.model.entity.UserEntity;

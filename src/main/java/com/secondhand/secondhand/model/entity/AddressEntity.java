@@ -8,32 +8,46 @@ import java.util.List;
 @Table(name = "addresses")
 public class AddressEntity extends BaseEntity{
 
+    @Column()
     private String firstName;
 
+    @Column()
     private String lastName;
 
+    @Column()
     private String phoneNumber;
 
+    @Column()
     private String city;
 
+    @Column()
     private String municipality;
 
+    @Column()
     private String zip;
 
+    @Column()
     private String neighborhood;
 
+    @Column()
     private String street;
 
+    @Column()
     private String streetNumber;
 
+    @Column()
     private String block;
 
+    @Column()
     private String entry;
 
+    @Column()
     private String floor;
 
+    @Column()
     private String apartment;
 
+    @Column()
     private String detailsAboutAddress;
 
 //    @ManyToOne()

@@ -2,28 +2,22 @@ package com.secondhand.secondhand.service;
 
 import com.secondhand.secondhand.model.binding.UserAddressBindingModel;
 import com.secondhand.secondhand.model.binding.UserChangePersonalDataBindingModel;
-import com.secondhand.secondhand.model.binding.UserEditAddressBindingModel;
-import com.secondhand.secondhand.model.dto.ClothDTO;
 import com.secondhand.secondhand.model.dto.SpeedyAddressDTO;
 import com.secondhand.secondhand.model.dto.UserInformationDTO;
 import com.secondhand.secondhand.model.entity.AddressEntity;
-import com.secondhand.secondhand.model.entity.SpeedyAddressEntity;
 import com.secondhand.secondhand.model.entity.UserEntity;
 import com.secondhand.secondhand.model.service.SpeedyNewAddressServiceModel;
 import com.secondhand.secondhand.model.service.UserChangePasswordServiceModel;
 import com.secondhand.secondhand.model.service.UserEditAddressServiceModel;
 import com.secondhand.secondhand.model.service.UserRegistrationServiceModel;
 
-import javax.servlet.http.Cookie;
-import java.util.List;
-import java.util.Optional;
-
 public interface UserService {
 
+    UserInformationDTO validateUserIfLoggedAndRoles(String email);
     boolean isEmailExists(String email);
     UserInformationDTO registerNewUserAndLogin(UserRegistrationServiceModel registerServiceModel);
-    Optional<UserEntity> findByLogin(String login);
-    UserEntity findUserByEmail(String email);
+    UserEntity findUserByEmailDefault(String email);
+    UserInformationDTO findUserByEmailLoginGraph(String email);
     boolean isAdmin(String userEmail);
 
     UserEntity userChangePassword(UserChangePasswordServiceModel serviceModel);
@@ -34,7 +28,10 @@ public interface UserService {
 
     boolean deleteOneOwnAddress(Long addressId, String userEmail);
 
-    List<SpeedyAddressDTO> addSpeedyOfficeAddressToUser(SpeedyNewAddressServiceModel speedyNewAddressServiceModel);
+    SpeedyAddressDTO addSpeedyOfficeAddressToUser(SpeedyNewAddressServiceModel speedyNewAddressServiceModel);
+
+    UserInformationDTO userPersonalData(String email);
+    UserInformationDTO userAddresses(String email);
 
 //    List<ClothDTO> getUserCart(String userEmail);
 //    List<ClothDTO> getGuestCart(String cookie);

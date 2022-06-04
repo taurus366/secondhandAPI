@@ -1,8 +1,6 @@
 package com.secondhand.secondhand.model.dto;
 
-import javax.persistence.Column;
-
-public class addressDTO {
+public class AddressDTO {
 
     private Long id;
 
@@ -45,7 +43,7 @@ public class addressDTO {
         return id;
     }
 
-    public addressDTO setId(Long id) {
+    public AddressDTO setId(Long id) {
         this.id = id;
         return this;
     }
@@ -54,7 +52,7 @@ public class addressDTO {
         return firstName;
     }
 
-    public addressDTO setFirstName(String firstName) {
+    public AddressDTO setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -63,7 +61,7 @@ public class addressDTO {
         return lastName;
     }
 
-    public addressDTO setLastName(String lastName) {
+    public AddressDTO setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -72,7 +70,7 @@ public class addressDTO {
         return phoneNumber;
     }
 
-    public addressDTO setPhoneNumber(String phoneNumber) {
+    public AddressDTO setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
         return this;
     }
@@ -81,7 +79,7 @@ public class addressDTO {
         return city;
     }
 
-    public addressDTO setCity(String city) {
+    public AddressDTO setCity(String city) {
         this.city = city;
         return this;
     }
@@ -90,7 +88,7 @@ public class addressDTO {
         return municipality;
     }
 
-    public addressDTO setMunicipality(String municipality) {
+    public AddressDTO setMunicipality(String municipality) {
         this.municipality = municipality;
         return this;
     }
@@ -99,7 +97,7 @@ public class addressDTO {
         return zip;
     }
 
-    public addressDTO setZip(String zip) {
+    public AddressDTO setZip(String zip) {
         this.zip = zip;
         return this;
     }
@@ -108,7 +106,7 @@ public class addressDTO {
         return neighborhood;
     }
 
-    public addressDTO setNeighborhood(String neighborhood) {
+    public AddressDTO setNeighborhood(String neighborhood) {
         this.neighborhood = neighborhood;
         return this;
     }
@@ -117,7 +115,7 @@ public class addressDTO {
         return street;
     }
 
-    public addressDTO setStreet(String street) {
+    public AddressDTO setStreet(String street) {
         this.street = street;
         return this;
     }
@@ -126,7 +124,7 @@ public class addressDTO {
         return streetNumber;
     }
 
-    public addressDTO setStreetNumber(String streetNumber) {
+    public AddressDTO setStreetNumber(String streetNumber) {
         this.streetNumber = streetNumber;
         return this;
     }
@@ -135,7 +133,7 @@ public class addressDTO {
         return block;
     }
 
-    public addressDTO setBlock(String block) {
+    public AddressDTO setBlock(String block) {
         this.block = block;
         return this;
     }
@@ -144,7 +142,7 @@ public class addressDTO {
         return entry;
     }
 
-    public addressDTO setEntry(String entry) {
+    public AddressDTO setEntry(String entry) {
         this.entry = entry;
         return this;
     }
@@ -153,7 +151,7 @@ public class addressDTO {
         return floor;
     }
 
-    public addressDTO setFloor(String floor) {
+    public AddressDTO setFloor(String floor) {
         this.floor = floor;
         return this;
     }
@@ -162,7 +160,7 @@ public class addressDTO {
         return apartment;
     }
 
-    public addressDTO setApartment(String apartment) {
+    public AddressDTO setApartment(String apartment) {
         this.apartment = apartment;
         return this;
     }
@@ -171,7 +169,7 @@ public class addressDTO {
         return detailsAboutAddress;
     }
 
-    public addressDTO setDetailsAboutAddress(String detailsAboutAddress) {
+    public AddressDTO setDetailsAboutAddress(String detailsAboutAddress) {
         this.detailsAboutAddress = detailsAboutAddress;
         return this;
     }
@@ -180,7 +178,7 @@ public class addressDTO {
         return userEmail;
     }
 
-    public addressDTO setUserEmail(String userEmail) {
+    public AddressDTO setUserEmail(String userEmail) {
         this.userEmail = userEmail;
         return this;
     }

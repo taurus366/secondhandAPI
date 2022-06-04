@@ -1,7 +1,5 @@
 package com.secondhand.secondhand.model.dto;
 
-import com.secondhand.secondhand.model.entity.AddressEntity;
-import com.secondhand.secondhand.model.entity.RoleEntity;
 import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
 
 import java.util.ArrayList;
@@ -13,10 +11,11 @@ public class UserInformationDTO {
     private String firstName;
     private String lastName;
     private String email;
-    private List<RoleEntity> roles = new ArrayList<>();
+    private List<RoleDTO> roles = new ArrayList<>();
     private UserSexEnum sex;
     private String phoneNumber;
-    private List<AddressEntity> addresses = new ArrayList<>();
+    private List<AddressDTO> addresses = new ArrayList<>();
+    private List<SpeedyAddressDTO> SpeedyAddressList = new ArrayList<>();
 
     public Long getId() {
         return id;
@@ -27,11 +26,11 @@ public class UserInformationDTO {
         return this;
     }
 
-    public List<AddressEntity> getAddresses() {
+    public List<AddressDTO> getAddresses() {
         return addresses;
     }
 
-    public UserInformationDTO setAddresses(List<AddressEntity> addresses) {
+    public UserInformationDTO setAddresses(List<AddressDTO> addresses) {
         this.addresses = addresses;
         return this;
     }
@@ -63,11 +62,11 @@ public class UserInformationDTO {
         return this;
     }
 
-    public List<RoleEntity> getRoles() {
+    public List<RoleDTO> getRoles() {
         return roles;
     }
 
-    public UserInformationDTO setRoles(List<RoleEntity> roles) {
+    public UserInformationDTO setRoles(List<RoleDTO> roles) {
         this.roles = roles;
         return this;
     }
@@ -87,6 +86,15 @@ public class UserInformationDTO {
 
     public UserInformationDTO setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+        return this;
+    }
+
+    public List<SpeedyAddressDTO> getSpeedyAddressList() {
+        return SpeedyAddressList;
+    }
+
+    public UserInformationDTO setSpeedyAddressList(List<SpeedyAddressDTO> speedyAddressList) {
+        this.SpeedyAddressList = speedyAddressList;
         return this;
     }
 }

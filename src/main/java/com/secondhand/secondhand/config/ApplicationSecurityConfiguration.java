@@ -125,13 +125,13 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
             HttpServletResponse response,
             Authentication authentication) throws IOException {
 
-        UserEntity userByEmail = userService.findUserByEmail(authentication.getName());
+        UserInformationDTO userByEmailLoginGraph = userService.findUserByEmailLoginGraph(authentication.getName());
 //                .orElseThrow(() -> new UsernameNotFoundException("User not found: " + authentication.getName()));
 
 //        clothService.changeGuestClothToUserCloth(request,response,userByEmail.getId());
 
         cartService
-                .changeGuestCartToUserCart(userByEmail.getEmail(), request.getCookies());
+                .changeGuestCartToUserCart(userByEmailLoginGraph.getEmail(), request.getCookies());
 
         Cookie cookie = new Cookie("GSESSIONID", "");
         cookie.setPath("/");
@@ -139,7 +139,8 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
         response
                 .addCookie(cookie);
 
-        objectMapper.writeValue(response.getWriter(), modelMapper.map(userByEmail, UserInformationDTO.class));
+
+        objectMapper.writeValue(response.getWriter(),userByEmailLoginGraph);
 
         response.setStatus(HttpStatus.OK.value());
 
@@ -178,7 +179,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of( "http://77.71.76.17:4200"));
+        configuration.setAllowedOrigins(List.of( "http://localhost:4200", "http://77.71.76.17:8080", "http://77.71.76.17:4200", "http://192.168.0.163:4200"));
         configuration.setAllowedMethods(List.of("POST, GET, OPTIONS, DELETE"));
 //        configuration.setAllowCredentials(true);
         //the below three lines will add the relevant CORS response headers

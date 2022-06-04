@@ -1,8 +1,6 @@
 package com.secondhand.secondhand.model.entity;
 
 import com.secondhand.secondhand.model.entity.enums.UserSexEnum;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -51,9 +49,26 @@ import java.util.List;
 //        }
 )
 @NamedEntityGraph(
+        name = "userAddress-SpeedyAddress",
+        attributeNodes = {
+                @NamedAttributeNode("speedyAddressList"),
+                @NamedAttributeNode("addresses")
+        }
+)
+@NamedEntityGraph(
         name = "speedyAddresses",
         attributeNodes = {
-                @NamedAttributeNode("speedyAddressList")
+                @NamedAttributeNode("speedyAddressList"),
+                @NamedAttributeNode(value = "speedyAddressList",subgraph = "addresses")
+        },
+        subgraphs = {
+                @NamedSubgraph(
+                        name = "addresses",
+                        attributeNodes = {
+                                @NamedAttributeNode("city"),
+                                @NamedAttributeNode("address")
+                        }
+                )
         }
 )
 @NamedEntityGraph(
@@ -99,13 +114,13 @@ public class UserEntity extends BaseEntity {
     @Column(nullable = true)
     private String phoneNumber;
 
-    @OneToMany(cascade = {CascadeType.ALL,CascadeType.REMOVE})
+    @OneToMany(cascade = {CascadeType.ALL,CascadeType.REMOVE},mappedBy = "")
     private List<AddressEntity> addresses = new ArrayList<>();
 
     @ManyToMany()
-//    @LazyCollection(LazyCollectionOption.FALSE)
     private List<RoleEntity> roles = new ArrayList<>();
 
+//    @ManyToMany()
     @ManyToMany(fetch = FetchType.EAGER)
     private List<ClothEntity> clothesList = new ArrayList<>();
 

@@ -1,16 +1,12 @@
 package com.secondhand.secondhand.repository;
 
 import com.secondhand.secondhand.model.entity.ClothEntity;
-import com.secondhand.secondhand.model.entity.GuestTokenEntity;
-import com.secondhand.secondhand.model.entity.UserEntity;
 import com.secondhand.secondhand.model.entity.enums.ClothColorEnum;
 import com.secondhand.secondhand.model.entity.enums.ClothSexEnum;
 import com.secondhand.secondhand.model.entity.enums.ClothSizeEnum;
 import com.secondhand.secondhand.model.entity.enums.ItemTypeEnum;
-import org.hibernate.annotations.NamedQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

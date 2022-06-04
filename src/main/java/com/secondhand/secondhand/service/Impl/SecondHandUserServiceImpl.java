@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import javax.mail.AuthenticationFailedException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,16 +23,16 @@ public class SecondHandUserServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        System.out.println(email + " LOGGED _____________________2__________________________________________");
 
         UserEntity userEntity = userRepository
-                .findByEmailGraph(email)
+                .findByEmailGraphRole(email)
                 .orElseThrow(() -> {
                    throw  new UsernameNotFoundException("User with that email " + email + " not found!");
 
                 });
-        System.out.println("test");
-        System.out.println(userEntity.getPassword() + "dadasdasd");
+
+        System.out.println(email + " LOGGED _____________________2__________________________________________");
+
         return mapToUserDetails(userEntity);
     }
 

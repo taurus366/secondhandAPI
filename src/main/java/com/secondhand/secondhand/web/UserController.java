@@ -19,6 +19,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -57,24 +58,29 @@ public class UserController {
     }
 
     //    CHECK IF USER IS LOGGED OR NOT! UPDATE FRONT END USER INTERFACE
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/validate")
-    public ResponseEntity<UserInformationDTO> checkUserIfLogged(@AuthenticationPrincipal SecondHandUser principal, HttpServletRequest request, HttpServletResponse response) {
-        UserInformationDTO mappedUser = null;
-        try {
-            UserEntity userByEmail = userService.findUserByEmail(principal.getUserIdentifierEmail());
-            mappedUser = modelMapper.map(userByEmail, UserInformationDTO.class);
-        } catch (Exception e) {
+    public ResponseEntity<Object> checkUserIfLogged(@AuthenticationPrincipal SecondHandUser principal, HttpServletRequest request, HttpServletResponse response) {
+//        UserInformationDTO userByEmailValidate = null;
+//        try {
+////            System.out.println(principal.getUserIdentifierEmail());
+////            mappedUser = modelMapper.map(userByEmail, UserInformationDTO.class);
+//        } catch (Exception e) {
+//
+////            HERE I CHECK THE GSESSIONID THEN SEND TO CLIENT
+////            OR IF THE CLIENTS HAS ALREADY IT
+////            THEN I ONLY CHECK IF ITS EXISTS IN DB
+////            this.cookieFunction.CheckThenIfNecessaryAddNewCookie(request, response);
+//
+//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(e.getMessage());
+//        }
+            // TODO -> here shouldn't return any information !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! JUST CHECK IF IT IS LOGGED !
+//        return ResponseEntity.status(HttpStatus.OK).body(userByEmailValidate);
 
+        UserInformationDTO userInformationDTO = userService
+                .validateUserIfLoggedAndRoles(principal.getUserIdentifierEmail());
 
-//            HERE I CHECK THE GSESSIONID THEN SEND TO CLIENT
-//            OR IF THE CLIENTS HAS ALREADY IT
-//            THEN I ONLY CHECK IF ITS EXISTS IN DB
-//            this.cookieFunction.CheckThenIfNecessaryAddNewCookie(request, response);
-
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-        }
-
-        return ResponseEntity.status(HttpStatus.OK).body(mappedUser);
+        return ResponseEntity.status(HttpStatus.OK).body(userInformationDTO);
     }
 
     @PreAuthorize("isAdmin()")
@@ -101,7 +107,7 @@ public class UserController {
         String userIdentifierEmail = secondHandUser.getUserIdentifierEmail();
 
         UserEntity userByEmail = userService
-                .findUserByEmail(userIdentifierEmail);
+                .findUserByEmailDefault(userIdentifierEmail);
 
         boolean isCurrentPasswordMatches = false;
         boolean isSameNewPasswords = false;
@@ -140,15 +146,21 @@ public class UserController {
         UserChangePasswordServiceModel serviceModel = modelMapper.map(userChangePasswordBindingModel, UserChangePasswordServiceModel.class);
         serviceModel.setUserEmail(userIdentifierEmail);
 
-        UserEntity userEntity = this.userService
-                .userChangePassword(serviceModel);
+        try {
+            this.userService
+                    .userChangePassword(serviceModel);
+        } catch (UsernameNotFoundException ex) {
+            System.out.println(ex.getMessage());
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
+        }
 
-        UserInformationDTO mappedUser = modelMapper.map(userEntity, UserInformationDTO.class);
-        return ResponseEntity.ok().body(mappedUser);
+//        HERE MUST RETURN ONLY CODE 200 thats mean that request successful completed!
+//        UserInformationDTO mappedUser = modelMapper.map(userEntity, UserInformationDTO.class);
+        return ResponseEntity.ok().build();
 
     }
 
-//   TODO -> CHANGE CODES !
+    //   TODO -> CHANGE CODES !
     @PreAuthorize("isAuthenticated()")
     @PutMapping("/change/data")
     public ResponseEntity<Object> changeUserPersonalData(@AuthenticationPrincipal SecondHandUser secondHandUser, @Valid @RequestBody UserChangePersonalDataBindingModel userChangePersonalDataBindingModel, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
@@ -214,8 +226,6 @@ public class UserController {
     @PostMapping("/new/address")
     public ResponseEntity<Object> createNewAddress(@AuthenticationPrincipal SecondHandUser secondHandUser, @Valid @RequestBody UserAddressBindingModel userAddressBindingModel, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
-        System.out.println(userAddressBindingModel.getStreetNumber());
-
         if (bindingResult.hasErrors()) {
             redirectAttributes
                     .addFlashAttribute("userAddressBindingModel", userAddressBindingModel)
@@ -238,12 +248,11 @@ public class UserController {
             addressEntity = userService
                     .addNewAddress(userAddressBindingModel);
 
-            System.out.println(addressEntity.getId() + " id of the address");
         } catch (UserAddressesLimitException ex) {
 
             return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
         }
-        addressDTO mappedUserAddress = modelMapper.map(addressEntity, addressDTO.class);
+        AddressDTO mappedUserAddress = modelMapper.map(addressEntity, AddressDTO.class);
         mappedUserAddress.setId(addressEntity.getId());
 
         return ResponseEntity.ok().body(mappedUserAddress);
@@ -338,9 +347,9 @@ public class UserController {
         try {
             cityIdLongValue = Long.parseLong(cityId);
 
-             speedyAddressesByCityId = this.speedyCityService
+            speedyAddressesByCityId = this.speedyCityService
                     .getSpeedyAddressesByCityId(cityIdLongValue);
-        } catch (NumberFormatException ex){
+        } catch (NumberFormatException ex) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body("Number is allowed!");
         } catch (NullPointerException exx) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body("We couldn't find address with that city id" + " " + cityIdLongValue);
@@ -350,18 +359,17 @@ public class UserController {
     }
 
 //   SPEEDY ADDRESS
-
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/new/office/address")
     public ResponseEntity<Object> saveNewSpeedyAddress(@AuthenticationPrincipal SecondHandUser secondHandUser, @Valid @RequestBody SpeedyNewAddressBindingModel speedyNewAddressBindingModel, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
-       String userEmail = secondHandUser.getUserIdentifierEmail();
+        String userEmail = secondHandUser.getUserIdentifierEmail();
 
         if (bindingResult.hasErrors()) {
 
-          redirectAttributes
-                  .addFlashAttribute("speedyNewAddressBindingModel",speedyNewAddressBindingModel)
-                  .addFlashAttribute("org.springframework.validation.BindingResult.speedyNewAddressBindingModel",bindingResult);
+            redirectAttributes
+                    .addFlashAttribute("speedyNewAddressBindingModel", speedyNewAddressBindingModel)
+                    .addFlashAttribute("org.springframework.validation.BindingResult.speedyNewAddressBindingModel", bindingResult);
 
             return ResponseEntity.status(HttpStatus.CONFLICT).body(bindingResult.getAllErrors());
         }
@@ -374,12 +382,12 @@ public class UserController {
                 .setUserEmail(userEmail)
                 .setPhoneNumber(lastPhoneNumber);
 
-        List<SpeedyAddressDTO> speedyAddressDTO = null;
+        SpeedyAddressDTO speedyAddressDTO = null;
 
         try {
             speedyAddressDTO = this.userService
                     .addSpeedyOfficeAddressToUser(mapped);
-        }catch (UserAddressesLimitException ex){
+        } catch (UserAddressesLimitException ex) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
         }
 
@@ -387,4 +395,26 @@ public class UserController {
         return ResponseEntity.ok().body(speedyAddressDTO);
     }
 
+
+//    POPULATE USER INFORMATION LIKE [firstName,lastName,phoneNumber..]
+//    NOT USED YET
+    @PreAuthorize("isAuthenticated()")
+    @GetMapping("/info/data")
+    public ResponseEntity<Object> getUserPersonalData(@AuthenticationPrincipal SecondHandUser secondHandUser) {
+        UserInformationDTO userInformationDTO = this.userService
+                .userPersonalData(secondHandUser.getUserIdentifierEmail());
+        return ResponseEntity.ok(userInformationDTO);
+    }
+
+//    POPULATE USER ADDRESSES LIKE [ownAddress,speedyAddress]
+//    NOT USED YET
+    @PreAuthorize("isAuthenticated()")
+    @GetMapping("/info/addresses")
+    public ResponseEntity<Object> getUserAddresses(@AuthenticationPrincipal SecondHandUser secondHandUser) {
+
+        UserInformationDTO userInformationDTO = this.userService
+                .userAddresses(secondHandUser.getUserIdentifierEmail());
+
+        return ResponseEntity.ok(userInformationDTO);
+    }
 }

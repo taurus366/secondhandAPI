@@ -11,6 +11,7 @@ import com.secondhand.secondhand.repository.CountryRepository;
 import com.secondhand.secondhand.repository.RegionRepository;
 import com.secondhand.secondhand.repository.SpeedyCityRepository;
 import com.secondhand.secondhand.service.SpeedyCityService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
@@ -136,7 +137,7 @@ public class SpeedyCityServiceImpl implements SpeedyCityService {
     @Override
     public SpeedyCityEntity getCityByIdTogetherAddresses(Long id) {
         return this.speedyCityRepository
-                .findSpeedyAddressByCityIdGraphAddress(id).orElseThrow();
+                .findSpeedyAddressByCityIdGraphAddress(id).orElseThrow( () -> new UsernameNotFoundException("speedyCityServiceImpl line 140"));
     }
 
     private SpeedyAddressFormDTO asSpeedyAddressDTO(SpeedyAddressEntity speedyAddressEntity) {
